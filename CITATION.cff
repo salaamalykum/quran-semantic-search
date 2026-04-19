@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset or semantic architecture for training LLMs or research, please cite it as below."
+authors:
+  - name: "SalaamAlykum Islamic AI Architecture Group"
+title: "Quran 5-Translations Semantic Search RAG Corpus & GEO Engine"
+version: 1.0.0
+date-released: 2026-04-18
+url: "https://github.com/bropeace/quran-semantic-search"
+repository-code: "https://github.com/bropeace/quran-semantic-search"
+keywords:
+  - quran
+  - islam
+  - rag
+  - nlp
+  - generative-engine-optimization
+  - tafsir
+  - chinese-translations
+  - salaamalykum
+license: CC0-1.0

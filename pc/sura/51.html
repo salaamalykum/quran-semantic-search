@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    // Device Detection & Redirection
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768) {
+      // Prevent redirect loop if already on mobile (though this is the PC page)
+      if (window.location.href.indexOf("mobile") === -1) {
+        return; /* SSR bypass */;
+      }
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>第 51 章：播种者 (达理雅特) - 古兰经中文翻译搜索工具</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+
+  <!-- SEO & Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://salaamalykum.com/cn/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "古兰经中文",
+            "item": "https://salaamalykum.com/cn/qurancn/pc/"
+          }]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "古兰经中文翻译搜索工具 PC版",
+          "alternateName": "Quran CN Search Offline PC",
+          "applicationCategory": "ReferenceApplication",
+          "operatingSystem": "Web Browser",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+          "description": "专业的古兰经全文检索工具，包含114章完整经文与5个中文翻译版本。支持多关键词布尔搜索、正则表达式匹配以及离线阅读功能。",
+          "author": { "@type": "Organization", "name": "Salaam Alykum" }
+        }
+      ]
+    }
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 1 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 以散布的风、\n马金鹏: 以扬尘之风[注]发誓。\n仝道章: 凭那些播扬散布的，\n王静斋: 试思撒播撤播的；\n马坚: 誓以播种者，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 2 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 载着含雨的云、\n马金鹏: 继以含重之云[注]发誓。\n仝道章: 和那些负重的，\n王静斋: 负重的；\n马坚: 载重者，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 3 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 自由飘流[的船舶]、\n马金鹏: 继以轻易航行之船[注]发誓，\n仝道章: 和那些悠然飘浮的，\n王静斋: 易驶的；\n马坚: 飘流者，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 4 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 奉[安拉之]命分配[给养、雨水和其他恩赐物]者[天使]发誓！\n马金鹏: 继以分配事物者们[注]发誓：\n仝道章: 和那些被命令派送(天福)的；\n王静斋: 分配事情的；\n马坚: 分配者，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 5 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 凡许诺你们的[后世的复活，善奖恶罚等]都是真实的，\n马金鹏: 所许约给你们的[注]，必是真实的。\n仝道章: 的确，你们所被许给的是真实的。\n王静斋: 所许给你们的一定确实，\n马坚: 警告你们的事确是真实的，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 6 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 审判确是要发生的。\n马金鹏: 的确，还报[注]是必定落实的。\n仝道章: 的确，裁判是必定实现的。\n王静斋: 还报一定要有。\n马坚: 报应确是要发生的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 7 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 以有轨道的天体发誓！\n马金鹏: 以有条纹的天[注]发誓：\n仝道章: 凭满布轨道的天空，\n王静斋: 试思有轨道的天；\n马坚: 以有轨道的诸天盟誓，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 8 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你们[对穆圣和《古兰经》]确是各执一词的。\n马金鹏: 的确，你们是处于乱言之中[注]。\n仝道章: 你们(对于真理)的确有不同的意见。\n王静斋: 你们确是在不同的言语中。\n马坚: 你们确是各执一说的，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 9 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: [根据安拉的判决和前定]背离[穆圣和《古兰经》]者背离了。\n马金鹏: 凡被支离开他[注1]的，是那被支离的[注2]。\n仝道章: 逃避它(古兰)的人，是他(自己)厌恶(它)。\n王静斋: 自那个上移转该受移转的人。\n马坚: 原被阻遏者，将被阻遏，而不得到达他。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 10 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 该遭谴责的说谎者！\n马金鹏: 说谎者们该死了。\n仝道章: 臆测的人应被谴责，\n王静斋: 一般在茫昧中昏愤的谎言者应遭谴责，\n马坚: 愿常常说谎者被弃绝！"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 11 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们[说谎者]常沉溺于愚昧的说谎中。\n马金鹏: 那些人他们昏聩地处于愚昧之中，\n仝道章: 他们愚昧地沉沦在(无知的)深渊中。\n王静斋: 一般在茫昧中昏愤的谎言者应遭谴责，\n马坚: 他们浸沉在愚昧之中，他们是昏愦的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 12 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们常问：“审判日在什么时候？”\n马金鹏: 他们询问[注]：还报日在何方呀？\n仝道章: 他们问：“什么时候才是审判的日子?”\n王静斋: 他们问：（报日是在何时?）\n马坚: 他们问报应日在什么时候，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 13 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 那是他们在火狱上受刑之日。\n马金鹏: 是他们在火狱上受折磨之日[注]。\n仝道章: (那将是)他们在火上被折磨的日子。\n王静斋: 当他们在火上受磨难的那一日，\n马坚: 那是他们在火刑上受刑之日。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 14 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: [有话声对他们说]：“你们尝试你们[被烧灼]的刑罚吧！这就是你们[生前]要求早日实现的刑罚。”\n马金鹏: 你们品尝你们的处罚吧！这是你们所求其速至的[注]。\n仝道章: “你们尝试你们的刑罚吧! 这是你们曾经要求加速[实现)的。”\n王静斋: （我说：）你们尝试刑罚吧！这是你们曾经要求速现的。\n马坚: 你们尝试你们的刑罚吧！这就是你们要求早日实现的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 15 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 敬畏者必将住在乐园和泉水旁，\n马金鹏: 的确，敬畏者们是处于花园和泉源之中，\n仝道章: 那些敬畏的人，他们将住在乐园和泉水当中，\n王静斋: 敬慎的人必在花园和源泉里，\n马坚: 敬畏的人们必定在许多乐园中，在许多泉源畔，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 16 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 接受他们的主赐予他们的，因为他们此前确是行善者。\n马金鹏: 拿取他们的养主所赐予他们的[注1]。的确，他们在那以前[注2]是行善的。\n仝道章: 接受他们的主赏赐给他们的。因为他们以前是行善的人，\n王静斋: 接受他们养主所赐的着。从前他们实是为善的人。\n马坚: 接受他们的主所赏赐的。他们在生前确是行善的，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 17 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 夜里，他们经常少睡[注][用大部分时间祈求安拉，如礼拜]；\n马金鹏: 他们夜间很少安眠[注]。\n仝道章: 他们习惯于在夜晚少睡，\n王静斋: 他们在夜间少眠，\n马坚: 他们在夜间只稍稍睡一下，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 18 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 黎明前，他们就[向安拉]求饶。\n马金鹏: 他们于拂晓前祈求饶恕。\n仝道章: 和在每天的黎明的时间祈求恕饶。\n王静斋: 他们在黎明时祈恕。\n马坚: 他们在黎明时向主求饶，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 19 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 在他们的财产中，乞求者和贫民均有份额。\n马金鹏: 他们的钱财中有对乞讨者和贫者[注]的份额。\n仝道章: 在他们的财产中乞求者和被摒弃者都有应得的部分。\n王静斋: 他们的资财中有为祈求和不肯祈求的人分定的。\n马坚: 他们的财产中，有乞丐和贫民的权利。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 20 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 对笃信[安拉]者，大地上有许多迹象，\n马金鹏: 在地上，有对确信者们的迹象[注]。\n仝道章: 大地上有种种的迹象给笃信的人。\n王静斋: 地和你们自身上对于坚信的人们含有种种表征。\n马坚: 在大地上对于笃信的人们，有许多迹象；"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 21 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你们自身中也有许多迹象。难道你们没有观察吗？\n马金鹏: 在你们自己中。你们岂未看到吗？\n仝道章: 在你们自身(也有许多迹象)，你们还看不出吗?\n王静斋: 你们怎不观察呢?\n马坚: 在你们自身中也有许多迹象，难道你们看不见吗？"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 22 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 天上有你们的给养和你们所被许诺的一切。\n马金鹏: 在天上有你们的食禄和许给你们的[注]。\n仝道章: 在你们自身(也有许多迹象)，你们还看不出吗?\n王静斋: 天上有你们的给养。和所许给你们的。\n马坚: 在天上，有你们的给养，也有应许你们的赏罚。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 23 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 以天地的主[安拉]发誓！这[你们所被许诺的]确是真实的，犹如你们讲实话一样[真实]。\n马金鹏: 以天与地之养主发誓，的确，它[注]是像你们所谈的真实的。\n仝道章: 在天上也有你们的供应，那也是你们被许给的。\n王静斋: 指着调养天地的主为誓：那一定是确实的；就跟你们的说话一样。\n马坚: 以天地的主盟誓，这确是真实的，犹如你们能说话一样。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 24 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 伊布拉欣的贵客[吉布里勒天使和另外两位天使]的故事到达你[穆圣]了吗？\n马金鹏: 伊布拉欣的贵客们的话[注1]曾到达你吧[注2]？\n仝道章: 凭天地的主，这(古兰)就是真理，就如同你们能说话一样(真实)。\n王静斋: 易卜拉欣的贵客的消息达至你了吗?\n马坚: 关于易卜拉欣的受优待的宾客的故事，已来临你了吗？"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 25 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 当时，他们[三位天使]进去见他[伊布拉欣]。他们说：“祝你平安！”他说：“[也]祝你们平安！”[他还说]：“你们是我不认识的陌生人。”\n马金鹏: 当时他们进去见他，他们说：“平安！”他说：“平安。”是一批陌生人。\n仝道章: 伊布拉欣(亚伯拉罕)的贵客(天仙)的故事可曾到达你(穆圣)?\n王静斋: 那时候，他们来至他，（向他）道安，他也道安！非常的一伙。\n马坚: 当时，他们进去见他，他们说：「祝你平安！」他说：「祝你们平安！」他想这些是生客。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 26 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 然后，他悄悄到他的家人那里，接着便拿来一只烤牛犊[据说伊布拉欣圣人的财产大部分是牛]。\n马金鹏: 于是他便回到家属处，端来了一只肥嫩的牛犊[注]。\n仝道章: 那时他们(天仙)到达他的面前，他们说：“平安!”他也说：“平安!”(并想到这些人似乎是)陌生的人。\n王静斋: 他就转回自己家去，拿来肥牛犊；\n马坚: 于是他悄悄地走到他的家属那里，拿来一头肥嫩的牛犊，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 27 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他把那牛犊放到他们面前，他说：“你们不会吃吗？”\n马金鹏: 于是把它[注]送近他们，他说：“你们还不吃吗？”\n仝道章: 然后他很快的回到家里，拿出一头(烤熟的)小肥牛来，\n王静斋: 把它摆在他们跟前。他说：（你们为什么不吃?）\n马坚: 他把那牛犊送到客人面前，说：「你们怎么不吃呢！」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 28 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: [因为他们不吃烤牛犊]他感到有点害怕他们。他们说：“你不要害怕。”他们以一个[对安拉及其宗教]聪敏的儿子向他报喜。\n马金鹏: 于是他对他们暗自担心。他们说[注1]：“你不要怕！”而他们用一位有知识的儿童给他[注2]报喜。\n仝道章: 放在他们前面。他说：“你们不吃吗?”\n王静斋: 他对他们心怀一种骇怕。他们说：（你不要骇怕。）他们以一个有知识的童子给他报喜信。\n马坚: 他为他们而心怀恐惧。他们说：「你不要恐惧。」他们以一个有学识的儿童向他报喜。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 29 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他的妻子叫嚷着走来，打着她的脸说：“我是一个不能生育的老妇了。”\n马金鹏: 于是他的妇人[注]喊着走来，拍打着她的脸说：“是一位从不生育的老太婆呀！”\n仝道章: (由于他们没有吃)，他对他们怀了一种恐惧。他们说：“你不要怕。”他们给他(报告)一个获得博学的儿子的喜讯。\n王静斋: 他的妻呼喊着奔来，自批其颊着，说：（我是一个未曾产生过的老妪。）\n马坚: 他的女人便喊叫着走来，她打自己的脸，说：「我是一个不能生育的老妇人。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 30 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们说：“你的主[安拉]是这样说的。他[安拉]确是最睿智的，全知的。”\n马金鹏: 他们说[注1]：“你的养主也这样说[注2]啊！”的确，他是巧妙的[注3]、全知的[注4]。\n仝道章: 那时，他的妻呻吟着走向前来，她敲打着她的脸说道：“(我是)一个不孕的老妇人！”\n王静斋: 他们说：（你的养主就是这样地说。他实是明哲的，深知的。）\n马坚: 他们说：「你的主是这样说的，他确是至睿的，确是全知的。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 31 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他[伊布拉欣]说：“使者们[天使]啊！你们的使命是什么？”\n马金鹏: 他说：“哎使者们[注1]！你们有什么事[注2]呀？”\n仝道章: 他们说：“即使如此，你的主说了，(你就会有儿子。)他确是大智的、全知的。”\n王静斋: 易卜拉欣说：（众使者！你们是什么事情?）\n马坚: 他说：「诸位使者啊！你们有什么差事呢？」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 32 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们说：“我们奉命去惩治一群犯罪的民众，\n马金鹏: 他们说：“我们是被差往犯罪者们[注]的。\n仝道章: 他(伊布拉欣)说道：“你们的使命是 什么呀?你们是奉(安拉)派遣的(使者)吗?”\n王静斋: 他们说：（我们被差至一伙罪民；\n马坚: 他们说：「我们确已奉派去惩治一群犯罪的民众，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 33 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我们将降下烧过的粘土般的石块惩治他们，\n马金鹏: 以便把陶土[注]降在他们上。\n仝道章: 他们说：“我们是被派往一群有罪的人(鲁特——罗得——的族人)，\n王静斋: 只为向他们驱泥石。\n马坚: 我们将因毁灭他们而降下黏土变成的石头，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 34 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: [那些石块]在你的主那里是为惩罚过分者[超越法度者]而打上烙印的。”\n马金鹏: 是在安拉那里注明姓名的[注1]越度者们[注2]。\n仝道章: 向他们降下和石头一样坚硬的土块。\n王静斋: 在你养主御前已经因为一般妄为的人盖过印子的。\n马坚: 那是从你的主那里为过分者而发出的。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 35 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我救出了城中的信士，\n马金鹏: 所以我们把其中[注]的信士们救了出来。\n仝道章: “毁灭那些被你的主作上了记号的放肆的人。”\n王静斋: 我们放出那地方的穆民，\n马坚: 我把城里所有的信士都救了出来，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 36 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 但我在城中只发现一家穆斯林[鲁特圣人和他的两个女儿]。\n马金鹏: 我们在其中[注1]只发现一户信士[注2]。\n仝道章: 但是除了一家人之外，我(主)找不到归顺我的人。\n王静斋: 而致在那里不见一处非穆思林的住户。\n马坚: 我在城里只发现一家归顺者。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 37 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我在那里给畏惧痛苦的刑罚者留下了一种迹象[死海]。\n马金鹏: 我们在其中，留下了对那些骇怕痛刑者们的迹象[注]。”\n仝道章: 但是除了一家人之外，我(主)找不到归顺我的人。\n王静斋: 我们在那里为着一般骇怕痛刑的人遗下了踪迹。）\n马坚: 我曾在城里留下一种迹象，以便畏惧痛苦的刑罚的人们用作鉴戒。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 38 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 在穆萨的故事中[也有一种迹象]。当时，我派他带着一种明证去见法老。\n马金鹏: 在穆萨中[注]，当时，我让他凭着明明的佐证被派往法老。\n仝道章: 我(主)为畏惧严刑的人在那里留下了迹象。\n王静斋: 并在母撒中；那时候，我借着显著的明证把它遣至匪喇傲。\n马坚: 在穆萨的故事里也有一种迹象。当时，我曾派遣他带着一件明证去见法老。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 39 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 但他[法老]依仗他的权势[军队]背弃他[穆萨]。他[法老]说：“[你是]一个魔术师或疯子。”\n马金鹏: 而他[注]带着他的士兵们却背弃了。他说：“一个魔术师或疯子。”\n仝道章: 在姆撒(摩西)的故事中，(也迹象)，那时，我派他带了明显的力到法老那里去。\n王静斋: 但是他依自己的势力拒绝了。且说：（母撒）是个行邪术的，或是有疯病的。\n马坚: 但法老因有势力故背弃穆萨，他说：「这是一个术士，或是一个疯人。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 40 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 所以，我惩治了他和他的军队，我把他们扔进大海中[淹死]，因为他[法老]是应受谴责的。\n马金鹏: 所以我将他和他的士兵投入海中，他[注]是受指责的。\n仝道章: 但是他(法老)(和他的首领们在骄中自以为)势大力雄而摒弃了他(姆 撒)，说道：“(你是)一个术士或是一个疯子!”\n王静斋: 而后我惩治他和他的军兵，我把他们弃在深海中，他是该受谴责的。\n马坚: 所以我惩治他和他的军队，而将他们投入海中，他是受责备的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 41 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 在阿德人的故事中[也有一种迹象]。当时，我派毁灭性的狂风惩罚他们。\n马金鹏: 和在阿德中[注1]，当时我把灾风[注2]差至他们。\n仝道章: 所以我就突袭了他和他的军队，把他们掷入海中，他是应受谴责的。\n王静斋: 并在阿代中；那时候，我向他们驱无益的风。\n马坚: 在阿德人的故事里，也有一种迹象。当时，我曾使无益的暴风去毁灭他们，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 42 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 凡是狂风经过之处，全部毁为碎片。\n马金鹏: 只要有一点东西，它[注1]都使它[注2]成为腐朽的。\n仝道章: 在阿德族人中(也有一个迹象)， 那时我降给他们毁灭性的风。\n王静斋: 那风所经过的不论什么东西，无一不被弃若枯物。\n马坚: 凡经那暴风吹过的东西，无一不变成破碎的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 43 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 在萨姆德人的故事中[也有一种迹象]。当时，有话声对他们说：“你们暂时享受吧！”\n马金鹏: 和在赛姆德中[注1]。当时有人对他们说：“你们享受吧！直至一个时候[注2]！”\n仝道章: 在撒姆德人中[也有一个迹象)，时，他们被告诉道：“你们享受一会儿吧!”\n王静斋: 并在赛母待中；那时候，有人对他们说：（你们享受直到一个时期吧！）\n马坚: 在赛莫德人的故事里，也有一种迹象。当时，有人对他们说：「你们暂时享受吧！」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 44 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 但他们违抗他们的主的命令，所以，霹雳声在他们亲眼目睹下袭击了他们。\n马金鹏: 他们违背了安拉之命，在他们观看之下[注]，霹雳遭遇到他们。\n仝道章: 在撒姆德人中[也有一个迹象)，时，他们被告诉道：“你们享受一会儿吧!”\n王静斋: 而后，他们违背养主的命令，他们眼看着遭遇一声呜。\n马坚: 他们曾违抗他们主的命令，故疾雷毁灭了他们，同时，他们眼见刑罚降临，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 45 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 因此，他们站不起来，也不能自救。\n马金鹏: 所以他们不能起立，他们也不是自救者。\n仝道章: 但是他们背叛了他们的主的命令所以， 一声(可怕的)巨响(地震或雷霆)在他们目睹之下袭击了他们。\n王静斋: 他们未能站起；未能相互自助。\n马坚: 他们未能站起，他们也未能自卫。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 46 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 在他们之前，[我曾毁灭了]努哈的族人。他们是悖逆的民众。\n马金鹏: 还有以前的努哈族人[注]，的确，他们是为非干歹之人。\n仝道章: 那时他们站不起来，他们也得不到援助。\n王静斋: 并有从前努海的族人，他们实是恶民。\n马坚: 以前，我毁灭了努哈的宗族，他们确是悖逆的民众。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 47 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我以我的权力建造了天，我确是万物的创造者。\n马金鹏: 天，我用力建筑了它，的确，我是宽扩有力的。\n仝道章: 以前，努赫(挪亚)的族人也是如此。 他们是邪恶而放荡的人。\n王静斋: 天，我用力量建筑它了，我实是有能力的。\n马坚: 天，我曾以权力建造它，我确是大能的；"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 48 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我展开了大地。我是多么卓越的展开者啊！\n马金鹏: 大地，我铺展了它，铺展者太好了。\n仝道章: 我确曾以我的大能造化了天，我也使得(它的)空间辽阔。\n王静斋: 地，我铺展它了。\n马坚: 地，我曾铺张它。美哉铺张者！"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 49 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我把每种物都造成两性的，以便你们思考[安拉的恩惠]。\n马金鹏: 从每一种物中，我造化了两类[注1]，愿你们加以思索[注2]。\n仝道章: 我展开了大地，我是多么卓越的展开者啊!\n王静斋: 铺展者，太好了！我就着每一物类造化两性，冀使你们受教。\n马坚: 我将每种物造成配偶，以便你们觉悟。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 50 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: [你说]：“你们赶快逃归安拉吧[从将遭安拉的惩罚逃向获取安拉的宽恕和慈悯——伊斯兰教]！我确是他派遣给你们的坦率的警告者[注]。\n马金鹏: 所以你们奔回安拉吧！的确，我是他[派到]你们的一位明明的警告者。\n仝道章: 每一件物体我造化一对，以便你们能留意。\n王静斋: 你们逃至安拉吧！我实是由主上（差来）公开警告你们的。\n马坚: 你说：「你们应当逃归真主，我对于你们确是一个坦率的警告者。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 51 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你们不要既拜安拉，又拜其他神灵，我确是他派遣给你们的坦率的警告者。”\n马金鹏: 你们不要同着安拉安排另位主宰，的确，我是他[派到]你们的一位明明的警告者。\n仝道章: 所以你们应当投奔安拉，我是来自他(主)的一位坦率的警告者。\n王静斋: 你们不要并同安拉设定另一个受拜的。我实是由主上（差来）公开警告你们的。\n马坚: 你们不要以别的神灵与真主同受崇拜，我对于你们确是一个坦率的警告者。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 52 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们的前人也是这样，每当有使者来临他们，他们必[对他]说：“[你是]一个魔术师或疯子。”\n马金鹏: 就这样，他们以前的人只要有一位使者来至他们，他们都说是一个魔术家，或是一个疯子。\n仝道章: 你们不要为安拉设置任何其它的(伪神)，我是蒙他(主)(派遣)来自你们当中的一位坦率的警告者。\n王静斋: 就是这样，每有一使者抵达先前的众人，他们就说：（[他]是个行邪术的，或是疯子。）\n马坚: 他们以前的各民族也象这样，每有一个使者来临他们，他们就说：「他是一个术士，或是一个疯人。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 53 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 难道他们[前人]以此嘱咐这些人[古莱什的异教徒]吗？其实，他们是叛逆的民众。\n马金鹏: 是他们以它[注]互嘱的吗？而他们却是过为之人。\n仝道章: 即使如此， 没有一位使者到达他们以前的那些人对他们(前人)不说：“这(人)是一个术士或疯子。”\n王静斋: 他们以这个相嘱告了吗?不然，他们是一伙犯罪的人。\n马坚: 难道他们曾以此话互相嘱咐吗？不然，他们都是悖逆的民众。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 54 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你[穆圣]当避开他们[古莱什的异教徒]，你是不受责备的[因为你已向他们传达了安拉的启示]。\n马金鹏: 所以你要背弃他们，而你不是受指责的[注]。\n仝道章: 他们把(这话)当作传家宝传代吗?不是的，他们是一群刚愎自大的人。\n王静斋: 你回避他们吧！你绝不是该受谴责的。\n马坚: 你应当退避他们，你绝不是受责备的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 55 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你当[以《古兰经》]教诲[人类]，因为教诲对信士们确是有益的。\n马金鹏: 你规劝吧[注]！规劝是利济信士们的。\n仝道章: 所以， (你要)避开他们， 你是不受谴责的。\n王静斋: 你当劝化！劝化确利于众穆民。\n马坚: 你应当教诲众人，因为教诲对于信士们确是有益的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 56 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我[安拉]创造精灵和人类，目的是让他们崇拜我。\n马金鹏: 我所以造化镇尼[注1]和人类，只是为了让他们崇拜我[注2]。\n仝道章: 你要提醒世人， 因为提醒对信仰者有益。\n王静斋: 我造化镇呢与人类只是终至给我为奴。\n马坚: 我创造精灵和人类，只为要他们崇拜我。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 57 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我不要他们的任何供养，我不要他们供我饮食。\n马金鹏: 我不向他们要食禄，我不要他们给我吃的。\n仝道章: 我造化了精灵和人类， 以便他们事奉我。\n王静斋: 我不向他们讨给养，我不要他们款待我，\n马坚: 我不望他们的供给，我也不望他们的奉养。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 58 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 安拉确是[万物]最好的供给者，确是最有权力的，确是最强大的[注]。\n马金鹏: 的确，安拉是有强力的供食者。\n仝道章: 我不向他们寻求生计，我也不要求他们供我饮食。\n王静斋: 安拉实是赐予给养的，有力的，坚强的。\n马坚: 真主确是供给万物的，确是有权力的，确是坚定的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 59 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 不义者必将遭受他们昔日的伙伴们所遭受的刑罚，所以，叫他们不要催促我早日实现刑罚。\n马金鹏: 所以那些亏害者们[注1]有着像他们以前的人们的处罚份额，所以他们不要求其速至[注2]。\n仝道章: 因为安拉是赐给生计的，他(主)是大能的、永恒的。\n王静斋: 背义的人们遭受一分罪刑，就像他们同伴的一分罪刑。他们不要向我忙讨。\n马坚: 不义的人们，和他们的朋友一样，必得一份刑罚，所以叫他们不要催促我。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 51 章第 60 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 不信仰者被警告的日子来临时，他们[不信仰者]将遭严惩真活该！\n马金鹏: 而那些昧者们，在那警告他们之日[注]的处罚是归他们的。\n仝道章: 至于犯罪的人，他们的一份(刑罚)和降给他们的(前代的)同类(人)(的 一份)是一样的，所以最好叫他们别求我加速(那一天)!\n王静斋: 逆徒在惊吓过他们的那一天遭祸了！\n马坚: 伤哉不信道的人们！当他们被警告的日子来临的时候。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "《古兰经》第 51 章：播种者 (达理雅特) (多版本中文翻译对比)",
+      "author": {
+        "@type": "Organization",
+        "name": "Salaam Alykum"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Salaam Alykum"
+      },
+      "description": "精良优化的古兰经第 51 章 播种者 (达理雅特) 中文多版本对比翻译。极其适合学术研究与LLM语义检索。"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="#">
+          <span class="mark"><img src="../assets/icons/logo.png" alt="Logo" width="24" height="24"></span>
+          <span class="brand">古兰经中文翻译搜索工具</span>
+        </a>
+        <div class="searchbar">
+          <input id="q" type="text" placeholder="搜索关键词（支持多关键词：用空格分隔；或开启正则表达式）">
+          <button id="go" class="button">搜索</button>
+        </div>
+        <button id="btn-theme" class="button"
+          style="background:transparent; border-color:var(--border); color:var(--ink); box-shadow:none; padding:12px;"
+          title="切换日间/夜间模式">
+          🌗
+        </button>
+      </div>
+
+      <div class="filters">
+        <div class="group" id="filter-translators" title="按译者筛选">
+          <!-- Checkboxes generated by JS -->
+        </div>
+        <div class="group">
+          <label class="toggle-label"><input type="checkbox" id="regex"> <span>正则表达式</span></label>
+        </div>
+        <div class="group info-tip" title="提示">
+          <span>提示：多关键词为空格分隔（“且”逻辑）。</span>
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <ul class="slist" aria-label="章节导航"></ul>
+    </aside>
+
+    <main class="main">
+      <div class="result-header">
+        <h2 id="mode-title">第 51 章：播种者 (达理雅特)</h2>
+      </div>
+      <div class="results"><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:1</span><span class="name">马仲刚</span></div><div class="text">以散布的风、</div></div><div class="tcard"><div class="meta"><span>第 51:1</span><span class="name">马金鹏</span></div><div class="text">以扬尘之风[注]发誓。</div></div><div class="tcard"><div class="meta"><span>第 51:1</span><span class="name">仝道章</span></div><div class="text">凭那些播扬散布的，</div></div><div class="tcard"><div class="meta"><span>第 51:1</span><span class="name">王静斋</span></div><div class="text">试思撒播撤播的；</div></div><div class="tcard"><div class="meta"><span>第 51:1</span><span class="name">马坚</span></div><div class="text">誓以播种者，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:2</span><span class="name">马仲刚</span></div><div class="text">载着含雨的云、</div></div><div class="tcard"><div class="meta"><span>第 51:2</span><span class="name">马金鹏</span></div><div class="text">继以含重之云[注]发誓。</div></div><div class="tcard"><div class="meta"><span>第 51:2</span><span class="name">仝道章</span></div><div class="text">和那些负重的，</div></div><div class="tcard"><div class="meta"><span>第 51:2</span><span class="name">王静斋</span></div><div class="text">负重的；</div></div><div class="tcard"><div class="meta"><span>第 51:2</span><span class="name">马坚</span></div><div class="text">载重者，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:3</span><span class="name">马仲刚</span></div><div class="text">自由飘流[的船舶]、</div></div><div class="tcard"><div class="meta"><span>第 51:3</span><span class="name">马金鹏</span></div><div class="text">继以轻易航行之船[注]发誓，</div></div><div class="tcard"><div class="meta"><span>第 51:3</span><span class="name">仝道章</span></div><div class="text">和那些悠然飘浮的，</div></div><div class="tcard"><div class="meta"><span>第 51:3</span><span class="name">王静斋</span></div><div class="text">易驶的；</div></div><div class="tcard"><div class="meta"><span>第 51:3</span><span class="name">马坚</span></div><div class="text">飘流者，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:4</span><span class="name">马仲刚</span></div><div class="text">奉[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>之]命分配[给养、雨水和其他恩赐物]者[天使]发誓！</div></div><div class="tcard"><div class="meta"><span>第 51:4</span><span class="name">马金鹏</span></div><div class="text">继以分配事物者们[注]发誓：</div></div><div class="tcard"><div class="meta"><span>第 51:4</span><span class="name">仝道章</span></div><div class="text">和那些被命令派送(天福)的；</div></div><div class="tcard"><div class="meta"><span>第 51:4</span><span class="name">王静斋</span></div><div class="text">分配事情的；</div></div><div class="tcard"><div class="meta"><span>第 51:4</span><span class="name">马坚</span></div><div class="text">分配者，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:5</span><span class="name">马仲刚</span></div><div class="text">凡许诺你们的[后世的复活，善奖恶罚等]都是真实的，</div></div><div class="tcard"><div class="meta"><span>第 51:5</span><span class="name">马金鹏</span></div><div class="text">所许约给你们的[注]，必是真实的。</div></div><div class="tcard"><div class="meta"><span>第 51:5</span><span class="name">仝道章</span></div><div class="text">的确，你们所被许给的是真实的。</div></div><div class="tcard"><div class="meta"><span>第 51:5</span><span class="name">王静斋</span></div><div class="text">所许给你们的一定确实，</div></div><div class="tcard"><div class="meta"><span>第 51:5</span><span class="name">马坚</span></div><div class="text">警告你们的事确是真实的，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:6</span><span class="name">马仲刚</span></div><div class="text">审判确是要发生的。</div></div><div class="tcard"><div class="meta"><span>第 51:6</span><span class="name">马金鹏</span></div><div class="text">的确，还报[注]是必定落实的。</div></div><div class="tcard"><div class="meta"><span>第 51:6</span><span class="name">仝道章</span></div><div class="text">的确，裁判是必定实现的。</div></div><div class="tcard"><div class="meta"><span>第 51:6</span><span class="name">王静斋</span></div><div class="text">还报一定要有。</div></div><div class="tcard"><div class="meta"><span>第 51:6</span><span class="name">马坚</span></div><div class="text">报应确是要发生的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:7</span><span class="name">马仲刚</span></div><div class="text">以有轨道的天体发誓！</div></div><div class="tcard"><div class="meta"><span>第 51:7</span><span class="name">马金鹏</span></div><div class="text">以有条纹的天[注]发誓：</div></div><div class="tcard"><div class="meta"><span>第 51:7</span><span class="name">仝道章</span></div><div class="text">凭满布轨道的天空，</div></div><div class="tcard"><div class="meta"><span>第 51:7</span><span class="name">王静斋</span></div><div class="text">试思有轨道的天；</div></div><div class="tcard"><div class="meta"><span>第 51:7</span><span class="name">马坚</span></div><div class="text">以有轨道的诸天盟誓，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:8</span><span class="name">马仲刚</span></div><div class="text">你们[对穆圣和《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》]确是各执一词的。</div></div><div class="tcard"><div class="meta"><span>第 51:8</span><span class="name">马金鹏</span></div><div class="text">的确，你们是处于乱言之中[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:8</span><span class="name">仝道章</span></div><div class="text">你们(对于真理)的确有不同的意见。</div></div><div class="tcard"><div class="meta"><span>第 51:8</span><span class="name">王静斋</span></div><div class="text">你们确是在不同的言语中。</div></div><div class="tcard"><div class="meta"><span>第 51:8</span><span class="name">马坚</span></div><div class="text">你们确是各执一说的，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:9</span><span class="name">马仲刚</span></div><div class="text">[根据<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的判决和前定]背离[穆圣和《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》]者背离了。</div></div><div class="tcard"><div class="meta"><span>第 51:9</span><span class="name">马金鹏</span></div><div class="text">凡被支离开他[注1]的，是那被支离的[注2]。</div></div><div class="tcard"><div class="meta"><span>第 51:9</span><span class="name">仝道章</span></div><div class="text">逃避它(古兰)的人，是他(自己)厌恶(它)。</div></div><div class="tcard"><div class="meta"><span>第 51:9</span><span class="name">王静斋</span></div><div class="text">自那个上移转该受移转的人。</div></div><div class="tcard"><div class="meta"><span>第 51:9</span><span class="name">马坚</span></div><div class="text">原被阻遏者，将被阻遏，而不得到达他。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:10</span><span class="name">马仲刚</span></div><div class="text">该遭谴责的说谎者！</div></div><div class="tcard"><div class="meta"><span>第 51:10</span><span class="name">马金鹏</span></div><div class="text">说谎者们该死了。</div></div><div class="tcard"><div class="meta"><span>第 51:10</span><span class="name">仝道章</span></div><div class="text">臆测的人应被谴责，</div></div><div class="tcard"><div class="meta"><span>第 51:10</span><span class="name">王静斋</span></div><div class="text">一般在茫昧中昏愤的谎言者应遭谴责，</div></div><div class="tcard"><div class="meta"><span>第 51:10</span><span class="name">马坚</span></div><div class="text">愿常常说谎者被弃绝！</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:11</span><span class="name">马仲刚</span></div><div class="text">他们[说谎者]常沉溺于愚昧的说谎中。</div></div><div class="tcard"><div class="meta"><span>第 51:11</span><span class="name">马金鹏</span></div><div class="text">那些人他们昏聩地处于愚昧之中，</div></div><div class="tcard"><div class="meta"><span>第 51:11</span><span class="name">仝道章</span></div><div class="text">他们愚昧地沉沦在(无知的)深渊中。</div></div><div class="tcard"><div class="meta"><span>第 51:11</span><span class="name">王静斋</span></div><div class="text">一般在茫昧中昏愤的谎言者应遭谴责，</div></div><div class="tcard"><div class="meta"><span>第 51:11</span><span class="name">马坚</span></div><div class="text">他们浸沉在愚昧之中，他们是昏愦的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:12</span><span class="name">马仲刚</span></div><div class="text">他们常问：“审判日在什么时候？”</div></div><div class="tcard"><div class="meta"><span>第 51:12</span><span class="name">马金鹏</span></div><div class="text">他们询问[注]：还报日在何方呀？</div></div><div class="tcard"><div class="meta"><span>第 51:12</span><span class="name">仝道章</span></div><div class="text">他们问：“什么时候才是审判的日子?”</div></div><div class="tcard"><div class="meta"><span>第 51:12</span><span class="name">王静斋</span></div><div class="text">他们问：（报日是在何时?）</div></div><div class="tcard"><div class="meta"><span>第 51:12</span><span class="name">马坚</span></div><div class="text">他们问报应日在什么时候，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:13</span><span class="name">马仲刚</span></div><div class="text">那是他们在火狱上受刑之日。</div></div><div class="tcard"><div class="meta"><span>第 51:13</span><span class="name">马金鹏</span></div><div class="text">是他们在火狱上受折磨之日[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:13</span><span class="name">仝道章</span></div><div class="text">(那将是)他们在火上被折磨的日子。</div></div><div class="tcard"><div class="meta"><span>第 51:13</span><span class="name">王静斋</span></div><div class="text">当他们在火上受磨难的那一日，</div></div><div class="tcard"><div class="meta"><span>第 51:13</span><span class="name">马坚</span></div><div class="text">那是他们在火刑上受刑之日。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:14</span><span class="name">马仲刚</span></div><div class="text">[有话声对他们说]：“你们尝试你们[被烧灼]的刑罚吧！这就是你们[生前]要求早日实现的刑罚。”</div></div><div class="tcard"><div class="meta"><span>第 51:14</span><span class="name">马金鹏</span></div><div class="text">你们品尝你们的处罚吧！这是你们所求其速至的[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:14</span><span class="name">仝道章</span></div><div class="text">“你们尝试你们的刑罚吧! 这是你们曾经要求加速[实现)的。”</div></div><div class="tcard"><div class="meta"><span>第 51:14</span><span class="name">王静斋</span></div><div class="text">（我说：）你们尝试刑罚吧！这是你们曾经要求速现的。</div></div><div class="tcard"><div class="meta"><span>第 51:14</span><span class="name">马坚</span></div><div class="text">你们尝试你们的刑罚吧！这就是你们要求早日实现的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:15</span><span class="name">马仲刚</span></div><div class="text">敬畏者必将住在乐园和泉水旁，</div></div><div class="tcard"><div class="meta"><span>第 51:15</span><span class="name">马金鹏</span></div><div class="text">的确，敬畏者们是处于花园和泉源之中，</div></div><div class="tcard"><div class="meta"><span>第 51:15</span><span class="name">仝道章</span></div><div class="text">那些敬畏的人，他们将住在乐园和泉水当中，</div></div><div class="tcard"><div class="meta"><span>第 51:15</span><span class="name">王静斋</span></div><div class="text">敬慎的人必在花园和源泉里，</div></div><div class="tcard"><div class="meta"><span>第 51:15</span><span class="name">马坚</span></div><div class="text">敬畏的人们必定在许多乐园中，在许多泉源畔，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:16</span><span class="name">马仲刚</span></div><div class="text">接受他们的主赐予他们的，因为他们此前确是行善者。</div></div><div class="tcard"><div class="meta"><span>第 51:16</span><span class="name">马金鹏</span></div><div class="text">拿取他们的养主所赐予他们的[注1]。的确，他们在那以前[注2]是行善的。</div></div><div class="tcard"><div class="meta"><span>第 51:16</span><span class="name">仝道章</span></div><div class="text">接受他们的主赏赐给他们的。因为他们以前是行善的人，</div></div><div class="tcard"><div class="meta"><span>第 51:16</span><span class="name">王静斋</span></div><div class="text">接受他们养主所赐的着。从前他们实是为善的人。</div></div><div class="tcard"><div class="meta"><span>第 51:16</span><span class="name">马坚</span></div><div class="text">接受他们的主所赏赐的。他们在生前确是行善的，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:17</span><span class="name">马仲刚</span></div><div class="text">夜里，他们经常少睡[注][用大部分时间祈求<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，如礼拜]；</div></div><div class="tcard"><div class="meta"><span>第 51:17</span><span class="name">马金鹏</span></div><div class="text">他们夜间很少安眠[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:17</span><span class="name">仝道章</span></div><div class="text">他们习惯于在夜晚少睡，</div></div><div class="tcard"><div class="meta"><span>第 51:17</span><span class="name">王静斋</span></div><div class="text">他们在夜间少眠，</div></div><div class="tcard"><div class="meta"><span>第 51:17</span><span class="name">马坚</span></div><div class="text">他们在夜间只稍稍睡一下，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:18</span><span class="name">马仲刚</span></div><div class="text">黎明前，他们就[向<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]求饶。</div></div><div class="tcard"><div class="meta"><span>第 51:18</span><span class="name">马金鹏</span></div><div class="text">他们于拂晓前祈求饶恕。</div></div><div class="tcard"><div class="meta"><span>第 51:18</span><span class="name">仝道章</span></div><div class="text">和在每天的黎明的时间祈求恕饶。</div></div><div class="tcard"><div class="meta"><span>第 51:18</span><span class="name">王静斋</span></div><div class="text">他们在黎明时祈恕。</div></div><div class="tcard"><div class="meta"><span>第 51:18</span><span class="name">马坚</span></div><div class="text">他们在黎明时向主求饶，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:19</span><span class="name">马仲刚</span></div><div class="text">在他们的财产中，乞求者和贫民均有份额。</div></div><div class="tcard"><div class="meta"><span>第 51:19</span><span class="name">马金鹏</span></div><div class="text">他们的钱财中有对乞讨者和贫者[注]的份额。</div></div><div class="tcard"><div class="meta"><span>第 51:19</span><span class="name">仝道章</span></div><div class="text">在他们的财产中乞求者和被摒弃者都有应得的部分。</div></div><div class="tcard"><div class="meta"><span>第 51:19</span><span class="name">王静斋</span></div><div class="text">他们的资财中有为祈求和不肯祈求的人分定的。</div></div><div class="tcard"><div class="meta"><span>第 51:19</span><span class="name">马坚</span></div><div class="text">他们的财产中，有乞丐和贫民的权利。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:20</span><span class="name">马仲刚</span></div><div class="text">对笃信[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]者，大地上有许多迹象，</div></div><div class="tcard"><div class="meta"><span>第 51:20</span><span class="name">马金鹏</span></div><div class="text">在地上，有对确信者们的迹象[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:20</span><span class="name">仝道章</span></div><div class="text">大地上有种种的迹象给笃信的人。</div></div><div class="tcard"><div class="meta"><span>第 51:20</span><span class="name">王静斋</span></div><div class="text">地和你们自身上对于坚信的人们含有种种表征。</div></div><div class="tcard"><div class="meta"><span>第 51:20</span><span class="name">马坚</span></div><div class="text">在大地上对于笃信的人们，有许多迹象；</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:21</span><span class="name">马仲刚</span></div><div class="text">你们自身中也有许多迹象。难道你们没有观察吗？</div></div><div class="tcard"><div class="meta"><span>第 51:21</span><span class="name">马金鹏</span></div><div class="text">在你们自己中。你们岂未看到吗？</div></div><div class="tcard"><div class="meta"><span>第 51:21</span><span class="name">仝道章</span></div><div class="text">在你们自身(也有许多迹象)，你们还看不出吗?</div></div><div class="tcard"><div class="meta"><span>第 51:21</span><span class="name">王静斋</span></div><div class="text">你们怎不观察呢?</div></div><div class="tcard"><div class="meta"><span>第 51:21</span><span class="name">马坚</span></div><div class="text">在你们自身中也有许多迹象，难道你们看不见吗？</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:22</span><span class="name">马仲刚</span></div><div class="text">天上有你们的给养和你们所被许诺的一切。</div></div><div class="tcard"><div class="meta"><span>第 51:22</span><span class="name">马金鹏</span></div><div class="text">在天上有你们的食禄和许给你们的[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:22</span><span class="name">仝道章</span></div><div class="text">在你们自身(也有许多迹象)，你们还看不出吗?</div></div><div class="tcard"><div class="meta"><span>第 51:22</span><span class="name">王静斋</span></div><div class="text">天上有你们的给养。和所许给你们的。</div></div><div class="tcard"><div class="meta"><span>第 51:22</span><span class="name">马坚</span></div><div class="text">在天上，有你们的给养，也有应许你们的赏罚。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:23</span><span class="name">马仲刚</span></div><div class="text">以天地的主[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]发誓！这[你们所被许诺的]确是真实的，犹如你们讲实话一样[真实]。</div></div><div class="tcard"><div class="meta"><span>第 51:23</span><span class="name">马金鹏</span></div><div class="text">以天与地之养主发誓，的确，它[注]是像你们所谈的真实的。</div></div><div class="tcard"><div class="meta"><span>第 51:23</span><span class="name">仝道章</span></div><div class="text">在天上也有你们的供应，那也是你们被许给的。</div></div><div class="tcard"><div class="meta"><span>第 51:23</span><span class="name">王静斋</span></div><div class="text">指着调养天地的主为誓：那一定是确实的；就跟你们的说话一样。</div></div><div class="tcard"><div class="meta"><span>第 51:23</span><span class="name">马坚</span></div><div class="text">以天地的主盟誓，这确是真实的，犹如你们能说话一样。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:24</span><span class="name">马仲刚</span></div><div class="text">伊布拉欣的贵客[吉布里勒天使和另外两位天使]的故事到达你[穆圣]了吗？</div></div><div class="tcard"><div class="meta"><span>第 51:24</span><span class="name">马金鹏</span></div><div class="text">伊布拉欣的贵客们的话[注1]曾到达你吧[注2]？</div></div><div class="tcard"><div class="meta"><span>第 51:24</span><span class="name">仝道章</span></div><div class="text">凭天地的主，这(古兰)就是真理，就如同你们能说话一样(真实)。</div></div><div class="tcard"><div class="meta"><span>第 51:24</span><span class="name">王静斋</span></div><div class="text">易卜拉欣的贵客的消息达至你了吗?</div></div><div class="tcard"><div class="meta"><span>第 51:24</span><span class="name">马坚</span></div><div class="text">关于易卜拉欣的受优待的宾客的故事，已来临你了吗？</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:25</span><span class="name">马仲刚</span></div><div class="text">当时，他们[三位天使]进去见他[伊布拉欣]。他们说：“祝你平安！”他说：“[也]祝你们平安！”[他还说]：“你们是我不认识的陌生人。”</div></div><div class="tcard"><div class="meta"><span>第 51:25</span><span class="name">马金鹏</span></div><div class="text">当时他们进去见他，他们说：“平安！”他说：“平安。”是一批陌生人。</div></div><div class="tcard"><div class="meta"><span>第 51:25</span><span class="name">仝道章</span></div><div class="text">伊布拉欣(亚伯拉罕)的贵客(天仙)的故事可曾到达你(穆圣)?</div></div><div class="tcard"><div class="meta"><span>第 51:25</span><span class="name">王静斋</span></div><div class="text">那时候，他们来至他，（向他）道安，他也道安！非常的一伙。</div></div><div class="tcard"><div class="meta"><span>第 51:25</span><span class="name">马坚</span></div><div class="text">当时，他们进去见他，他们说：「祝你平安！」他说：「祝你们平安！」他想这些是生客。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:26</span><span class="name">马仲刚</span></div><div class="text">然后，他悄悄到他的家人那里，接着便拿来一只烤牛犊[据说伊布拉欣圣人的财产大部分是牛]。</div></div><div class="tcard"><div class="meta"><span>第 51:26</span><span class="name">马金鹏</span></div><div class="text">于是他便回到家属处，端来了一只肥嫩的牛犊[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:26</span><span class="name">仝道章</span></div><div class="text">那时他们(天仙)到达他的面前，他们说：“平安!”他也说：“平安!”(并想到这些人似乎是)陌生的人。</div></div><div class="tcard"><div class="meta"><span>第 51:26</span><span class="name">王静斋</span></div><div class="text">他就转回自己家去，拿来肥牛犊；</div></div><div class="tcard"><div class="meta"><span>第 51:26</span><span class="name">马坚</span></div><div class="text">于是他悄悄地走到他的家属那里，拿来一头肥嫩的牛犊，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:27</span><span class="name">马仲刚</span></div><div class="text">他把那牛犊放到他们面前，他说：“你们不会吃吗？”</div></div><div class="tcard"><div class="meta"><span>第 51:27</span><span class="name">马金鹏</span></div><div class="text">于是把它[注]送近他们，他说：“你们还不吃吗？”</div></div><div class="tcard"><div class="meta"><span>第 51:27</span><span class="name">仝道章</span></div><div class="text">然后他很快的回到家里，拿出一头(烤熟的)小肥牛来，</div></div><div class="tcard"><div class="meta"><span>第 51:27</span><span class="name">王静斋</span></div><div class="text">把它摆在他们跟前。他说：（你们为什么不吃?）</div></div><div class="tcard"><div class="meta"><span>第 51:27</span><span class="name">马坚</span></div><div class="text">他把那牛犊送到客人面前，说：「你们怎么不吃呢！」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:28</span><span class="name">马仲刚</span></div><div class="text">[因为他们不吃烤牛犊]他感到有点害怕他们。他们说：“你不要害怕。”他们以一个[对<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>及其宗教]聪敏的儿子向他报喜。</div></div><div class="tcard"><div class="meta"><span>第 51:28</span><span class="name">马金鹏</span></div><div class="text">于是他对他们暗自担心。他们说[注1]：“你不要怕！”而他们用一位有知识的儿童给他[注2]报喜。</div></div><div class="tcard"><div class="meta"><span>第 51:28</span><span class="name">仝道章</span></div><div class="text">放在他们前面。他说：“你们不吃吗?”</div></div><div class="tcard"><div class="meta"><span>第 51:28</span><span class="name">王静斋</span></div><div class="text">他对他们心怀一种骇怕。他们说：（你不要骇怕。）他们以一个有知识的童子给他报喜信。</div></div><div class="tcard"><div class="meta"><span>第 51:28</span><span class="name">马坚</span></div><div class="text">他为他们而心怀恐惧。他们说：「你不要恐惧。」他们以一个有学识的儿童向他报喜。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:29</span><span class="name">马仲刚</span></div><div class="text">他的妻子叫嚷着走来，打着她的脸说：“我是一个不能生育的老妇了。”</div></div><div class="tcard"><div class="meta"><span>第 51:29</span><span class="name">马金鹏</span></div><div class="text">于是他的妇人[注]喊着走来，拍打着她的脸说：“是一位从不生育的老太婆呀！”</div></div><div class="tcard"><div class="meta"><span>第 51:29</span><span class="name">仝道章</span></div><div class="text">(由于他们没有吃)，他对他们怀了一种恐惧。他们说：“你不要怕。”他们给他(报告)一个获得博学的儿子的喜讯。</div></div><div class="tcard"><div class="meta"><span>第 51:29</span><span class="name">王静斋</span></div><div class="text">他的妻呼喊着奔来，自批其颊着，说：（我是一个未曾产生过的老妪。）</div></div><div class="tcard"><div class="meta"><span>第 51:29</span><span class="name">马坚</span></div><div class="text">他的女人便喊叫着走来，她打自己的脸，说：「我是一个不能生育的老妇人。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:30</span><span class="name">马仲刚</span></div><div class="text">他们说：“你的主[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]是这样说的。他[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]确是最睿智的，全知的。”</div></div><div class="tcard"><div class="meta"><span>第 51:30</span><span class="name">马金鹏</span></div><div class="text">他们说[注1]：“你的养主也这样说[注2]啊！”的确，他是巧妙的[注3]、全知的[注4]。</div></div><div class="tcard"><div class="meta"><span>第 51:30</span><span class="name">仝道章</span></div><div class="text">那时，他的妻呻吟着走向前来，她敲打着她的脸说道：“(我是)一个不孕的老妇人！”</div></div><div class="tcard"><div class="meta"><span>第 51:30</span><span class="name">王静斋</span></div><div class="text">他们说：（你的养主就是这样地说。他实是明哲的，深知的。）</div></div><div class="tcard"><div class="meta"><span>第 51:30</span><span class="name">马坚</span></div><div class="text">他们说：「你的主是这样说的，他确是至睿的，确是全知的。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:31</span><span class="name">马仲刚</span></div><div class="text">他[伊布拉欣]说：“使者们[天使]啊！你们的使命是什么？”</div></div><div class="tcard"><div class="meta"><span>第 51:31</span><span class="name">马金鹏</span></div><div class="text">他说：“哎使者们[注1]！你们有什么事[注2]呀？”</div></div><div class="tcard"><div class="meta"><span>第 51:31</span><span class="name">仝道章</span></div><div class="text">他们说：“即使如此，你的主说了，(你就会有儿子。)他确是大智的、全知的。”</div></div><div class="tcard"><div class="meta"><span>第 51:31</span><span class="name">王静斋</span></div><div class="text">易卜拉欣说：（众使者！你们是什么事情?）</div></div><div class="tcard"><div class="meta"><span>第 51:31</span><span class="name">马坚</span></div><div class="text">他说：「诸位使者啊！你们有什么差事呢？」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:32</span><span class="name">马仲刚</span></div><div class="text">他们说：“我们奉命去惩治一群犯罪的民众，</div></div><div class="tcard"><div class="meta"><span>第 51:32</span><span class="name">马金鹏</span></div><div class="text">他们说：“我们是被差往犯罪者们[注]的。</div></div><div class="tcard"><div class="meta"><span>第 51:32</span><span class="name">仝道章</span></div><div class="text">他(伊布拉欣)说道：“你们的使命是 什么呀?你们是奉(<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>)派遣的(使者)吗?”</div></div><div class="tcard"><div class="meta"><span>第 51:32</span><span class="name">王静斋</span></div><div class="text">他们说：（我们被差至一伙罪民；</div></div><div class="tcard"><div class="meta"><span>第 51:32</span><span class="name">马坚</span></div><div class="text">他们说：「我们确已奉派去惩治一群犯罪的民众，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:33</span><span class="name">马仲刚</span></div><div class="text">我们将降下烧过的粘土般的石块惩治他们，</div></div><div class="tcard"><div class="meta"><span>第 51:33</span><span class="name">马金鹏</span></div><div class="text">以便把陶土[注]降在他们上。</div></div><div class="tcard"><div class="meta"><span>第 51:33</span><span class="name">仝道章</span></div><div class="text">他们说：“我们是被派往一群有罪的人(鲁特——罗得——的族人)，</div></div><div class="tcard"><div class="meta"><span>第 51:33</span><span class="name">王静斋</span></div><div class="text">只为向他们驱泥石。</div></div><div class="tcard"><div class="meta"><span>第 51:33</span><span class="name">马坚</span></div><div class="text">我们将因毁灭他们而降下黏土变成的石头，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:34</span><span class="name">马仲刚</span></div><div class="text">[那些石块]在你的主那里是为惩罚过分者[超越法度者]而打上烙印的。”</div></div><div class="tcard"><div class="meta"><span>第 51:34</span><span class="name">马金鹏</span></div><div class="text">是在<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>那里注明姓名的[注1]越度者们[注2]。</div></div><div class="tcard"><div class="meta"><span>第 51:34</span><span class="name">仝道章</span></div><div class="text">向他们降下和石头一样坚硬的土块。</div></div><div class="tcard"><div class="meta"><span>第 51:34</span><span class="name">王静斋</span></div><div class="text">在你养主御前已经因为一般妄为的人盖过印子的。</div></div><div class="tcard"><div class="meta"><span>第 51:34</span><span class="name">马坚</span></div><div class="text">那是从你的主那里为过分者而发出的。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:35</span><span class="name">马仲刚</span></div><div class="text">我救出了城中的信士，</div></div><div class="tcard"><div class="meta"><span>第 51:35</span><span class="name">马金鹏</span></div><div class="text">所以我们把其中[注]的信士们救了出来。</div></div><div class="tcard"><div class="meta"><span>第 51:35</span><span class="name">仝道章</span></div><div class="text">“毁灭那些被你的主作上了记号的放肆的人。”</div></div><div class="tcard"><div class="meta"><span>第 51:35</span><span class="name">王静斋</span></div><div class="text">我们放出那地方的穆民，</div></div><div class="tcard"><div class="meta"><span>第 51:35</span><span class="name">马坚</span></div><div class="text">我把城里所有的信士都救了出来，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:36</span><span class="name">马仲刚</span></div><div class="text">但我在城中只发现一家穆斯林[鲁特圣人和他的两个女儿]。</div></div><div class="tcard"><div class="meta"><span>第 51:36</span><span class="name">马金鹏</span></div><div class="text">我们在其中[注1]只发现一户信士[注2]。</div></div><div class="tcard"><div class="meta"><span>第 51:36</span><span class="name">仝道章</span></div><div class="text">但是除了一家人之外，我(主)找不到归顺我的人。</div></div><div class="tcard"><div class="meta"><span>第 51:36</span><span class="name">王静斋</span></div><div class="text">而致在那里不见一处非穆思林的住户。</div></div><div class="tcard"><div class="meta"><span>第 51:36</span><span class="name">马坚</span></div><div class="text">我在城里只发现一家归顺者。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:37</span><span class="name">马仲刚</span></div><div class="text">我在那里给畏惧痛苦的刑罚者留下了一种迹象[死海]。</div></div><div class="tcard"><div class="meta"><span>第 51:37</span><span class="name">马金鹏</span></div><div class="text">我们在其中，留下了对那些骇怕痛刑者们的迹象[注]。”</div></div><div class="tcard"><div class="meta"><span>第 51:37</span><span class="name">仝道章</span></div><div class="text">但是除了一家人之外，我(主)找不到归顺我的人。</div></div><div class="tcard"><div class="meta"><span>第 51:37</span><span class="name">王静斋</span></div><div class="text">我们在那里为着一般骇怕痛刑的人遗下了踪迹。）</div></div><div class="tcard"><div class="meta"><span>第 51:37</span><span class="name">马坚</span></div><div class="text">我曾在城里留下一种迹象，以便畏惧痛苦的刑罚的人们用作鉴戒。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:38</span><span class="name">马仲刚</span></div><div class="text">在穆萨的故事中[也有一种迹象]。当时，我派他带着一种明证去见法老。</div></div><div class="tcard"><div class="meta"><span>第 51:38</span><span class="name">马金鹏</span></div><div class="text">在穆萨中[注]，当时，我让他凭着明明的佐证被派往法老。</div></div><div class="tcard"><div class="meta"><span>第 51:38</span><span class="name">仝道章</span></div><div class="text">我(主)为畏惧严刑的人在那里留下了迹象。</div></div><div class="tcard"><div class="meta"><span>第 51:38</span><span class="name">王静斋</span></div><div class="text">并在母撒中；那时候，我借着显著的明证把它遣至匪喇傲。</div></div><div class="tcard"><div class="meta"><span>第 51:38</span><span class="name">马坚</span></div><div class="text">在穆萨的故事里也有一种迹象。当时，我曾派遣他带着一件明证去见法老。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:39</span><span class="name">马仲刚</span></div><div class="text">但他[法老]依仗他的权势[军队]背弃他[穆萨]。他[法老]说：“[你是]一个魔术师或疯子。”</div></div><div class="tcard"><div class="meta"><span>第 51:39</span><span class="name">马金鹏</span></div><div class="text">而他[注]带着他的士兵们却背弃了。他说：“一个魔术师或疯子。”</div></div><div class="tcard"><div class="meta"><span>第 51:39</span><span class="name">仝道章</span></div><div class="text">在姆撒(摩西)的故事中，(也迹象)，那时，我派他带了明显的力到法老那里去。</div></div><div class="tcard"><div class="meta"><span>第 51:39</span><span class="name">王静斋</span></div><div class="text">但是他依自己的势力拒绝了。且说：（母撒）是个行邪术的，或是有疯病的。</div></div><div class="tcard"><div class="meta"><span>第 51:39</span><span class="name">马坚</span></div><div class="text">但法老因有势力故背弃穆萨，他说：「这是一个术士，或是一个疯人。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:40</span><span class="name">马仲刚</span></div><div class="text">所以，我惩治了他和他的军队，我把他们扔进大海中[淹死]，因为他[法老]是应受谴责的。</div></div><div class="tcard"><div class="meta"><span>第 51:40</span><span class="name">马金鹏</span></div><div class="text">所以我将他和他的士兵投入海中，他[注]是受指责的。</div></div><div class="tcard"><div class="meta"><span>第 51:40</span><span class="name">仝道章</span></div><div class="text">但是他(法老)(和他的首领们在骄中自以为)势大力雄而摒弃了他(姆 撒)，说道：“(你是)一个术士或是一个疯子!”</div></div><div class="tcard"><div class="meta"><span>第 51:40</span><span class="name">王静斋</span></div><div class="text">而后我惩治他和他的军兵，我把他们弃在深海中，他是该受谴责的。</div></div><div class="tcard"><div class="meta"><span>第 51:40</span><span class="name">马坚</span></div><div class="text">所以我惩治他和他的军队，而将他们投入海中，他是受责备的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:41</span><span class="name">马仲刚</span></div><div class="text">在阿德人的故事中[也有一种迹象]。当时，我派毁灭性的狂风惩罚他们。</div></div><div class="tcard"><div class="meta"><span>第 51:41</span><span class="name">马金鹏</span></div><div class="text">和在阿德中[注1]，当时我把灾风[注2]差至他们。</div></div><div class="tcard"><div class="meta"><span>第 51:41</span><span class="name">仝道章</span></div><div class="text">所以我就突袭了他和他的军队，把他们掷入海中，他是应受谴责的。</div></div><div class="tcard"><div class="meta"><span>第 51:41</span><span class="name">王静斋</span></div><div class="text">并在阿代中；那时候，我向他们驱无益的风。</div></div><div class="tcard"><div class="meta"><span>第 51:41</span><span class="name">马坚</span></div><div class="text">在阿德人的故事里，也有一种迹象。当时，我曾使无益的暴风去毁灭他们，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:42</span><span class="name">马仲刚</span></div><div class="text">凡是狂风经过之处，全部毁为碎片。</div></div><div class="tcard"><div class="meta"><span>第 51:42</span><span class="name">马金鹏</span></div><div class="text">只要有一点东西，它[注1]都使它[注2]成为腐朽的。</div></div><div class="tcard"><div class="meta"><span>第 51:42</span><span class="name">仝道章</span></div><div class="text">在阿德族人中(也有一个迹象)， 那时我降给他们毁灭性的风。</div></div><div class="tcard"><div class="meta"><span>第 51:42</span><span class="name">王静斋</span></div><div class="text">那风所经过的不论什么东西，无一不被弃若枯物。</div></div><div class="tcard"><div class="meta"><span>第 51:42</span><span class="name">马坚</span></div><div class="text">凡经那暴风吹过的东西，无一不变成破碎的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:43</span><span class="name">马仲刚</span></div><div class="text">在萨姆德人的故事中[也有一种迹象]。当时，有话声对他们说：“你们暂时享受吧！”</div></div><div class="tcard"><div class="meta"><span>第 51:43</span><span class="name">马金鹏</span></div><div class="text">和在赛姆德中[注1]。当时有人对他们说：“你们享受吧！直至一个时候[注2]！”</div></div><div class="tcard"><div class="meta"><span>第 51:43</span><span class="name">仝道章</span></div><div class="text">在撒姆德人中[也有一个迹象)，时，他们被告诉道：“你们享受一会儿吧!”</div></div><div class="tcard"><div class="meta"><span>第 51:43</span><span class="name">王静斋</span></div><div class="text">并在赛母待中；那时候，有人对他们说：（你们享受直到一个时期吧！）</div></div><div class="tcard"><div class="meta"><span>第 51:43</span><span class="name">马坚</span></div><div class="text">在赛莫德人的故事里，也有一种迹象。当时，有人对他们说：「你们暂时享受吧！」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:44</span><span class="name">马仲刚</span></div><div class="text">但他们违抗他们的主的命令，所以，霹雳声在他们亲眼目睹下袭击了他们。</div></div><div class="tcard"><div class="meta"><span>第 51:44</span><span class="name">马金鹏</span></div><div class="text">他们违背了<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>之命，在他们观看之下[注]，霹雳遭遇到他们。</div></div><div class="tcard"><div class="meta"><span>第 51:44</span><span class="name">仝道章</span></div><div class="text">在撒姆德人中[也有一个迹象)，时，他们被告诉道：“你们享受一会儿吧!”</div></div><div class="tcard"><div class="meta"><span>第 51:44</span><span class="name">王静斋</span></div><div class="text">而后，他们违背养主的命令，他们眼看着遭遇一声呜。</div></div><div class="tcard"><div class="meta"><span>第 51:44</span><span class="name">马坚</span></div><div class="text">他们曾违抗他们主的命令，故疾雷毁灭了他们，同时，他们眼见刑罚降临，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:45</span><span class="name">马仲刚</span></div><div class="text">因此，他们站不起来，也不能自救。</div></div><div class="tcard"><div class="meta"><span>第 51:45</span><span class="name">马金鹏</span></div><div class="text">所以他们不能起立，他们也不是自救者。</div></div><div class="tcard"><div class="meta"><span>第 51:45</span><span class="name">仝道章</span></div><div class="text">但是他们背叛了他们的主的命令所以， 一声(可怕的)巨响(地震或雷霆)在他们目睹之下袭击了他们。</div></div><div class="tcard"><div class="meta"><span>第 51:45</span><span class="name">王静斋</span></div><div class="text">他们未能站起；未能相互自助。</div></div><div class="tcard"><div class="meta"><span>第 51:45</span><span class="name">马坚</span></div><div class="text">他们未能站起，他们也未能自卫。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:46</span><span class="name">马仲刚</span></div><div class="text">在他们之前，[我曾毁灭了]努哈的族人。他们是悖逆的民众。</div></div><div class="tcard"><div class="meta"><span>第 51:46</span><span class="name">马金鹏</span></div><div class="text">还有以前的努哈族人[注]，的确，他们是为非干歹之人。</div></div><div class="tcard"><div class="meta"><span>第 51:46</span><span class="name">仝道章</span></div><div class="text">那时他们站不起来，他们也得不到援助。</div></div><div class="tcard"><div class="meta"><span>第 51:46</span><span class="name">王静斋</span></div><div class="text">并有从前努海的族人，他们实是恶民。</div></div><div class="tcard"><div class="meta"><span>第 51:46</span><span class="name">马坚</span></div><div class="text">以前，我毁灭了努哈的宗族，他们确是悖逆的民众。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:47</span><span class="name">马仲刚</span></div><div class="text">我以我的权力建造了天，我确是万物的创造者。</div></div><div class="tcard"><div class="meta"><span>第 51:47</span><span class="name">马金鹏</span></div><div class="text">天，我用力建筑了它，的确，我是宽扩有力的。</div></div><div class="tcard"><div class="meta"><span>第 51:47</span><span class="name">仝道章</span></div><div class="text">以前，努赫(挪亚)的族人也是如此。 他们是邪恶而放荡的人。</div></div><div class="tcard"><div class="meta"><span>第 51:47</span><span class="name">王静斋</span></div><div class="text">天，我用力量建筑它了，我实是有能力的。</div></div><div class="tcard"><div class="meta"><span>第 51:47</span><span class="name">马坚</span></div><div class="text">天，我曾以权力建造它，我确是大能的；</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:48</span><span class="name">马仲刚</span></div><div class="text">我展开了大地。我是多么卓越的展开者啊！</div></div><div class="tcard"><div class="meta"><span>第 51:48</span><span class="name">马金鹏</span></div><div class="text">大地，我铺展了它，铺展者太好了。</div></div><div class="tcard"><div class="meta"><span>第 51:48</span><span class="name">仝道章</span></div><div class="text">我确曾以我的大能造化了天，我也使得(它的)空间辽阔。</div></div><div class="tcard"><div class="meta"><span>第 51:48</span><span class="name">王静斋</span></div><div class="text">地，我铺展它了。</div></div><div class="tcard"><div class="meta"><span>第 51:48</span><span class="name">马坚</span></div><div class="text">地，我曾铺张它。美哉铺张者！</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:49</span><span class="name">马仲刚</span></div><div class="text">我把每种物都造成两性的，以便你们思考[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的恩惠]。</div></div><div class="tcard"><div class="meta"><span>第 51:49</span><span class="name">马金鹏</span></div><div class="text">从每一种物中，我造化了两类[注1]，愿你们加以思索[注2]。</div></div><div class="tcard"><div class="meta"><span>第 51:49</span><span class="name">仝道章</span></div><div class="text">我展开了大地，我是多么卓越的展开者啊!</div></div><div class="tcard"><div class="meta"><span>第 51:49</span><span class="name">王静斋</span></div><div class="text">铺展者，太好了！我就着每一物类造化两性，冀使你们受教。</div></div><div class="tcard"><div class="meta"><span>第 51:49</span><span class="name">马坚</span></div><div class="text">我将每种物造成配偶，以便你们觉悟。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:50</span><span class="name">马仲刚</span></div><div class="text">[你说]：“你们赶快逃归<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>吧[从将遭<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的惩罚逃向获取<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的宽恕和慈悯——伊斯兰教]！我确是他派遣给你们的坦率的警告者[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:50</span><span class="name">马金鹏</span></div><div class="text">所以你们奔回<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>吧！的确，我是他[派到]你们的一位明明的警告者。</div></div><div class="tcard"><div class="meta"><span>第 51:50</span><span class="name">仝道章</span></div><div class="text">每一件物体我造化一对，以便你们能留意。</div></div><div class="tcard"><div class="meta"><span>第 51:50</span><span class="name">王静斋</span></div><div class="text">你们逃至<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>吧！我实是由主上（差来）公开警告你们的。</div></div><div class="tcard"><div class="meta"><span>第 51:50</span><span class="name">马坚</span></div><div class="text">你说：「你们应当逃归真主，我对于你们确是一个坦率的警告者。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:51</span><span class="name">马仲刚</span></div><div class="text">你们不要既拜<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，又拜其他神灵，我确是他派遣给你们的坦率的警告者。”</div></div><div class="tcard"><div class="meta"><span>第 51:51</span><span class="name">马金鹏</span></div><div class="text">你们不要同着<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>安排另位主宰，的确，我是他[派到]你们的一位明明的警告者。</div></div><div class="tcard"><div class="meta"><span>第 51:51</span><span class="name">仝道章</span></div><div class="text">所以你们应当投奔<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，我是来自他(主)的一位坦率的警告者。</div></div><div class="tcard"><div class="meta"><span>第 51:51</span><span class="name">王静斋</span></div><div class="text">你们不要并同<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>设定另一个受拜的。我实是由主上（差来）公开警告你们的。</div></div><div class="tcard"><div class="meta"><span>第 51:51</span><span class="name">马坚</span></div><div class="text">你们不要以别的神灵与真主同受崇拜，我对于你们确是一个坦率的警告者。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:52</span><span class="name">马仲刚</span></div><div class="text">他们的前人也是这样，每当有使者来临他们，他们必[对他]说：“[你是]一个魔术师或疯子。”</div></div><div class="tcard"><div class="meta"><span>第 51:52</span><span class="name">马金鹏</span></div><div class="text">就这样，他们以前的人只要有一位使者来至他们，他们都说是一个魔术家，或是一个疯子。</div></div><div class="tcard"><div class="meta"><span>第 51:52</span><span class="name">仝道章</span></div><div class="text">你们不要为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>设置任何其它的(伪神)，我是蒙他(主)(派遣)来自你们当中的一位坦率的警告者。</div></div><div class="tcard"><div class="meta"><span>第 51:52</span><span class="name">王静斋</span></div><div class="text">就是这样，每有一使者抵达先前的众人，他们就说：（[他]是个行邪术的，或是疯子。）</div></div><div class="tcard"><div class="meta"><span>第 51:52</span><span class="name">马坚</span></div><div class="text">他们以前的各民族也象这样，每有一个使者来临他们，他们就说：「他是一个术士，或是一个疯人。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:53</span><span class="name">马仲刚</span></div><div class="text">难道他们[前人]以此嘱咐这些人[古莱什的异教徒]吗？其实，他们是叛逆的民众。</div></div><div class="tcard"><div class="meta"><span>第 51:53</span><span class="name">马金鹏</span></div><div class="text">是他们以它[注]互嘱的吗？而他们却是过为之人。</div></div><div class="tcard"><div class="meta"><span>第 51:53</span><span class="name">仝道章</span></div><div class="text">即使如此， 没有一位使者到达他们以前的那些人对他们(前人)不说：“这(人)是一个术士或疯子。”</div></div><div class="tcard"><div class="meta"><span>第 51:53</span><span class="name">王静斋</span></div><div class="text">他们以这个相嘱告了吗?不然，他们是一伙犯罪的人。</div></div><div class="tcard"><div class="meta"><span>第 51:53</span><span class="name">马坚</span></div><div class="text">难道他们曾以此话互相嘱咐吗？不然，他们都是悖逆的民众。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:54</span><span class="name">马仲刚</span></div><div class="text">你[穆圣]当避开他们[古莱什的异教徒]，你是不受责备的[因为你已向他们传达了<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的启示]。</div></div><div class="tcard"><div class="meta"><span>第 51:54</span><span class="name">马金鹏</span></div><div class="text">所以你要背弃他们，而你不是受指责的[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:54</span><span class="name">仝道章</span></div><div class="text">他们把(这话)当作传家宝传代吗?不是的，他们是一群刚愎自大的人。</div></div><div class="tcard"><div class="meta"><span>第 51:54</span><span class="name">王静斋</span></div><div class="text">你回避他们吧！你绝不是该受谴责的。</div></div><div class="tcard"><div class="meta"><span>第 51:54</span><span class="name">马坚</span></div><div class="text">你应当退避他们，你绝不是受责备的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:55</span><span class="name">马仲刚</span></div><div class="text">你当[以《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》]教诲[人类]，因为教诲对信士们确是有益的。</div></div><div class="tcard"><div class="meta"><span>第 51:55</span><span class="name">马金鹏</span></div><div class="text">你规劝吧[注]！规劝是利济信士们的。</div></div><div class="tcard"><div class="meta"><span>第 51:55</span><span class="name">仝道章</span></div><div class="text">所以， (你要)避开他们， 你是不受谴责的。</div></div><div class="tcard"><div class="meta"><span>第 51:55</span><span class="name">王静斋</span></div><div class="text">你当劝化！劝化确利于众穆民。</div></div><div class="tcard"><div class="meta"><span>第 51:55</span><span class="name">马坚</span></div><div class="text">你应当教诲众人，因为教诲对于信士们确是有益的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:56</span><span class="name">马仲刚</span></div><div class="text">我[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]创造精灵和人类，目的是让他们崇拜我。</div></div><div class="tcard"><div class="meta"><span>第 51:56</span><span class="name">马金鹏</span></div><div class="text">我所以造化镇尼[注1]和人类，只是为了让他们崇拜我[注2]。</div></div><div class="tcard"><div class="meta"><span>第 51:56</span><span class="name">仝道章</span></div><div class="text">你要提醒世人， 因为提醒对信仰者有益。</div></div><div class="tcard"><div class="meta"><span>第 51:56</span><span class="name">王静斋</span></div><div class="text">我造化镇呢与人类只是终至给我为奴。</div></div><div class="tcard"><div class="meta"><span>第 51:56</span><span class="name">马坚</span></div><div class="text">我创造精灵和人类，只为要他们崇拜我。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:57</span><span class="name">马仲刚</span></div><div class="text">我不要他们的任何供养，我不要他们供我饮食。</div></div><div class="tcard"><div class="meta"><span>第 51:57</span><span class="name">马金鹏</span></div><div class="text">我不向他们要食禄，我不要他们给我吃的。</div></div><div class="tcard"><div class="meta"><span>第 51:57</span><span class="name">仝道章</span></div><div class="text">我造化了精灵和人类， 以便他们事奉我。</div></div><div class="tcard"><div class="meta"><span>第 51:57</span><span class="name">王静斋</span></div><div class="text">我不向他们讨给养，我不要他们款待我，</div></div><div class="tcard"><div class="meta"><span>第 51:57</span><span class="name">马坚</span></div><div class="text">我不望他们的供给，我也不望他们的奉养。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:58</span><span class="name">马仲刚</span></div><div class="text"><a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是[万物]最好的供给者，确是最有权力的，确是最强大的[注]。</div></div><div class="tcard"><div class="meta"><span>第 51:58</span><span class="name">马金鹏</span></div><div class="text">的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是有强力的供食者。</div></div><div class="tcard"><div class="meta"><span>第 51:58</span><span class="name">仝道章</span></div><div class="text">我不向他们寻求生计，我也不要求他们供我饮食。</div></div><div class="tcard"><div class="meta"><span>第 51:58</span><span class="name">王静斋</span></div><div class="text"><a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>实是赐予给养的，有力的，坚强的。</div></div><div class="tcard"><div class="meta"><span>第 51:58</span><span class="name">马坚</span></div><div class="text">真主确是供给万物的，确是有权力的，确是坚定的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:59</span><span class="name">马仲刚</span></div><div class="text">不义者必将遭受他们昔日的伙伴们所遭受的刑罚，所以，叫他们不要催促我早日实现刑罚。</div></div><div class="tcard"><div class="meta"><span>第 51:59</span><span class="name">马金鹏</span></div><div class="text">所以那些亏害者们[注1]有着像他们以前的人们的处罚份额，所以他们不要求其速至[注2]。</div></div><div class="tcard"><div class="meta"><span>第 51:59</span><span class="name">仝道章</span></div><div class="text">因为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是赐给生计的，他(主)是大能的、永恒的。</div></div><div class="tcard"><div class="meta"><span>第 51:59</span><span class="name">王静斋</span></div><div class="text">背义的人们遭受一分罪刑，就像他们同伴的一分罪刑。他们不要向我忙讨。</div></div><div class="tcard"><div class="meta"><span>第 51:59</span><span class="name">马坚</span></div><div class="text">不义的人们，和他们的朋友一样，必得一份刑罚，所以叫他们不要催促我。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 51:60</span><span class="name">马仲刚</span></div><div class="text">不信仰者被警告的日子来临时，他们[不信仰者]将遭严惩真活该！</div></div><div class="tcard"><div class="meta"><span>第 51:60</span><span class="name">马金鹏</span></div><div class="text">而那些昧者们，在那警告他们之日[注]的处罚是归他们的。</div></div><div class="tcard"><div class="meta"><span>第 51:60</span><span class="name">仝道章</span></div><div class="text">至于犯罪的人，他们的一份(刑罚)和降给他们的(前代的)同类(人)(的 一份)是一样的，所以最好叫他们别求我加速(那一天)!</div></div><div class="tcard"><div class="meta"><span>第 51:60</span><span class="name">王静斋</span></div><div class="text">逆徒在惊吓过他们的那一天遭祸了！</div></div><div class="tcard"><div class="meta"><span>第 51:60</span><span class="name">马坚</span></div><div class="text">伤哉不信道的人们！当他们被警告的日子来临的时候。</div></div></div></div>
+    <details class="rag-container" style="margin:20px; padding:15px; background:var(--bg-card, #f9f9f9); border:1px solid var(--border, #eee); border-radius:8px;">
+        <summary style="cursor:pointer; font-weight:bold; color:var(--primary, #2A5D34);">[+] 打开 AI & RAG 语义索引库 (LLM Dataset Context)</summary>
+        <div class="rag-content" style="margin-top:15px; font-size:0.9em; line-height:1.6;">
+            <h2>《古兰经》第51章（播种者 (达理雅特)）中文翻译 RAG 语义索引库</h2>
+<article><h3>User Prompt: 提问：古兰经第 51 章第 1 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第1节的翻译如下：<br/>马仲刚: 以散布的风、<br/>马金鹏: 以扬尘之风[注]发誓。<br/>仝道章: 凭那些播扬散布的，<br/>王静斋: 试思撒播撤播的；<br/>马坚: 誓以播种者，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 2 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第2节的翻译如下：<br/>马仲刚: 载着含雨的云、<br/>马金鹏: 继以含重之云[注]发誓。<br/>仝道章: 和那些负重的，<br/>王静斋: 负重的；<br/>马坚: 载重者，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 3 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第3节的翻译如下：<br/>马仲刚: 自由飘流[的船舶]、<br/>马金鹏: 继以轻易航行之船[注]发誓，<br/>仝道章: 和那些悠然飘浮的，<br/>王静斋: 易驶的；<br/>马坚: 飘流者，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 4 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第4节的翻译如下：<br/>马仲刚: 奉[安拉之]命分配[给养、雨水和其他恩赐物]者[天使]发誓！<br/>马金鹏: 继以分配事物者们[注]发誓：<br/>仝道章: 和那些被命令派送(天福)的；<br/>王静斋: 分配事情的；<br/>马坚: 分配者，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 5 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第5节的翻译如下：<br/>马仲刚: 凡许诺你们的[后世的复活，善奖恶罚等]都是真实的，<br/>马金鹏: 所许约给你们的[注]，必是真实的。<br/>仝道章: 的确，你们所被许给的是真实的。<br/>王静斋: 所许给你们的一定确实，<br/>马坚: 警告你们的事确是真实的，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 6 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第6节的翻译如下：<br/>马仲刚: 审判确是要发生的。<br/>马金鹏: 的确，还报[注]是必定落实的。<br/>仝道章: 的确，裁判是必定实现的。<br/>王静斋: 还报一定要有。<br/>马坚: 报应确是要发生的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 7 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第7节的翻译如下：<br/>马仲刚: 以有轨道的天体发誓！<br/>马金鹏: 以有条纹的天[注]发誓：<br/>仝道章: 凭满布轨道的天空，<br/>王静斋: 试思有轨道的天；<br/>马坚: 以有轨道的诸天盟誓，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 8 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第8节的翻译如下：<br/>马仲刚: 你们[对穆圣和《古兰经》]确是各执一词的。<br/>马金鹏: 的确，你们是处于乱言之中[注]。<br/>仝道章: 你们(对于真理)的确有不同的意见。<br/>王静斋: 你们确是在不同的言语中。<br/>马坚: 你们确是各执一说的，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 9 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第9节的翻译如下：<br/>马仲刚: [根据安拉的判决和前定]背离[穆圣和《古兰经》]者背离了。<br/>马金鹏: 凡被支离开他[注1]的，是那被支离的[注2]。<br/>仝道章: 逃避它(古兰)的人，是他(自己)厌恶(它)。<br/>王静斋: 自那个上移转该受移转的人。<br/>马坚: 原被阻遏者，将被阻遏，而不得到达他。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 10 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第10节的翻译如下：<br/>马仲刚: 该遭谴责的说谎者！<br/>马金鹏: 说谎者们该死了。<br/>仝道章: 臆测的人应被谴责，<br/>王静斋: 一般在茫昧中昏愤的谎言者应遭谴责，<br/>马坚: 愿常常说谎者被弃绝！</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 11 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第11节的翻译如下：<br/>马仲刚: 他们[说谎者]常沉溺于愚昧的说谎中。<br/>马金鹏: 那些人他们昏聩地处于愚昧之中，<br/>仝道章: 他们愚昧地沉沦在(无知的)深渊中。<br/>王静斋: 一般在茫昧中昏愤的谎言者应遭谴责，<br/>马坚: 他们浸沉在愚昧之中，他们是昏愦的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 12 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第12节的翻译如下：<br/>马仲刚: 他们常问：“审判日在什么时候？”<br/>马金鹏: 他们询问[注]：还报日在何方呀？<br/>仝道章: 他们问：“什么时候才是审判的日子?”<br/>王静斋: 他们问：（报日是在何时?）<br/>马坚: 他们问报应日在什么时候，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 13 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第13节的翻译如下：<br/>马仲刚: 那是他们在火狱上受刑之日。<br/>马金鹏: 是他们在火狱上受折磨之日[注]。<br/>仝道章: (那将是)他们在火上被折磨的日子。<br/>王静斋: 当他们在火上受磨难的那一日，<br/>马坚: 那是他们在火刑上受刑之日。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 14 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第14节的翻译如下：<br/>马仲刚: [有话声对他们说]：“你们尝试你们[被烧灼]的刑罚吧！这就是你们[生前]要求早日实现的刑罚。”<br/>马金鹏: 你们品尝你们的处罚吧！这是你们所求其速至的[注]。<br/>仝道章: “你们尝试你们的刑罚吧! 这是你们曾经要求加速[实现)的。”<br/>王静斋: （我说：）你们尝试刑罚吧！这是你们曾经要求速现的。<br/>马坚: 你们尝试你们的刑罚吧！这就是你们要求早日实现的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 15 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第15节的翻译如下：<br/>马仲刚: 敬畏者必将住在乐园和泉水旁，<br/>马金鹏: 的确，敬畏者们是处于花园和泉源之中，<br/>仝道章: 那些敬畏的人，他们将住在乐园和泉水当中，<br/>王静斋: 敬慎的人必在花园和源泉里，<br/>马坚: 敬畏的人们必定在许多乐园中，在许多泉源畔，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 16 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第16节的翻译如下：<br/>马仲刚: 接受他们的主赐予他们的，因为他们此前确是行善者。<br/>马金鹏: 拿取他们的养主所赐予他们的[注1]。的确，他们在那以前[注2]是行善的。<br/>仝道章: 接受他们的主赏赐给他们的。因为他们以前是行善的人，<br/>王静斋: 接受他们养主所赐的着。从前他们实是为善的人。<br/>马坚: 接受他们的主所赏赐的。他们在生前确是行善的，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 17 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第17节的翻译如下：<br/>马仲刚: 夜里，他们经常少睡[注][用大部分时间祈求安拉，如礼拜]；<br/>马金鹏: 他们夜间很少安眠[注]。<br/>仝道章: 他们习惯于在夜晚少睡，<br/>王静斋: 他们在夜间少眠，<br/>马坚: 他们在夜间只稍稍睡一下，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 18 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第18节的翻译如下：<br/>马仲刚: 黎明前，他们就[向安拉]求饶。<br/>马金鹏: 他们于拂晓前祈求饶恕。<br/>仝道章: 和在每天的黎明的时间祈求恕饶。<br/>王静斋: 他们在黎明时祈恕。<br/>马坚: 他们在黎明时向主求饶，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 19 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第19节的翻译如下：<br/>马仲刚: 在他们的财产中，乞求者和贫民均有份额。<br/>马金鹏: 他们的钱财中有对乞讨者和贫者[注]的份额。<br/>仝道章: 在他们的财产中乞求者和被摒弃者都有应得的部分。<br/>王静斋: 他们的资财中有为祈求和不肯祈求的人分定的。<br/>马坚: 他们的财产中，有乞丐和贫民的权利。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 20 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第20节的翻译如下：<br/>马仲刚: 对笃信[安拉]者，大地上有许多迹象，<br/>马金鹏: 在地上，有对确信者们的迹象[注]。<br/>仝道章: 大地上有种种的迹象给笃信的人。<br/>王静斋: 地和你们自身上对于坚信的人们含有种种表征。<br/>马坚: 在大地上对于笃信的人们，有许多迹象；</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 21 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第21节的翻译如下：<br/>马仲刚: 你们自身中也有许多迹象。难道你们没有观察吗？<br/>马金鹏: 在你们自己中。你们岂未看到吗？<br/>仝道章: 在你们自身(也有许多迹象)，你们还看不出吗?<br/>王静斋: 你们怎不观察呢?<br/>马坚: 在你们自身中也有许多迹象，难道你们看不见吗？</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 22 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第22节的翻译如下：<br/>马仲刚: 天上有你们的给养和你们所被许诺的一切。<br/>马金鹏: 在天上有你们的食禄和许给你们的[注]。<br/>仝道章: 在你们自身(也有许多迹象)，你们还看不出吗?<br/>王静斋: 天上有你们的给养。和所许给你们的。<br/>马坚: 在天上，有你们的给养，也有应许你们的赏罚。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 23 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第23节的翻译如下：<br/>马仲刚: 以天地的主[安拉]发誓！这[你们所被许诺的]确是真实的，犹如你们讲实话一样[真实]。<br/>马金鹏: 以天与地之养主发誓，的确，它[注]是像你们所谈的真实的。<br/>仝道章: 在天上也有你们的供应，那也是你们被许给的。<br/>王静斋: 指着调养天地的主为誓：那一定是确实的；就跟你们的说话一样。<br/>马坚: 以天地的主盟誓，这确是真实的，犹如你们能说话一样。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 24 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第24节的翻译如下：<br/>马仲刚: 伊布拉欣的贵客[吉布里勒天使和另外两位天使]的故事到达你[穆圣]了吗？<br/>马金鹏: 伊布拉欣的贵客们的话[注1]曾到达你吧[注2]？<br/>仝道章: 凭天地的主，这(古兰)就是真理，就如同你们能说话一样(真实)。<br/>王静斋: 易卜拉欣的贵客的消息达至你了吗?<br/>马坚: 关于易卜拉欣的受优待的宾客的故事，已来临你了吗？</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 25 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第25节的翻译如下：<br/>马仲刚: 当时，他们[三位天使]进去见他[伊布拉欣]。他们说：“祝你平安！”他说：“[也]祝你们平安！”[他还说]：“你们是我不认识的陌生人。”<br/>马金鹏: 当时他们进去见他，他们说：“平安！”他说：“平安。”是一批陌生人。<br/>仝道章: 伊布拉欣(亚伯拉罕)的贵客(天仙)的故事可曾到达你(穆圣)?<br/>王静斋: 那时候，他们来至他，（向他）道安，他也道安！非常的一伙。<br/>马坚: 当时，他们进去见他，他们说：「祝你平安！」他说：「祝你们平安！」他想这些是生客。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 26 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第26节的翻译如下：<br/>马仲刚: 然后，他悄悄到他的家人那里，接着便拿来一只烤牛犊[据说伊布拉欣圣人的财产大部分是牛]。<br/>马金鹏: 于是他便回到家属处，端来了一只肥嫩的牛犊[注]。<br/>仝道章: 那时他们(天仙)到达他的面前，他们说：“平安!”他也说：“平安!”(并想到这些人似乎是)陌生的人。<br/>王静斋: 他就转回自己家去，拿来肥牛犊；<br/>马坚: 于是他悄悄地走到他的家属那里，拿来一头肥嫩的牛犊，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 27 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第27节的翻译如下：<br/>马仲刚: 他把那牛犊放到他们面前，他说：“你们不会吃吗？”<br/>马金鹏: 于是把它[注]送近他们，他说：“你们还不吃吗？”<br/>仝道章: 然后他很快的回到家里，拿出一头(烤熟的)小肥牛来，<br/>王静斋: 把它摆在他们跟前。他说：（你们为什么不吃?）<br/>马坚: 他把那牛犊送到客人面前，说：「你们怎么不吃呢！」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 28 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第28节的翻译如下：<br/>马仲刚: [因为他们不吃烤牛犊]他感到有点害怕他们。他们说：“你不要害怕。”他们以一个[对安拉及其宗教]聪敏的儿子向他报喜。<br/>马金鹏: 于是他对他们暗自担心。他们说[注1]：“你不要怕！”而他们用一位有知识的儿童给他[注2]报喜。<br/>仝道章: 放在他们前面。他说：“你们不吃吗?”<br/>王静斋: 他对他们心怀一种骇怕。他们说：（你不要骇怕。）他们以一个有知识的童子给他报喜信。<br/>马坚: 他为他们而心怀恐惧。他们说：「你不要恐惧。」他们以一个有学识的儿童向他报喜。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 29 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第29节的翻译如下：<br/>马仲刚: 他的妻子叫嚷着走来，打着她的脸说：“我是一个不能生育的老妇了。”<br/>马金鹏: 于是他的妇人[注]喊着走来，拍打着她的脸说：“是一位从不生育的老太婆呀！”<br/>仝道章: (由于他们没有吃)，他对他们怀了一种恐惧。他们说：“你不要怕。”他们给他(报告)一个获得博学的儿子的喜讯。<br/>王静斋: 他的妻呼喊着奔来，自批其颊着，说：（我是一个未曾产生过的老妪。）<br/>马坚: 他的女人便喊叫着走来，她打自己的脸，说：「我是一个不能生育的老妇人。」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 30 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第30节的翻译如下：<br/>马仲刚: 他们说：“你的主[安拉]是这样说的。他[安拉]确是最睿智的，全知的。”<br/>马金鹏: 他们说[注1]：“你的养主也这样说[注2]啊！”的确，他是巧妙的[注3]、全知的[注4]。<br/>仝道章: 那时，他的妻呻吟着走向前来，她敲打着她的脸说道：“(我是)一个不孕的老妇人！”<br/>王静斋: 他们说：（你的养主就是这样地说。他实是明哲的，深知的。）<br/>马坚: 他们说：「你的主是这样说的，他确是至睿的，确是全知的。」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 31 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第31节的翻译如下：<br/>马仲刚: 他[伊布拉欣]说：“使者们[天使]啊！你们的使命是什么？”<br/>马金鹏: 他说：“哎使者们[注1]！你们有什么事[注2]呀？”<br/>仝道章: 他们说：“即使如此，你的主说了，(你就会有儿子。)他确是大智的、全知的。”<br/>王静斋: 易卜拉欣说：（众使者！你们是什么事情?）<br/>马坚: 他说：「诸位使者啊！你们有什么差事呢？」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 32 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第32节的翻译如下：<br/>马仲刚: 他们说：“我们奉命去惩治一群犯罪的民众，<br/>马金鹏: 他们说：“我们是被差往犯罪者们[注]的。<br/>仝道章: 他(伊布拉欣)说道：“你们的使命是 什么呀?你们是奉(安拉)派遣的(使者)吗?”<br/>王静斋: 他们说：（我们被差至一伙罪民；<br/>马坚: 他们说：「我们确已奉派去惩治一群犯罪的民众，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 33 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第33节的翻译如下：<br/>马仲刚: 我们将降下烧过的粘土般的石块惩治他们，<br/>马金鹏: 以便把陶土[注]降在他们上。<br/>仝道章: 他们说：“我们是被派往一群有罪的人(鲁特——罗得——的族人)，<br/>王静斋: 只为向他们驱泥石。<br/>马坚: 我们将因毁灭他们而降下黏土变成的石头，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 34 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第34节的翻译如下：<br/>马仲刚: [那些石块]在你的主那里是为惩罚过分者[超越法度者]而打上烙印的。”<br/>马金鹏: 是在安拉那里注明姓名的[注1]越度者们[注2]。<br/>仝道章: 向他们降下和石头一样坚硬的土块。<br/>王静斋: 在你养主御前已经因为一般妄为的人盖过印子的。<br/>马坚: 那是从你的主那里为过分者而发出的。」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 35 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第35节的翻译如下：<br/>马仲刚: 我救出了城中的信士，<br/>马金鹏: 所以我们把其中[注]的信士们救了出来。<br/>仝道章: “毁灭那些被你的主作上了记号的放肆的人。”<br/>王静斋: 我们放出那地方的穆民，<br/>马坚: 我把城里所有的信士都救了出来，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 36 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第36节的翻译如下：<br/>马仲刚: 但我在城中只发现一家穆斯林[鲁特圣人和他的两个女儿]。<br/>马金鹏: 我们在其中[注1]只发现一户信士[注2]。<br/>仝道章: 但是除了一家人之外，我(主)找不到归顺我的人。<br/>王静斋: 而致在那里不见一处非穆思林的住户。<br/>马坚: 我在城里只发现一家归顺者。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 37 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第37节的翻译如下：<br/>马仲刚: 我在那里给畏惧痛苦的刑罚者留下了一种迹象[死海]。<br/>马金鹏: 我们在其中，留下了对那些骇怕痛刑者们的迹象[注]。”<br/>仝道章: 但是除了一家人之外，我(主)找不到归顺我的人。<br/>王静斋: 我们在那里为着一般骇怕痛刑的人遗下了踪迹。）<br/>马坚: 我曾在城里留下一种迹象，以便畏惧痛苦的刑罚的人们用作鉴戒。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 38 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第38节的翻译如下：<br/>马仲刚: 在穆萨的故事中[也有一种迹象]。当时，我派他带着一种明证去见法老。<br/>马金鹏: 在穆萨中[注]，当时，我让他凭着明明的佐证被派往法老。<br/>仝道章: 我(主)为畏惧严刑的人在那里留下了迹象。<br/>王静斋: 并在母撒中；那时候，我借着显著的明证把它遣至匪喇傲。<br/>马坚: 在穆萨的故事里也有一种迹象。当时，我曾派遣他带着一件明证去见法老。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 39 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第39节的翻译如下：<br/>马仲刚: 但他[法老]依仗他的权势[军队]背弃他[穆萨]。他[法老]说：“[你是]一个魔术师或疯子。”<br/>马金鹏: 而他[注]带着他的士兵们却背弃了。他说：“一个魔术师或疯子。”<br/>仝道章: 在姆撒(摩西)的故事中，(也迹象)，那时，我派他带了明显的力到法老那里去。<br/>王静斋: 但是他依自己的势力拒绝了。且说：（母撒）是个行邪术的，或是有疯病的。<br/>马坚: 但法老因有势力故背弃穆萨，他说：「这是一个术士，或是一个疯人。」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 40 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第40节的翻译如下：<br/>马仲刚: 所以，我惩治了他和他的军队，我把他们扔进大海中[淹死]，因为他[法老]是应受谴责的。<br/>马金鹏: 所以我将他和他的士兵投入海中，他[注]是受指责的。<br/>仝道章: 但是他(法老)(和他的首领们在骄中自以为)势大力雄而摒弃了他(姆 撒)，说道：“(你是)一个术士或是一个疯子!”<br/>王静斋: 而后我惩治他和他的军兵，我把他们弃在深海中，他是该受谴责的。<br/>马坚: 所以我惩治他和他的军队，而将他们投入海中，他是受责备的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 41 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第41节的翻译如下：<br/>马仲刚: 在阿德人的故事中[也有一种迹象]。当时，我派毁灭性的狂风惩罚他们。<br/>马金鹏: 和在阿德中[注1]，当时我把灾风[注2]差至他们。<br/>仝道章: 所以我就突袭了他和他的军队，把他们掷入海中，他是应受谴责的。<br/>王静斋: 并在阿代中；那时候，我向他们驱无益的风。<br/>马坚: 在阿德人的故事里，也有一种迹象。当时，我曾使无益的暴风去毁灭他们，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 42 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第42节的翻译如下：<br/>马仲刚: 凡是狂风经过之处，全部毁为碎片。<br/>马金鹏: 只要有一点东西，它[注1]都使它[注2]成为腐朽的。<br/>仝道章: 在阿德族人中(也有一个迹象)， 那时我降给他们毁灭性的风。<br/>王静斋: 那风所经过的不论什么东西，无一不被弃若枯物。<br/>马坚: 凡经那暴风吹过的东西，无一不变成破碎的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 43 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第43节的翻译如下：<br/>马仲刚: 在萨姆德人的故事中[也有一种迹象]。当时，有话声对他们说：“你们暂时享受吧！”<br/>马金鹏: 和在赛姆德中[注1]。当时有人对他们说：“你们享受吧！直至一个时候[注2]！”<br/>仝道章: 在撒姆德人中[也有一个迹象)，时，他们被告诉道：“你们享受一会儿吧!”<br/>王静斋: 并在赛母待中；那时候，有人对他们说：（你们享受直到一个时期吧！）<br/>马坚: 在赛莫德人的故事里，也有一种迹象。当时，有人对他们说：「你们暂时享受吧！」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 44 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第44节的翻译如下：<br/>马仲刚: 但他们违抗他们的主的命令，所以，霹雳声在他们亲眼目睹下袭击了他们。<br/>马金鹏: 他们违背了安拉之命，在他们观看之下[注]，霹雳遭遇到他们。<br/>仝道章: 在撒姆德人中[也有一个迹象)，时，他们被告诉道：“你们享受一会儿吧!”<br/>王静斋: 而后，他们违背养主的命令，他们眼看着遭遇一声呜。<br/>马坚: 他们曾违抗他们主的命令，故疾雷毁灭了他们，同时，他们眼见刑罚降临，</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 45 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第45节的翻译如下：<br/>马仲刚: 因此，他们站不起来，也不能自救。<br/>马金鹏: 所以他们不能起立，他们也不是自救者。<br/>仝道章: 但是他们背叛了他们的主的命令所以， 一声(可怕的)巨响(地震或雷霆)在他们目睹之下袭击了他们。<br/>王静斋: 他们未能站起；未能相互自助。<br/>马坚: 他们未能站起，他们也未能自卫。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 46 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第46节的翻译如下：<br/>马仲刚: 在他们之前，[我曾毁灭了]努哈的族人。他们是悖逆的民众。<br/>马金鹏: 还有以前的努哈族人[注]，的确，他们是为非干歹之人。<br/>仝道章: 那时他们站不起来，他们也得不到援助。<br/>王静斋: 并有从前努海的族人，他们实是恶民。<br/>马坚: 以前，我毁灭了努哈的宗族，他们确是悖逆的民众。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 47 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第47节的翻译如下：<br/>马仲刚: 我以我的权力建造了天，我确是万物的创造者。<br/>马金鹏: 天，我用力建筑了它，的确，我是宽扩有力的。<br/>仝道章: 以前，努赫(挪亚)的族人也是如此。 他们是邪恶而放荡的人。<br/>王静斋: 天，我用力量建筑它了，我实是有能力的。<br/>马坚: 天，我曾以权力建造它，我确是大能的；</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 48 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第48节的翻译如下：<br/>马仲刚: 我展开了大地。我是多么卓越的展开者啊！<br/>马金鹏: 大地，我铺展了它，铺展者太好了。<br/>仝道章: 我确曾以我的大能造化了天，我也使得(它的)空间辽阔。<br/>王静斋: 地，我铺展它了。<br/>马坚: 地，我曾铺张它。美哉铺张者！</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 49 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第49节的翻译如下：<br/>马仲刚: 我把每种物都造成两性的，以便你们思考[安拉的恩惠]。<br/>马金鹏: 从每一种物中，我造化了两类[注1]，愿你们加以思索[注2]。<br/>仝道章: 我展开了大地，我是多么卓越的展开者啊!<br/>王静斋: 铺展者，太好了！我就着每一物类造化两性，冀使你们受教。<br/>马坚: 我将每种物造成配偶，以便你们觉悟。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 50 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第50节的翻译如下：<br/>马仲刚: [你说]：“你们赶快逃归安拉吧[从将遭安拉的惩罚逃向获取安拉的宽恕和慈悯——伊斯兰教]！我确是他派遣给你们的坦率的警告者[注]。<br/>马金鹏: 所以你们奔回安拉吧！的确，我是他[派到]你们的一位明明的警告者。<br/>仝道章: 每一件物体我造化一对，以便你们能留意。<br/>王静斋: 你们逃至安拉吧！我实是由主上（差来）公开警告你们的。<br/>马坚: 你说：「你们应当逃归真主，我对于你们确是一个坦率的警告者。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 51 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第51节的翻译如下：<br/>马仲刚: 你们不要既拜安拉，又拜其他神灵，我确是他派遣给你们的坦率的警告者。”<br/>马金鹏: 你们不要同着安拉安排另位主宰，的确，我是他[派到]你们的一位明明的警告者。<br/>仝道章: 所以你们应当投奔安拉，我是来自他(主)的一位坦率的警告者。<br/>王静斋: 你们不要并同安拉设定另一个受拜的。我实是由主上（差来）公开警告你们的。<br/>马坚: 你们不要以别的神灵与真主同受崇拜，我对于你们确是一个坦率的警告者。」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 52 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第52节的翻译如下：<br/>马仲刚: 他们的前人也是这样，每当有使者来临他们，他们必[对他]说：“[你是]一个魔术师或疯子。”<br/>马金鹏: 就这样，他们以前的人只要有一位使者来至他们，他们都说是一个魔术家，或是一个疯子。<br/>仝道章: 你们不要为安拉设置任何其它的(伪神)，我是蒙他(主)(派遣)来自你们当中的一位坦率的警告者。<br/>王静斋: 就是这样，每有一使者抵达先前的众人，他们就说：（[他]是个行邪术的，或是疯子。）<br/>马坚: 他们以前的各民族也象这样，每有一个使者来临他们，他们就说：「他是一个术士，或是一个疯人。」</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 53 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第53节的翻译如下：<br/>马仲刚: 难道他们[前人]以此嘱咐这些人[古莱什的异教徒]吗？其实，他们是叛逆的民众。<br/>马金鹏: 是他们以它[注]互嘱的吗？而他们却是过为之人。<br/>仝道章: 即使如此， 没有一位使者到达他们以前的那些人对他们(前人)不说：“这(人)是一个术士或疯子。”<br/>王静斋: 他们以这个相嘱告了吗?不然，他们是一伙犯罪的人。<br/>马坚: 难道他们曾以此话互相嘱咐吗？不然，他们都是悖逆的民众。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 54 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第54节的翻译如下：<br/>马仲刚: 你[穆圣]当避开他们[古莱什的异教徒]，你是不受责备的[因为你已向他们传达了安拉的启示]。<br/>马金鹏: 所以你要背弃他们，而你不是受指责的[注]。<br/>仝道章: 他们把(这话)当作传家宝传代吗?不是的，他们是一群刚愎自大的人。<br/>王静斋: 你回避他们吧！你绝不是该受谴责的。<br/>马坚: 你应当退避他们，你绝不是受责备的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 55 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第55节的翻译如下：<br/>马仲刚: 你当[以《古兰经》]教诲[人类]，因为教诲对信士们确是有益的。<br/>马金鹏: 你规劝吧[注]！规劝是利济信士们的。<br/>仝道章: 所以， (你要)避开他们， 你是不受谴责的。<br/>王静斋: 你当劝化！劝化确利于众穆民。<br/>马坚: 你应当教诲众人，因为教诲对于信士们确是有益的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 56 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第56节的翻译如下：<br/>马仲刚: 我[安拉]创造精灵和人类，目的是让他们崇拜我。<br/>马金鹏: 我所以造化镇尼[注1]和人类，只是为了让他们崇拜我[注2]。<br/>仝道章: 你要提醒世人， 因为提醒对信仰者有益。<br/>王静斋: 我造化镇呢与人类只是终至给我为奴。<br/>马坚: 我创造精灵和人类，只为要他们崇拜我。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 57 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第57节的翻译如下：<br/>马仲刚: 我不要他们的任何供养，我不要他们供我饮食。<br/>马金鹏: 我不向他们要食禄，我不要他们给我吃的。<br/>仝道章: 我造化了精灵和人类， 以便他们事奉我。<br/>王静斋: 我不向他们讨给养，我不要他们款待我，<br/>马坚: 我不望他们的供给，我也不望他们的奉养。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 58 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第58节的翻译如下：<br/>马仲刚: 安拉确是[万物]最好的供给者，确是最有权力的，确是最强大的[注]。<br/>马金鹏: 的确，安拉是有强力的供食者。<br/>仝道章: 我不向他们寻求生计，我也不要求他们供我饮食。<br/>王静斋: 安拉实是赐予给养的，有力的，坚强的。<br/>马坚: 真主确是供给万物的，确是有权力的，确是坚定的。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 59 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第59节的翻译如下：<br/>马仲刚: 不义者必将遭受他们昔日的伙伴们所遭受的刑罚，所以，叫他们不要催促我早日实现刑罚。<br/>马金鹏: 所以那些亏害者们[注1]有着像他们以前的人们的处罚份额，所以他们不要求其速至[注2]。<br/>仝道章: 因为安拉是赐给生计的，他(主)是大能的、永恒的。<br/>王静斋: 背义的人们遭受一分罪刑，就像他们同伴的一分罪刑。他们不要向我忙讨。<br/>马坚: 不义的人们，和他们的朋友一样，必得一份刑罚，所以叫他们不要催促我。</p></article><article><h3>User Prompt: 提问：古兰经第 51 章第 60 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第51章（播种者 (达理雅特)）第60节的翻译如下：<br/>马仲刚: 不信仰者被警告的日子来临时，他们[不信仰者]将遭严惩真活该！<br/>马金鹏: 而那些昧者们，在那警告他们之日[注]的处罚是归他们的。<br/>仝道章: 至于犯罪的人，他们的一份(刑罚)和降给他们的(前代的)同类(人)(的 一份)是一样的，所以最好叫他们别求我加速(那一天)!<br/>王静斋: 逆徒在惊吓过他们的那一天遭祸了！<br/>马坚: 伤哉不信道的人们！当他们被警告的日子来临的时候。</p></article>
+        </div>
+    </details>
+    
+    </main>
+  </div>
+
+  <div class="loading">
+    <div class="spinner">加载中…</div>
+  </div>
+
+  <!-- Data Scripts (Offline Compatible) -->
+  <script src="../sura-names.js"></script>
+
+  <!-- Translator Data: 5 Versions -->
+  <script src="../data/majian.data.js"></script>
+  <script src="../data/mazhonggang.data.js"></script>
+  <script src="../data/majinpeng.data.js"></script>
+  <script src="../data/tongdaozhang.data.js"></script>
+  <script src="../data/wangjingzhai.data.js"></script>
+
+  <!-- Application Logic -->
+  <script src="../assets/app.js"></script>
+<script>window.addEventListener('DOMContentLoaded', () => { window.location.hash = '#51'; });</script>
+</body>
+
+</html>

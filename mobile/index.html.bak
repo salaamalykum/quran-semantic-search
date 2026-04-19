@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Quran CN 离线版 · Mobile</title>
+  <meta name="theme-color" content="#ffffff"/>
+  <link rel="icon" href="./assets/icons/logo.svg"/>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button id="btn-drawer" class="icon-btn" aria-label="打开章节导航">☰</button>
+      <div class="brand">Quran CN</div>
+      <div class="search-wrap">
+        <input id="q" type="search" placeholder="搜索关键词（支持多个空格分词，支持 /regex/）" />
+        <button id="go" class="btn">搜索</button>
+      </div>
+    </header>
+
+    <aside id="drawer" class="drawer">
+      <div class="drawer-header">
+        <strong>章节导航</strong>
+        <button id="close-drawer" class="icon-btn">✕</button>
+      </div>
+      <div id="sura-list" class="sura-list"></div>
+    </aside>
+
+    <main class="main">
+      <div class="controls">
+        <div class="grid-filters" id="filter-translators"></div>
+        <div class="helper">
+          <button id="select-all" class="small">全选</button>
+          <button id="clear-all" class="small">清除</button>
+        </div>
+      </div>
+
+      <div id="status" class="status"></div>
+      <div id="loading" class="loading" style="display:none">加载中…</div>
+
+      <div id="results" class="results"></div>
+    </main>
+  </div>
+
+  <!-- data loaders -->
+  <script src="./sura-names.js"></script>
+  <script src="./data/mazhonggang.data.js"></script>
+  <script src="./data/majinpeng.data.js"></script>
+  <script src="./data/tongdaozhang.data.js"></script>
+  <script src="./data/wangjingzhai.data.js"></script>
+  <script src="./data/majian.data.js"></script>
+
+  <script src="./app.js"></script>
+</body>
+</html>

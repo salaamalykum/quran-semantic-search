@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    // Device Detection & Redirection
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768) {
+      // Prevent redirect loop if already on mobile (though this is the PC page)
+      if (window.location.href.indexOf("mobile") === -1) {
+        return; /* SSR bypass */;
+      }
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>第 31 章：鲁格曼 - 古兰经中文翻译搜索工具</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+
+  <!-- SEO & Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://salaamalykum.com/cn/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "古兰经中文",
+            "item": "https://salaamalykum.com/cn/qurancn/pc/"
+          }]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "古兰经中文翻译搜索工具 PC版",
+          "alternateName": "Quran CN Search Offline PC",
+          "applicationCategory": "ReferenceApplication",
+          "operatingSystem": "Web Browser",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+          "description": "专业的古兰经全文检索工具，包含114章完整经文与5个中文翻译版本。支持多关键词布尔搜索、正则表达式匹配以及离线阅读功能。",
+          "author": { "@type": "Organization", "name": "Salaam Alykum" }
+        }
+      ]
+    }
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 1 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 艾利夫，俩目，米目[阿拉伯语三个字母的音译，唯安拉最知道其意]。\n马金鹏: 艾立夫，俩姆，米姆[注]。\n仝道章: 阿立甫、俩目、敏目。\n王静斋: （阿里甫、俩模、密默。）\n马坚: 艾列弗，俩目，米目。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 2 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 这些是智慧的经典[《古兰经》]的经文，\n马金鹏: 这是[注1]奥妙经典[注2]的迹象。\n仝道章: 这是智慧的经典的章节，\n王静斋: 这是固典的文词。\n马坚: 这些是有智慧的经典的节文，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 3 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 是对行善者的引导和慈悯。\n马金鹏: [是][注]对行善者们的引导和慈悯。\n仝道章: 是对行善的人的引导和慈悯。\n王静斋: 引导与慈惠一般为善的人；\n马坚: 是行善者的向导和恩惠。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 4 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们[行善者]谨守拜功，完纳天课，笃信后世[注]。\n马金鹏: 那些履行拜功、缴纳天课的，他们对末日是确信的[注]。\n仝道章: 那些。人是守拜功、纳天课，并坚信后世的人。\n王静斋: 就是一般立拜功，施天课，并且坚信后世的。\n马坚: 行善者，谨守拜功，完纳天课，且确信后世。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 5 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 这些人遵行从他们的主启示的正道，这些人确是成功者。\n马金鹏: 这些人是在他们养主之正道上的，这些人他们是得救的。\n仝道章: 这些(人)遵从他们的主的引导，这些人是成功的(人)。\n王静斋: 他们是守其养主正道的，这般人均是得意的，\n马坚: 这等人，是遵守他们的主的正道的，这等人确是成功的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 6 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 人们中有人[以宝贵的时间]换取无聊之言[如唱歌和音乐等]，以便无知地使人们背离安拉之道，并把它[安拉之道]当笑柄。[复活日]这些人[在火狱里]必受凌辱的刑罚。\n马金鹏: 人们中有那买得嬉言[注1]的，以便无知地迷失安拉之路[注2]，并把它当作嘲讽[注3]。这些人，他们应受卑刑[注4]。\n仝道章: 人群中有些没有(天经)知识的人交换无稽的闲谈，以便(把人们)由安拉的道上误导，并拿它(天经)当作笑柄。这些人得到的是羞辱的刑罚。\n王静斋: 人类中有的接受戏言，而致无知识地诱人错过安拉的道，并以它为可戏的；这般人应遭辱刑。\n马坚: 有人购买无谓的谈话，以便他无知无识地使人背离真主的正道，而且把它当作笑柄。这等人，将受凌辱的刑罚。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 7 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 当有人向他诵读我的启示时，他就傲慢[注]地避开，好像没有听见一样，好像他的耳是聋钝的，所以，你[穆圣]当向他宣布[他必受]痛苦的刑罚。\n马金鹏: 我的迹象[注1]被读给他时，他便高傲地背弃，像没听到似的，像他的两耳中有些沉重似的。所以你用痛刑给他报喜[注2]吧！\n仝道章: 当有人对他诵读我的启示时，他就高傲地避开了，好象他不曾听到它们，好象他的两耳都聋了，所以你要对他宣告一个痛苦的刑罚的消息。\n王静斋: 一旦有人把我的表征读给他了，他就高傲着转去，好像他未听到，好像他的两耳重听。你就以痛刑报告他吧，\n马坚: 有人对他宣读我的迹象的时候，他自大地退避，彷佛没有听见一样，彷佛他的两耳重听一样。你以痛苦的刑罚，向他报喜吧。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 8 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 凡信仰并行善者，他们将获得恩泽的乐园，\n马金鹏: 的确，那些归信，并干善功的人们，则享受恩典天堂[注]。\n仝道章: 那些信仰并做善事的人，他们得到的是快乐的天园，\n王静斋: 归信并作善举的人，必得到乐园，永居其中。\n马坚: 信道而且行善者，必将享受极乐园，"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 9 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 永居其中。安拉的诺言是真实的。他是全能的，最睿智的。\n马金鹏: 永居其中，[作为]安拉的真实许约。他是有力的、巧安排的。\n仝道章: 他们将住在其中。安拉的诺言是真实的，他是大能的、大智的。\n王静斋: 安拉决定的约。他是优胜的，明哲的。\n马坚: 而永居其中。这是真主的真实的应许，他确是万能的，确是至睿的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 10 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他用你们看不见的柱子建造诸天，并在大地上稳固地安置群山，以免你们随大地而摇荡，且在大地上散布各种动物。我从天空降下雨水，借此而生长出各种美丽的植物。\n马金鹏: 他用你们看不到的柱子造化了天。在地上投下了防止带着你们而震动的山岳，在地上散布了各种动物。他从天上降下了水，于是他在其中[注1]让各类美好的[注2]生长。\n仝道章: 你们可以看到，他不需支柱造化诸天，他在大地上放置稳固的山岳，以免它跟你们一起动摇。他并在它上面散布各种动物。我也从天空降下雨来，并使各种优良的生物在其中生长。\n王静斋: 他造化诸天，并无你们看见的楹柱。他把定山置在地上，以免它摇动你们。他把各样动物散播在地上；并由上空降下水来，而用它发长各色美丽的。\n马坚: 他创造诸天，而不用你们所能见的支柱；他在大地上安置许多山岳，以免大地动摇，使你们不安；他在大地上散布各种动物。他从云中降下雨水，而在大地上滋生各种优良的植物。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 11 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 这就是安拉的创造。你们告诉我吧！你们舍他[安拉]而崇拜的[偶像]究竟能创造什么呢？不，不义者是在明显的迷误中。\n马金鹏: 这就是安拉的造化。你们可让我看看：他以外的那些[注1]造化了些什么？而亏害者们[注2]，是在明明的迷歧之中。\n仝道章: 这就是安拉的造化。你们现在能显示给我(你们)在他之外(所崇拜的)其它的(伪神)曾经造化了些什么吗?没有，作恶的人是在明显的错误当中。\n王静斋: 这是安拉的造化；你们告诉我：除他以外的那一切造化什么了? 背义的人实是在显著的迷误中。\n马坚: 这是真主所创造的，你们指示我吧，你们舍真主而崇拜的（偶像〕究竟创造了甚么呢？不然，不义的人是在明显的迷误中的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 12 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我确已赐给鲁格曼智慧[和宗教知识]。[我说]：“你当感谢安拉[的恩惠]。”谁感恩，谁自受其益；谁忘恩负义，[谁自受其害]。安拉确是无所求的，受赞颂的。\n马金鹏: 我确已把哲理[注1]给了鲁格曼[注2]：“你要感谢安拉！凡感谢者，则是为自己而感谢[注3]。凡隐昧者，则安拉是无求的[注4]，受赞的。”\n仝道章: 我曾赐给陆格曼智慧，(说道：)“你要对安拉感激。”任何人知感是对他自己(有益)，倘若任何人忘恩负义，安拉确是无求的、受一切赞美的。\n王静斋: 我确曾赐给鲁格曼卓识了，（说：）你当感念安拉，感念的人，那就是利其自身作感念。忘恩的人，安拉一定是无求的，受赞的。那时候，\n马坚: 我确已把智慧赏赐鲁格曼，（我说）：「你当感谢真主。感谢的人，只为自己而感谢，孤负的人，须知真主确是无求的，确是可颂的。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 13 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 当时，鲁格曼劝戒他的儿子说：“我的儿子啊！你不要给安拉设置伙伴，给安拉设置伙伴确是大逆不道[注]。”\n马金鹏: 当时，鲁格曼规劝他的儿子[注1]说：“哎！我的孩子呀！你不要举伴安拉！的确，举伴是巨大的亏害[注2]。”\n仝道章: 那时陆格曼劝诫他的儿子道：“我的儿啊! 不要为安拉添附伙伴。信奉多神确实是严重的罪恶。”\n王静斋: 鲁格曼劝他儿子说：（我的小儿呀，你不要给安拉拟匹偶；举匹偶实是一大背义。\n马坚: 当日，鲁格曼曾教训他的儿子说：「我的小子啊！你不要以任何物配主。以物配主，确是大逆不道的。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 14 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我已命人当孝敬父母[注]。他的母亲弱上加弱艰难地怀他，他的断奶是在两年内。[我说]：“你当感谢我及你的父母，唯我[安拉]这里是最后的归宿。\n马金鹏: 我嘱咐人要[孝]其双亲，他母亲弱上加弱[注]地怀了他，他的离开是在两周年里。“你要感谢我和你的双亲！归处是至我。\n仝道章: 我已命人对他的父母孝顺。他的母亲在疲弱中孕育着他，他又需两年，断奶。(我说：)“你们要对我和你的父母知恩感德，你们的归宿是我。\n王静斋: 我嘱告世人孝他父母——其母备极疲乏着怀他；他的离乳是在二年。你当感念我和你的父母。归惟归于我。\n马坚: 我曾命人孝敬父母——他母亲弱上加弱地怀着他，他的断乳，是在两年之中——（我说）：「你应当感谢我和你的父母；惟我是最后的归宿。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 15 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 假如他俩强迫你用你所不知道的给我设置伙伴，那么，你就不要服从他俩，但在今世要善待他俩。你当遵行归信我的人的道，然后，你们都将归到我这里来，我将把你们曾经所做的告诉你们。”\n马金鹏: 如他俩迫使你用你所不知道的[注]举伴我时，你不要顺从他俩，你要在尘世中同他俩好好相处。你要跟从那要归至我者的路！后来你们归至我，则我把你们的作为告诉你们。”\n仝道章: “倘若他们勉强你把你所不知道的(东西)添附作我的伙伴，你不要服从他们。不过在今世仍要(关怀地)侍奉他们，并追随归依我的人的道。你们终将回到我这里，我将会告诉你们所做过的一切。”\n王静斋: 如果他俩强你把自所不知的给我作匹偶，你不要服从他俩。在今世你要善待父母；你要追随那归向我的人的道路。而后你们惟归于我，我再把你们所作过的宣告你们——\n马坚: 如果他俩勒令你以你所不知道的东西配我，那么，你不要服从他俩，在今世，你应当依礼义而奉事他俩，你应当遵守归依我者的道路；惟我是你们的归宿，我要把你们的行为告诉你们。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 16 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: [鲁格曼说]：“我的儿子啊！善恶的行为，虽小如一粒芥子的重量，即使它隐藏在岩石中，或在天上，或在地下，安拉也要把它显示出来。安拉确是最敏锐的，彻知的。\n马金鹏: [鲁格曼说)：“哎！我的孩子呀！的确，若它[注1]是一粒芥籽重，而它是在磐石中，或在天上，或在地下，安拉都把它拿来，的确，安拉是仔细[注2]的，洞知的。\n仝道章: “我的儿啊！”(陆格曼说，)“即使一粒芥子的重量， 即使它是(藏)在岩石中，或是藏在天地间的(任何所在)，安拉都会把它显示出来。因为安拉是深知秘奥的、洞悉的。\n王静斋: 我的小儿呀！差错若是芥菜粒重，它是在盘石里，或在天，或在地，安拉即将拿它来。安拉是妙知的，尽知的。\n马坚: 鲁格曼说：「我的小子啊！善恶的行为，虽小如芥子，隐藏在盘石里，或在天空中，或在地底下，真主都要显示它。真主确是明察的，确是彻知的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 17 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我的儿子啊！你当谨守拜功，劝人行善，止人作恶，忍受你所遭遇的不幸。这确是[安拉颁布的]一些命令。\n马金鹏: 哎！我的孩子呀！要履行拜功！要命人行善！要止人干歹！对所遭遇的[注]要忍耐！的确，那是已定的事。\n仝道章: “我的儿啊!你要保持礼拜，劝人行善和禁止人为非作歹，并对任何降临到你的(不幸)坚忍。这些的确都是(需要)很大决心的事。\n王静斋: 我的小儿呀，你当立拜功，当命以合法的，禁止非理的，并忍受自所遭遇的。这确属于意志坚决的事情。\n马坚: 我的小子啊！你应当谨守拜功，应当劝善戒恶，应当忍受患难，这确是应该决心做的事情。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 18 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你不要傲视人们，不要傲慢地在大地上行走。安拉绝不喜欢任何自大自夸者。\n马金鹏: 你不要使你的脸腮背向人们[注]！你不要在地上傲慢行走！的确，安拉不喜每个傲慢夸耀而行者。\n仝道章: “你不要对人们(骄傲地)掉转你的脸，也不要在地上横行霸道。因为安拉不喜爱任何高傲的大言不惭的人。\n王静斋: 你不要对人骄傲：你不要在地上狂行：安拉实不喜骄傲自矜的人。\n马坚: 你不要为藐视众人而转脸，不要洋洋得意地在大地上行走，真主确是不喜爱一切傲慢者、矜夸者的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 19 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你当步伐稳健[显示不傲慢]，当压低你的声音，因为最讨厌的声音确是驴的叫声。”\n马金鹏: 你在步行时要端正[注]，要低声！的确，最丑的声音，确是驴的叫声。”\n仝道章: “你要举止雍容，言语温文。的确一切声音中最粗鲁的声音就是驴叫。”\n王静斋: 你在步行上要得守中： 你要低声。的确，声音最可憎的实是驴声。\n马坚: 你应当节制你的步伐，你应当抑制你的声音；最讨厌的声音，确是驴子的声音。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 20 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: [人们啊！]难道你们不知道吗？安拉使天地间的一切为你们服务，并把看得见之物[如树木、动物、雨水、日月等]和看不见之物[如信仰安拉和后世等]的恩惠广施给你们。但人们中仍有人争论安拉，他既无知识，也未受引导，且没有一部光明的经典。\n马金鹏: 你们岂不知道[注1]？的确，安拉为你们控制了天与地中的，他把那表面的和内部的恩典全给了你们。人们中[注2]却有那毫无知识、正道与没有明明的经典的人而争论安拉[之事]的。\n仝道章: 你们没看到安拉已使天地间的万物都驯服于你们，并在明中或暗中大量地供给你们他的恩赏吗?但是在人们当中仍有一些没有知识、没有引导和没有一本启发他们的经典的人在争论安拉。\n王静斋: 你们岂未看见：安拉为你们降服在天在地的，并把自己内外的恩典完全施给你们吗?有的人无知识，无引导，也无光明的经典着，因为安拉起辩论。\n马坚: 难道你们不知道吗？真主曾为你们制服天地间的一切，他博施你们表里的恩惠。有人争论真主的德性，但他们既无知识，又无向导，且无灿烂的经典。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 21 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 当有人对他们说：“你们来遵行安拉所降示的经典[《古兰经》]吧！”他们就说：“不，我们只遵行我们发现我们的祖先所遵行的遗教。”要是恶魔召唤他们去受火狱的刑罚，[难道他们也要遵行他们的祖先的遗教吗？]\n马金鹏: 如果有人对他们说：“你们跟从安拉所降的吧！”他们说：“我们只跟从我们所发现我们的父辈们所跟从的[注]。”即使魔鬼把他们唤到烈火之刑吗？\n仝道章: 如果有人告诉他们“追随安拉已经降下的(经典或启示)”时，他们说：“不，我们遵循我们祖先(所遵循)的。”(什么!)甚至连魔鬼召唤他们到烈焰的刑罚中(也要遵循)吗?\n王静斋: 一旦有人对他们说：（你们追随安拉降下的吧！）他们就说：（不，我们追随曾见自己列祖所守的。）设若恶魔把他们唤至火刑，（他们也肯追随吗?）\n马坚: 如果有人对他们说：「你们应当遵守真主所降示的（经典）。」他们就说：「不然，我们遵守我们祖先的遗教。」即使恶魔叫他们去受烈火的刑罚，（他们仍要遵循）吗？"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 22 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 谁彻底归顺安拉，且是行善者，谁确已握住了最坚固的支柱[注]。万事最终都将归到安拉那里去[受审]。\n马金鹏: 凡使其面容顺从安拉[注1]，而他是行善者[注2]，则他确已把握住坚固的环节[注3]，事物的归结[注4]是至安拉。\n仝道章: 谁全心全意归信安拉，并且是一个行善的人，他的确已抓住了最牢固的手把， 一切事务的结局都归于安拉。\n王静斋: 那在为善着倾向安拉的人，确已抓住至坚固的把柄了。诸事的归宿惟归于安拉。\n马坚: 诚心归顺真主而且常行善事者，确已把握住坚固的把柄。万事的结局，只归真主。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 23 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 至于不信仰者，绝不要让他的不信使你[穆圣]忧愁。他们都将归到我这里来，我将把他们曾经所做的告诉他们。安拉的确全知[人类]胸中的一切。\n马金鹏: 凡隐昧者，则他的隐昧不要使你担忧[注]，他们的归处是至我。我把他们所干的告诉他们。的确，安拉是全知有心胸者的。\n仝道章: 倘若任何人不信，莫让他的不信使你忧伤。他们的归宿是我，那时我将把他们所做过的(行为)告诉他们。安拉熟知(人们)心中的一切。\n王静斋: 不信的人，其不信可莫贻你忧虑。他们惟独返回于我而后我把他们所干过的宣告给他们。安拉深知胸中所怀的。\n马坚: 不信道者，你不要为他们的不信而忧愁，他们只归于我，我要把他们的行为告诉他们。真主确是全知他们的胸怀的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 24 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我使他们暂时享乐，然后，我将迫使他们去受酷刑。\n马金鹏: 我使他们稍稍享受[注]，以后，迫使他们至严厉的处罚。\n仝道章: 我赐给他们(今世)片刻的欢乐(享受)，然后我将驱使他们去受重刑。\n王静斋: 我教他们享受少时，而后我把他们迫至重刑。\n马坚: 我使他们稍稍享受幸福，然后，强迫他们去受严厉的刑罚。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 25 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 假如你问他们：“谁创造了天地？”他们必说：“安拉。”你[对他们]说：“一切赞颂，全归安拉。”不，他们大多数人并不知道。\n马金鹏: 你若是询问他们：“谁造化了天和地呀？”他们必定说：“是安拉！”你说：“万赞归安拉[注]！”而他们的大多是不知道的。\n仝道章: 如果你问他们：“是谁造化了天地?”他们一定会说：“安拉。”你说：“赞美安拉!”但是他们大多不知道。\n王静斋: 你若问他们：（谁造化了天地?）他们必说：（安拉。）你说：（赞颂安拉。）不然，他们的多半不知道。\n马坚: 如果你问他们：「谁创造了大地？」他们必定说：「真主。」你说：「一切赞颂，全归真主！」不然，他们大半不知道。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 26 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 天地间的一切都是安拉的。安拉确是无所求的，受赞颂的。\n马金鹏: 天与地中的归安拉，的确，安拉是无求的、受赞的。\n仝道章: 天地间的万物都属于安拉。安拉确实是无求的、最应受赞美的。\n王静斋: 天地间所有的惟独安拉执掌。安拉实是无求的，受赞的。\n马坚: 天地万物只是真主的，真主确是无求的，确是可颂的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 27 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 假如用大地上所有的树做成笔，以海水做墨汁，并且再加上七个海的海水做墨汁，也不能写尽安拉的语言[注]。安拉确是全能的，最睿智的。\n马金鹏: 假若地上的树是笔，而海和其后的七个海供给[墨汁][注1]，安拉的话是无穷尽的[注2]。的确，安拉是大能动、巧妙的。\n仝道章: 如果地上所有的树都是笔，海洋都是墨水，和再给它加上七大洋的(供应)，安拉的话也不能被写完。安拉是大能的、大智的。\n王静斋: 设若地上的树是些个笔，一海之外另有七海助长它，安拉的话未尝尽没。安拉实是优胜的，明哲的。\n马坚: 假若用大地上所有的树来制成笔，用海水作墨汁，再加上七海的墨汁，终不能写尽真主的言语。真主确是万能的，确是至睿的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 28 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 创造你们和复活你们，犹如[创造和复活]一个人那样[简单]。安拉确是全闻的，全视的。\n马金鹏: 你们的造化和你们的复活[注1]，只是像一个人[注2]。的确，安拉是全听的、全观的。\n仝道章: 你们的造化，你们的复活，只不过和(造化和复活)一个人一样。安拉是能听的、能见的。\n王静斋: 造化你们和复活你们，只像（造化）一个人。安拉实是能听的，能见的。\n马坚: 创造你们和复活你们，只像创造一个人和复活一个人一祥。真主确是全聪的，确是全明的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 29 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 难道你没有看见吗？安拉使黑夜进入白昼，使白昼进入黑夜，并使日月[为你们]服务，每个都按规定的程序运行。凡是你们所做的，安拉确是彻知的。\n马金鹏: 你岂未见[注1]？的确，安拉使黑夜进入白昼中，使白昼进入黑夜中。他控制了太阳和月亮，每个都运行至定期[注2]。而安拉是洞悉你们的所作所为的。\n仝道章: 你没看见安拉使夜进入昼中，和他使昼进入夜中；他驯伏日月，使它们各自循其轨道运行，直到规定的时期；和安拉是熟知你们所做的吗?\n王静斋: 你岂未看见安拉纳夜于昼，纳昼于夜，并降服了日月，每一个行至一定的时期，且（未看见）安拉尽知你们的作为吗?\n马坚: 难道你不知道吗？真主使黑夜侵入白昼，使白昼侵入黑夜，并制服日月，各自运行，至一定期。真主是彻知你们的行为的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 30 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 这是因为，安拉确是真宰，他们舍他而祈求的确是虚妄的。安拉确是至高无上的，至大的。\n马金鹏: 那是因为安拉是真实的，而他们于他以外所乞求[注]的是虚伪的。的确，安拉是崇高的、伟大的。\n仝道章: 这因为安拉是真实的，和因为你们在他之外所祈求的都是虚假的，和因为安拉是至高的、至大的。\n王静斋: 这是由于安拉就是真的，他们撇开他所拜的是假的，安拉就是尊大玄高的。\n马坚: 那是因为真主确是真实的；他们舍他而祈祷的，确是虚伪的；真主确是至尊的，确是至大的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 31 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 难道你没有看见吗？船舶依安拉的恩惠航行于大海中，以便他向你们显示他的一些迹象。对每个坚忍者和感恩者，此中确有许多迹象。\n马金鹏: 你岂未见船只吗？它凭借安拉的恩典[注1]行驶在海洋里，以便让你们看到他的迹象。的确，那里面有对每个忍耐者和感谢者的迹象[注2]。\n仝道章: 你没看见船舶藉安拉的慈悯航行海洋，以便他能对你们显示他的迹象吗?对于坚忍和知感的人，在这当中确有种种迹象。\n王静斋: 你岂未见船在海中借着安拉的恩惠航行，为的是教你们看见他的一部分表征?此中对于一切忍耐与感恩的人确含有种种表征。\n马坚: 难道你不知道吗？船舶在海中带着真主的恩惠而航行，以便他指示你们他的一部分迹象，对于每个坚忍的、感谢的人，此中确有许多迹象。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 32 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 当山一般的波涛笼罩着他们时，他们就虔诚敬意地祈求安拉。但当他使他们平安登陆时，他们中有些人就采取折中之道[介于信仰与不信仰之间]。唯每个背信弃义者和忘恩负义者才会否认我的迹象。\n马金鹏: 在像山岳般的波浪笼罩他们时，他们便虔诚地乞求安拉。当他们得救登陆时，则他们中有折中行事者[注]，不信我的迹象的，只是每个奸诈、隐昧者。\n仝道章: 当浪象天篷似地盖着他们时，他们呼求安拉，对他全心全意地信仰。但是当他把他们救上陆地时，他们当中就有千些人(在真与伪之间)采取折中之道了。除了(那些)离经叛道，忘恩负义的(人)之外，没有人不信我的迹象!\n王静斋: 像阴影的浪涛遮覆他们的时候，他们就呼求安拉对他竭诚顺服着；当他解救他们达到陆地的时候，他们内里有持中的。不信我表征的，只是一切失信忘恩的人。\n马坚: 当山岳般的波涛笼罩他们的时候，他们虔诚地祈祷真主，当他使他们平安登陆的时候，他们中有中和的人；只有每个狡猾的、孤恩的人，否认我的迹象。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 33 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 人们啊！你们当敬畏你们的主。你们当畏惧那一天，父亲对儿子毫无益处，儿子对父亲也毫无益处。安拉的诺言确是真实的，所以，不要让今世生活欺骗你们，不要让骗贼[恶魔]借安拉的名义欺骗你们。\n马金鹏: 哎人们啊！要敬畏你们的养主！要骇怕父亲对儿子毫无益处，和儿子对父亲毫无裨益的那天[注1]！的确，安拉的许约[注2]是真实的，所以切不要受眼前生活的欺骗！不要凭借安拉[注3]而让魔鬼欺骗了你们。\n仝道章: 人类啊! 你们要敬畏你们的主，并畏惧(那即将降临的)日子，那时父亲不能对他的儿子有任何益处，儿子也不能对他的父亲有任何裨益。的确，安拉的诺言是真实的，所以不要让今世生活蒙骗了你们，也不要让骗徒借安拉来蒙骗你们。\n王静斋: 众人哪，你们当畏惧养主；你们当骇怕那么一日。父不能替子，子不能替父料理一事。安拉的约是切实的。你们不要被今生所骗，也不要被欺骗的借着安拉来欺骗。\n马坚: 人们啊！你们应当敬畏你们的主，你们应当畏惧那一日，父亲对于儿子毫无裨益，儿子对于父亲也毫无裨益。真主的应许，确是真实的，绝不要让今世的生活欺骗你们，绝不要让猾贼以真主的容忍欺骗你们。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 31 章第 34 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 唯安拉知道复活的时间，他降下雨水，他知道子宫中所怀的[胎儿及其性别]；任何人都不知道自己明天将做什么，任何人都不知道自己将死于何地[注]。安拉确是全知的，彻知的。\n马金鹏: 的确，安拉那里有末日的知识[注1]，他降下甘霖[注2]，他知道子宫中的东西[注3]，每个人不知道他明天干什么[注4]，每个人不知道他将死在何地[注5]。的确，安拉是全知的、洞悉的。\n仝道章: 时间的知识是踉安拉在一起的，(只有安拉知道。)是他降雨和知道在子宫中的是什么。没有人会知道他自己在明天将做些什么。也没有人知道他自己将死在何处，安拉确是全知的、熟悉(万事万物)的。\n王静斋: 的确，惟安拉自知复生；他降下雨来，他知道子宫以内的。人不知道自己在明天要作何事；人不知道自己将死在什么地方。安拉确是深知的，尽知的。\n马坚: 在真主那里，的确有关于复活时的知识，他常降及时雨，他知道胎儿的（性别）；而任何人都不知道自己明日将做甚么事，任何人都不知道自己将死在甚么地方。真主确是全知的，确是彻知的。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "《古兰经》第 31 章：鲁格曼 (多版本中文翻译对比)",
+      "author": {
+        "@type": "Organization",
+        "name": "Salaam Alykum"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Salaam Alykum"
+      },
+      "description": "精良优化的古兰经第 31 章 鲁格曼 中文多版本对比翻译。极其适合学术研究与LLM语义检索。"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="#">
+          <span class="mark"><img src="../assets/icons/logo.png" alt="Logo" width="24" height="24"></span>
+          <span class="brand">古兰经中文翻译搜索工具</span>
+        </a>
+        <div class="searchbar">
+          <input id="q" type="text" placeholder="搜索关键词（支持多关键词：用空格分隔；或开启正则表达式）">
+          <button id="go" class="button">搜索</button>
+        </div>
+        <button id="btn-theme" class="button"
+          style="background:transparent; border-color:var(--border); color:var(--ink); box-shadow:none; padding:12px;"
+          title="切换日间/夜间模式">
+          🌗
+        </button>
+      </div>
+
+      <div class="filters">
+        <div class="group" id="filter-translators" title="按译者筛选">
+          <!-- Checkboxes generated by JS -->
+        </div>
+        <div class="group">
+          <label class="toggle-label"><input type="checkbox" id="regex"> <span>正则表达式</span></label>
+        </div>
+        <div class="group info-tip" title="提示">
+          <span>提示：多关键词为空格分隔（“且”逻辑）。</span>
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <ul class="slist" aria-label="章节导航"></ul>
+    </aside>
+
+    <main class="main">
+      <div class="result-header">
+        <h2 id="mode-title">第 31 章：鲁格曼</h2>
+      </div>
+      <div class="results"><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:1</span><span class="name">马仲刚</span></div><div class="text">艾利夫，俩目，米目[阿拉伯语三个字母的音译，唯<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>最知道其意]。</div></div><div class="tcard"><div class="meta"><span>第 31:1</span><span class="name">马金鹏</span></div><div class="text">艾立夫，俩姆，米姆[注]。</div></div><div class="tcard"><div class="meta"><span>第 31:1</span><span class="name">仝道章</span></div><div class="text">阿立甫、俩目、敏目。</div></div><div class="tcard"><div class="meta"><span>第 31:1</span><span class="name">王静斋</span></div><div class="text">（阿里甫、俩模、密默。）</div></div><div class="tcard"><div class="meta"><span>第 31:1</span><span class="name">马坚</span></div><div class="text">艾列弗，俩目，米目。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:2</span><span class="name">马仲刚</span></div><div class="text">这些是智慧的经典[《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》]的经文，</div></div><div class="tcard"><div class="meta"><span>第 31:2</span><span class="name">马金鹏</span></div><div class="text">这是[注1]奥妙经典[注2]的迹象。</div></div><div class="tcard"><div class="meta"><span>第 31:2</span><span class="name">仝道章</span></div><div class="text">这是智慧的经典的章节，</div></div><div class="tcard"><div class="meta"><span>第 31:2</span><span class="name">王静斋</span></div><div class="text">这是固典的文词。</div></div><div class="tcard"><div class="meta"><span>第 31:2</span><span class="name">马坚</span></div><div class="text">这些是有智慧的经典的节文，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:3</span><span class="name">马仲刚</span></div><div class="text">是对行善者的引导和慈悯。</div></div><div class="tcard"><div class="meta"><span>第 31:3</span><span class="name">马金鹏</span></div><div class="text">[是][注]对行善者们的引导和慈悯。</div></div><div class="tcard"><div class="meta"><span>第 31:3</span><span class="name">仝道章</span></div><div class="text">是对行善的人的引导和慈悯。</div></div><div class="tcard"><div class="meta"><span>第 31:3</span><span class="name">王静斋</span></div><div class="text">引导与慈惠一般为善的人；</div></div><div class="tcard"><div class="meta"><span>第 31:3</span><span class="name">马坚</span></div><div class="text">是行善者的向导和恩惠。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:4</span><span class="name">马仲刚</span></div><div class="text">他们[行善者]谨守拜功，完纳天课，笃信后世[注]。</div></div><div class="tcard"><div class="meta"><span>第 31:4</span><span class="name">马金鹏</span></div><div class="text">那些履行拜功、缴纳天课的，他们对末日是确信的[注]。</div></div><div class="tcard"><div class="meta"><span>第 31:4</span><span class="name">仝道章</span></div><div class="text">那些。人是守拜功、纳天课，并坚信后世的人。</div></div><div class="tcard"><div class="meta"><span>第 31:4</span><span class="name">王静斋</span></div><div class="text">就是一般立拜功，施天课，并且坚信后世的。</div></div><div class="tcard"><div class="meta"><span>第 31:4</span><span class="name">马坚</span></div><div class="text">行善者，谨守拜功，完纳天课，且确信后世。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:5</span><span class="name">马仲刚</span></div><div class="text">这些人遵行从他们的主启示的正道，这些人确是成功者。</div></div><div class="tcard"><div class="meta"><span>第 31:5</span><span class="name">马金鹏</span></div><div class="text">这些人是在他们养主之正道上的，这些人他们是得救的。</div></div><div class="tcard"><div class="meta"><span>第 31:5</span><span class="name">仝道章</span></div><div class="text">这些(人)遵从他们的主的引导，这些人是成功的(人)。</div></div><div class="tcard"><div class="meta"><span>第 31:5</span><span class="name">王静斋</span></div><div class="text">他们是守其养主正道的，这般人均是得意的，</div></div><div class="tcard"><div class="meta"><span>第 31:5</span><span class="name">马坚</span></div><div class="text">这等人，是遵守他们的主的正道的，这等人确是成功的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:6</span><span class="name">马仲刚</span></div><div class="text">人们中有人[以宝贵的时间]换取无聊之言[如唱歌和音乐等]，以便无知地使人们背离<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>之道，并把它[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>之道]当笑柄。[复活日]这些人[在火狱里]必受凌辱的刑罚。</div></div><div class="tcard"><div class="meta"><span>第 31:6</span><span class="name">马金鹏</span></div><div class="text">人们中有那买得嬉言[注1]的，以便无知地迷失<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>之路[注2]，并把它当作嘲讽[注3]。这些人，他们应受卑刑[注4]。</div></div><div class="tcard"><div class="meta"><span>第 31:6</span><span class="name">仝道章</span></div><div class="text">人群中有些没有(天经)知识的人交换无稽的闲谈，以便(把人们)由<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的道上误导，并拿它(天经)当作笑柄。这些人得到的是羞辱的刑罚。</div></div><div class="tcard"><div class="meta"><span>第 31:6</span><span class="name">王静斋</span></div><div class="text">人类中有的接受戏言，而致无知识地诱人错过<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的道，并以它为可戏的；这般人应遭辱刑。</div></div><div class="tcard"><div class="meta"><span>第 31:6</span><span class="name">马坚</span></div><div class="text">有人购买无谓的谈话，以便他无知无识地使人背离真主的正道，而且把它当作笑柄。这等人，将受凌辱的刑罚。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:7</span><span class="name">马仲刚</span></div><div class="text">当有人向他诵读我的启示时，他就傲慢[注]地避开，好像没有听见一样，好像他的耳是聋钝的，所以，你[穆圣]当向他宣布[他必受]痛苦的刑罚。</div></div><div class="tcard"><div class="meta"><span>第 31:7</span><span class="name">马金鹏</span></div><div class="text">我的迹象[注1]被读给他时，他便高傲地背弃，像没听到似的，像他的两耳中有些沉重似的。所以你用痛刑给他报喜[注2]吧！</div></div><div class="tcard"><div class="meta"><span>第 31:7</span><span class="name">仝道章</span></div><div class="text">当有人对他诵读我的启示时，他就高傲地避开了，好象他不曾听到它们，好象他的两耳都聋了，所以你要对他宣告一个痛苦的刑罚的消息。</div></div><div class="tcard"><div class="meta"><span>第 31:7</span><span class="name">王静斋</span></div><div class="text">一旦有人把我的表征读给他了，他就高傲着转去，好像他未听到，好像他的两耳重听。你就以痛刑报告他吧，</div></div><div class="tcard"><div class="meta"><span>第 31:7</span><span class="name">马坚</span></div><div class="text">有人对他宣读我的迹象的时候，他自大地退避，彷佛没有听见一样，彷佛他的两耳重听一样。你以痛苦的刑罚，向他报喜吧。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:8</span><span class="name">马仲刚</span></div><div class="text">凡信仰并行善者，他们将获得恩泽的乐园，</div></div><div class="tcard"><div class="meta"><span>第 31:8</span><span class="name">马金鹏</span></div><div class="text">的确，那些归信，并干善功的人们，则享受恩典天堂[注]。</div></div><div class="tcard"><div class="meta"><span>第 31:8</span><span class="name">仝道章</span></div><div class="text">那些信仰并做善事的人，他们得到的是快乐的天园，</div></div><div class="tcard"><div class="meta"><span>第 31:8</span><span class="name">王静斋</span></div><div class="text">归信并作善举的人，必得到乐园，永居其中。</div></div><div class="tcard"><div class="meta"><span>第 31:8</span><span class="name">马坚</span></div><div class="text">信道而且行善者，必将享受极乐园，</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:9</span><span class="name">马仲刚</span></div><div class="text">永居其中。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的诺言是真实的。他是全能的，最睿智的。</div></div><div class="tcard"><div class="meta"><span>第 31:9</span><span class="name">马金鹏</span></div><div class="text">永居其中，[作为]<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的真实许约。他是有力的、巧安排的。</div></div><div class="tcard"><div class="meta"><span>第 31:9</span><span class="name">仝道章</span></div><div class="text">他们将住在其中。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的诺言是真实的，他是大能的、大智的。</div></div><div class="tcard"><div class="meta"><span>第 31:9</span><span class="name">王静斋</span></div><div class="text"><a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>决定的约。他是优胜的，明哲的。</div></div><div class="tcard"><div class="meta"><span>第 31:9</span><span class="name">马坚</span></div><div class="text">而永居其中。这是真主的真实的应许，他确是万能的，确是至睿的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:10</span><span class="name">马仲刚</span></div><div class="text">他用你们看不见的柱子建造诸天，并在大地上稳固地安置群山，以免你们随大地而摇荡，且在大地上散布各种动物。我从天空降下雨水，借此而生长出各种美丽的植物。</div></div><div class="tcard"><div class="meta"><span>第 31:10</span><span class="name">马金鹏</span></div><div class="text">他用你们看不到的柱子造化了天。在地上投下了防止带着你们而震动的山岳，在地上散布了各种动物。他从天上降下了水，于是他在其中[注1]让各类美好的[注2]生长。</div></div><div class="tcard"><div class="meta"><span>第 31:10</span><span class="name">仝道章</span></div><div class="text">你们可以看到，他不需支柱造化诸天，他在大地上放置稳固的山岳，以免它跟你们一起动摇。他并在它上面散布各种动物。我也从天空降下雨来，并使各种优良的生物在其中生长。</div></div><div class="tcard"><div class="meta"><span>第 31:10</span><span class="name">王静斋</span></div><div class="text">他造化诸天，并无你们看见的楹柱。他把定山置在地上，以免它摇动你们。他把各样动物散播在地上；并由上空降下水来，而用它发长各色美丽的。</div></div><div class="tcard"><div class="meta"><span>第 31:10</span><span class="name">马坚</span></div><div class="text">他创造诸天，而不用你们所能见的支柱；他在大地上安置许多山岳，以免大地动摇，使你们不安；他在大地上散布各种动物。他从云中降下雨水，而在大地上滋生各种优良的植物。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:11</span><span class="name">马仲刚</span></div><div class="text">这就是<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的创造。你们告诉我吧！你们舍他[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]而崇拜的[偶像]究竟能创造什么呢？不，不义者是在明显的迷误中。</div></div><div class="tcard"><div class="meta"><span>第 31:11</span><span class="name">马金鹏</span></div><div class="text">这就是<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的造化。你们可让我看看：他以外的那些[注1]造化了些什么？而亏害者们[注2]，是在明明的迷歧之中。</div></div><div class="tcard"><div class="meta"><span>第 31:11</span><span class="name">仝道章</span></div><div class="text">这就是<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的造化。你们现在能显示给我(你们)在他之外(所崇拜的)其它的(伪神)曾经造化了些什么吗?没有，作恶的人是在明显的错误当中。</div></div><div class="tcard"><div class="meta"><span>第 31:11</span><span class="name">王静斋</span></div><div class="text">这是<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的造化；你们告诉我：除他以外的那一切造化什么了? 背义的人实是在显著的迷误中。</div></div><div class="tcard"><div class="meta"><span>第 31:11</span><span class="name">马坚</span></div><div class="text">这是真主所创造的，你们指示我吧，你们舍真主而崇拜的（偶像〕究竟创造了甚么呢？不然，不义的人是在明显的迷误中的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:12</span><span class="name">马仲刚</span></div><div class="text">我确已赐给鲁格曼智慧[和宗教知识]。[我说]：“你当感谢<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>[的恩惠]。”谁感恩，谁自受其益；谁忘恩负义，[谁自受其害]。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是无所求的，受赞颂的。</div></div><div class="tcard"><div class="meta"><span>第 31:12</span><span class="name">马金鹏</span></div><div class="text">我确已把哲理[注1]给了鲁格曼[注2]：“你要感谢<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>！凡感谢者，则是为自己而感谢[注3]。凡隐昧者，则<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是无求的[注4]，受赞的。”</div></div><div class="tcard"><div class="meta"><span>第 31:12</span><span class="name">仝道章</span></div><div class="text">我曾赐给陆格曼智慧，(说道：)“你要对<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>感激。”任何人知感是对他自己(有益)，倘若任何人忘恩负义，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是无求的、受一切赞美的。</div></div><div class="tcard"><div class="meta"><span>第 31:12</span><span class="name">王静斋</span></div><div class="text">我确曾赐给鲁格曼卓识了，（说：）你当感念<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，感念的人，那就是利其自身作感念。忘恩的人，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>一定是无求的，受赞的。那时候，</div></div><div class="tcard"><div class="meta"><span>第 31:12</span><span class="name">马坚</span></div><div class="text">我确已把智慧赏赐鲁格曼，（我说）：「你当感谢真主。感谢的人，只为自己而感谢，孤负的人，须知真主确是无求的，确是可颂的。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:13</span><span class="name">马仲刚</span></div><div class="text">当时，鲁格曼劝戒他的儿子说：“我的儿子啊！你不要给<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>设置伙伴，给<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>设置伙伴确是大逆不道[注]。”</div></div><div class="tcard"><div class="meta"><span>第 31:13</span><span class="name">马金鹏</span></div><div class="text">当时，鲁格曼规劝他的儿子[注1]说：“哎！我的孩子呀！你不要举伴<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>！的确，举伴是巨大的亏害[注2]。”</div></div><div class="tcard"><div class="meta"><span>第 31:13</span><span class="name">仝道章</span></div><div class="text">那时陆格曼劝诫他的儿子道：“我的儿啊! 不要为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>添附伙伴。信奉多神确实是严重的罪恶。”</div></div><div class="tcard"><div class="meta"><span>第 31:13</span><span class="name">王静斋</span></div><div class="text">鲁格曼劝他儿子说：（我的小儿呀，你不要给<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>拟匹偶；举匹偶实是一大背义。</div></div><div class="tcard"><div class="meta"><span>第 31:13</span><span class="name">马坚</span></div><div class="text">当日，鲁格曼曾教训他的儿子说：「我的小子啊！你不要以任何物配主。以物配主，确是大逆不道的。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:14</span><span class="name">马仲刚</span></div><div class="text">我已命人当孝敬父母[注]。他的母亲弱上加弱艰难地怀他，他的断奶是在两年内。[我说]：“你当感谢我及你的父母，唯我[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]这里是最后的归宿。</div></div><div class="tcard"><div class="meta"><span>第 31:14</span><span class="name">马金鹏</span></div><div class="text">我嘱咐人要[孝]其双亲，他母亲弱上加弱[注]地怀了他，他的离开是在两周年里。“你要感谢我和你的双亲！归处是至我。</div></div><div class="tcard"><div class="meta"><span>第 31:14</span><span class="name">仝道章</span></div><div class="text">我已命人对他的父母孝顺。他的母亲在疲弱中孕育着他，他又需两年，断奶。(我说：)“你们要对我和你的父母知恩感德，你们的归宿是我。</div></div><div class="tcard"><div class="meta"><span>第 31:14</span><span class="name">王静斋</span></div><div class="text">我嘱告世人孝他父母——其母备极疲乏着怀他；他的离乳是在二年。你当感念我和你的父母。归惟归于我。</div></div><div class="tcard"><div class="meta"><span>第 31:14</span><span class="name">马坚</span></div><div class="text">我曾命人孝敬父母——他母亲弱上加弱地怀着他，他的断乳，是在两年之中——（我说）：「你应当感谢我和你的父母；惟我是最后的归宿。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:15</span><span class="name">马仲刚</span></div><div class="text">假如他俩强迫你用你所不知道的给我设置伙伴，那么，你就不要服从他俩，但在今世要善待他俩。你当遵行归信我的人的道，然后，你们都将归到我这里来，我将把你们曾经所做的告诉你们。”</div></div><div class="tcard"><div class="meta"><span>第 31:15</span><span class="name">马金鹏</span></div><div class="text">如他俩迫使你用你所不知道的[注]举伴我时，你不要顺从他俩，你要在尘世中同他俩好好相处。你要跟从那要归至我者的路！后来你们归至我，则我把你们的作为告诉你们。”</div></div><div class="tcard"><div class="meta"><span>第 31:15</span><span class="name">仝道章</span></div><div class="text">“倘若他们勉强你把你所不知道的(东西)添附作我的伙伴，你不要服从他们。不过在今世仍要(关怀地)侍奉他们，并追随归依我的人的道。你们终将回到我这里，我将会告诉你们所做过的一切。”</div></div><div class="tcard"><div class="meta"><span>第 31:15</span><span class="name">王静斋</span></div><div class="text">如果他俩强你把自所不知的给我作匹偶，你不要服从他俩。在今世你要善待父母；你要追随那归向我的人的道路。而后你们惟归于我，我再把你们所作过的宣告你们——</div></div><div class="tcard"><div class="meta"><span>第 31:15</span><span class="name">马坚</span></div><div class="text">如果他俩勒令你以你所不知道的东西配我，那么，你不要服从他俩，在今世，你应当依礼义而奉事他俩，你应当遵守归依我者的道路；惟我是你们的归宿，我要把你们的行为告诉你们。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:16</span><span class="name">马仲刚</span></div><div class="text">[鲁格曼说]：“我的儿子啊！善恶的行为，虽小如一粒芥子的重量，即使它隐藏在岩石中，或在天上，或在地下，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>也要把它显示出来。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是最敏锐的，彻知的。</div></div><div class="tcard"><div class="meta"><span>第 31:16</span><span class="name">马金鹏</span></div><div class="text">[鲁格曼说)：“哎！我的孩子呀！的确，若它[注1]是一粒芥籽重，而它是在磐石中，或在天上，或在地下，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>都把它拿来，的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是仔细[注2]的，洞知的。</div></div><div class="tcard"><div class="meta"><span>第 31:16</span><span class="name">仝道章</span></div><div class="text">“我的儿啊！”(陆格曼说，)“即使一粒芥子的重量， 即使它是(藏)在岩石中，或是藏在天地间的(任何所在)，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>都会把它显示出来。因为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是深知秘奥的、洞悉的。</div></div><div class="tcard"><div class="meta"><span>第 31:16</span><span class="name">王静斋</span></div><div class="text">我的小儿呀！差错若是芥菜粒重，它是在盘石里，或在天，或在地，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>即将拿它来。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是妙知的，尽知的。</div></div><div class="tcard"><div class="meta"><span>第 31:16</span><span class="name">马坚</span></div><div class="text">鲁格曼说：「我的小子啊！善恶的行为，虽小如芥子，隐藏在盘石里，或在天空中，或在地底下，真主都要显示它。真主确是明察的，确是彻知的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:17</span><span class="name">马仲刚</span></div><div class="text">我的儿子啊！你当谨守拜功，劝人行善，止人作恶，忍受你所遭遇的不幸。这确是[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>颁布的]一些命令。</div></div><div class="tcard"><div class="meta"><span>第 31:17</span><span class="name">马金鹏</span></div><div class="text">哎！我的孩子呀！要履行拜功！要命人行善！要止人干歹！对所遭遇的[注]要忍耐！的确，那是已定的事。</div></div><div class="tcard"><div class="meta"><span>第 31:17</span><span class="name">仝道章</span></div><div class="text">“我的儿啊!你要保持礼拜，劝人行善和禁止人为非作歹，并对任何降临到你的(不幸)坚忍。这些的确都是(需要)很大决心的事。</div></div><div class="tcard"><div class="meta"><span>第 31:17</span><span class="name">王静斋</span></div><div class="text">我的小儿呀，你当立拜功，当命以合法的，禁止非理的，并忍受自所遭遇的。这确属于意志坚决的事情。</div></div><div class="tcard"><div class="meta"><span>第 31:17</span><span class="name">马坚</span></div><div class="text">我的小子啊！你应当谨守拜功，应当劝善戒恶，应当忍受患难，这确是应该决心做的事情。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:18</span><span class="name">马仲刚</span></div><div class="text">你不要傲视人们，不要傲慢地在大地上行走。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>绝不喜欢任何自大自夸者。</div></div><div class="tcard"><div class="meta"><span>第 31:18</span><span class="name">马金鹏</span></div><div class="text">你不要使你的脸腮背向人们[注]！你不要在地上傲慢行走！的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>不喜每个傲慢夸耀而行者。</div></div><div class="tcard"><div class="meta"><span>第 31:18</span><span class="name">仝道章</span></div><div class="text">“你不要对人们(骄傲地)掉转你的脸，也不要在地上横行霸道。因为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>不喜爱任何高傲的大言不惭的人。</div></div><div class="tcard"><div class="meta"><span>第 31:18</span><span class="name">王静斋</span></div><div class="text">你不要对人骄傲：你不要在地上狂行：<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>实不喜骄傲自矜的人。</div></div><div class="tcard"><div class="meta"><span>第 31:18</span><span class="name">马坚</span></div><div class="text">你不要为藐视众人而转脸，不要洋洋得意地在大地上行走，真主确是不喜爱一切傲慢者、矜夸者的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:19</span><span class="name">马仲刚</span></div><div class="text">你当步伐稳健[显示不傲慢]，当压低你的声音，因为最讨厌的声音确是驴的叫声。”</div></div><div class="tcard"><div class="meta"><span>第 31:19</span><span class="name">马金鹏</span></div><div class="text">你在步行时要端正[注]，要低声！的确，最丑的声音，确是驴的叫声。”</div></div><div class="tcard"><div class="meta"><span>第 31:19</span><span class="name">仝道章</span></div><div class="text">“你要举止雍容，言语温文。的确一切声音中最粗鲁的声音就是驴叫。”</div></div><div class="tcard"><div class="meta"><span>第 31:19</span><span class="name">王静斋</span></div><div class="text">你在步行上要得守中： 你要低声。的确，声音最可憎的实是驴声。</div></div><div class="tcard"><div class="meta"><span>第 31:19</span><span class="name">马坚</span></div><div class="text">你应当节制你的步伐，你应当抑制你的声音；最讨厌的声音，确是驴子的声音。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:20</span><span class="name">马仲刚</span></div><div class="text">[人们啊！]难道你们不知道吗？<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>使天地间的一切为你们服务，并把看得见之物[如树木、动物、雨水、日月等]和看不见之物[如信仰<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>和后世等]的恩惠广施给你们。但人们中仍有人争论<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，他既无知识，也未受引导，且没有一部光明的经典。</div></div><div class="tcard"><div class="meta"><span>第 31:20</span><span class="name">马金鹏</span></div><div class="text">你们岂不知道[注1]？的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>为你们控制了天与地中的，他把那表面的和内部的恩典全给了你们。人们中[注2]却有那毫无知识、正道与没有明明的经典的人而争论<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>[之事]的。</div></div><div class="tcard"><div class="meta"><span>第 31:20</span><span class="name">仝道章</span></div><div class="text">你们没看到<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>已使天地间的万物都驯服于你们，并在明中或暗中大量地供给你们他的恩赏吗?但是在人们当中仍有一些没有知识、没有引导和没有一本启发他们的经典的人在争论<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。</div></div><div class="tcard"><div class="meta"><span>第 31:20</span><span class="name">王静斋</span></div><div class="text">你们岂未看见：<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>为你们降服在天在地的，并把自己内外的恩典完全施给你们吗?有的人无知识，无引导，也无光明的经典着，因为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>起辩论。</div></div><div class="tcard"><div class="meta"><span>第 31:20</span><span class="name">马坚</span></div><div class="text">难道你们不知道吗？真主曾为你们制服天地间的一切，他博施你们表里的恩惠。有人争论真主的德性，但他们既无知识，又无向导，且无灿烂的经典。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:21</span><span class="name">马仲刚</span></div><div class="text">当有人对他们说：“你们来遵行<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>所降示的经典[《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》]吧！”他们就说：“不，我们只遵行我们发现我们的祖先所遵行的遗教。”要是恶魔召唤他们去受火狱的刑罚，[难道他们也要遵行他们的祖先的遗教吗？]</div></div><div class="tcard"><div class="meta"><span>第 31:21</span><span class="name">马金鹏</span></div><div class="text">如果有人对他们说：“你们跟从<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>所降的吧！”他们说：“我们只跟从我们所发现我们的父辈们所跟从的[注]。”即使魔鬼把他们唤到烈火之刑吗？</div></div><div class="tcard"><div class="meta"><span>第 31:21</span><span class="name">仝道章</span></div><div class="text">如果有人告诉他们“追随<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>已经降下的(经典或启示)”时，他们说：“不，我们遵循我们祖先(所遵循)的。”(什么!)甚至连魔鬼召唤他们到烈焰的刑罚中(也要遵循)吗?</div></div><div class="tcard"><div class="meta"><span>第 31:21</span><span class="name">王静斋</span></div><div class="text">一旦有人对他们说：（你们追随<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>降下的吧！）他们就说：（不，我们追随曾见自己列祖所守的。）设若恶魔把他们唤至火刑，（他们也肯追随吗?）</div></div><div class="tcard"><div class="meta"><span>第 31:21</span><span class="name">马坚</span></div><div class="text">如果有人对他们说：「你们应当遵守真主所降示的（经典）。」他们就说：「不然，我们遵守我们祖先的遗教。」即使恶魔叫他们去受烈火的刑罚，（他们仍要遵循）吗？</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:22</span><span class="name">马仲刚</span></div><div class="text">谁彻底归顺<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，且是行善者，谁确已握住了最坚固的支柱[注]。万事最终都将归到<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>那里去[受审]。</div></div><div class="tcard"><div class="meta"><span>第 31:22</span><span class="name">马金鹏</span></div><div class="text">凡使其面容顺从<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>[注1]，而他是行善者[注2]，则他确已把握住坚固的环节[注3]，事物的归结[注4]是至<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。</div></div><div class="tcard"><div class="meta"><span>第 31:22</span><span class="name">仝道章</span></div><div class="text">谁全心全意归信<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，并且是一个行善的人，他的确已抓住了最牢固的手把， 一切事务的结局都归于<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。</div></div><div class="tcard"><div class="meta"><span>第 31:22</span><span class="name">王静斋</span></div><div class="text">那在为善着倾向<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的人，确已抓住至坚固的把柄了。诸事的归宿惟归于<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。</div></div><div class="tcard"><div class="meta"><span>第 31:22</span><span class="name">马坚</span></div><div class="text">诚心归顺真主而且常行善事者，确已把握住坚固的把柄。万事的结局，只归真主。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:23</span><span class="name">马仲刚</span></div><div class="text">至于不信仰者，绝不要让他的不信使你[穆圣]忧愁。他们都将归到我这里来，我将把他们曾经所做的告诉他们。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的确全知[人类]胸中的一切。</div></div><div class="tcard"><div class="meta"><span>第 31:23</span><span class="name">马金鹏</span></div><div class="text">凡隐昧者，则他的隐昧不要使你担忧[注]，他们的归处是至我。我把他们所干的告诉他们。的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是全知有心胸者的。</div></div><div class="tcard"><div class="meta"><span>第 31:23</span><span class="name">仝道章</span></div><div class="text">倘若任何人不信，莫让他的不信使你忧伤。他们的归宿是我，那时我将把他们所做过的(行为)告诉他们。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>熟知(人们)心中的一切。</div></div><div class="tcard"><div class="meta"><span>第 31:23</span><span class="name">王静斋</span></div><div class="text">不信的人，其不信可莫贻你忧虑。他们惟独返回于我而后我把他们所干过的宣告给他们。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>深知胸中所怀的。</div></div><div class="tcard"><div class="meta"><span>第 31:23</span><span class="name">马坚</span></div><div class="text">不信道者，你不要为他们的不信而忧愁，他们只归于我，我要把他们的行为告诉他们。真主确是全知他们的胸怀的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:24</span><span class="name">马仲刚</span></div><div class="text">我使他们暂时享乐，然后，我将迫使他们去受酷刑。</div></div><div class="tcard"><div class="meta"><span>第 31:24</span><span class="name">马金鹏</span></div><div class="text">我使他们稍稍享受[注]，以后，迫使他们至严厉的处罚。</div></div><div class="tcard"><div class="meta"><span>第 31:24</span><span class="name">仝道章</span></div><div class="text">我赐给他们(今世)片刻的欢乐(享受)，然后我将驱使他们去受重刑。</div></div><div class="tcard"><div class="meta"><span>第 31:24</span><span class="name">王静斋</span></div><div class="text">我教他们享受少时，而后我把他们迫至重刑。</div></div><div class="tcard"><div class="meta"><span>第 31:24</span><span class="name">马坚</span></div><div class="text">我使他们稍稍享受幸福，然后，强迫他们去受严厉的刑罚。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:25</span><span class="name">马仲刚</span></div><div class="text">假如你问他们：“谁创造了天地？”他们必说：“<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。”你[对他们]说：“一切赞颂，全归<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。”不，他们大多数人并不知道。</div></div><div class="tcard"><div class="meta"><span>第 31:25</span><span class="name">马金鹏</span></div><div class="text">你若是询问他们：“谁造化了天和地呀？”他们必定说：“是<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>！”你说：“万赞归<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>[注]！”而他们的大多是不知道的。</div></div><div class="tcard"><div class="meta"><span>第 31:25</span><span class="name">仝道章</span></div><div class="text">如果你问他们：“是谁造化了天地?”他们一定会说：“<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。”你说：“赞美<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>!”但是他们大多不知道。</div></div><div class="tcard"><div class="meta"><span>第 31:25</span><span class="name">王静斋</span></div><div class="text">你若问他们：（谁造化了天地?）他们必说：（<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。）你说：（赞颂<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。）不然，他们的多半不知道。</div></div><div class="tcard"><div class="meta"><span>第 31:25</span><span class="name">马坚</span></div><div class="text">如果你问他们：「谁创造了大地？」他们必定说：「真主。」你说：「一切赞颂，全归真主！」不然，他们大半不知道。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:26</span><span class="name">马仲刚</span></div><div class="text">天地间的一切都是<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是无所求的，受赞颂的。</div></div><div class="tcard"><div class="meta"><span>第 31:26</span><span class="name">马金鹏</span></div><div class="text">天与地中的归<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是无求的、受赞的。</div></div><div class="tcard"><div class="meta"><span>第 31:26</span><span class="name">仝道章</span></div><div class="text">天地间的万物都属于<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确实是无求的、最应受赞美的。</div></div><div class="tcard"><div class="meta"><span>第 31:26</span><span class="name">王静斋</span></div><div class="text">天地间所有的惟独<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>执掌。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>实是无求的，受赞的。</div></div><div class="tcard"><div class="meta"><span>第 31:26</span><span class="name">马坚</span></div><div class="text">天地万物只是真主的，真主确是无求的，确是可颂的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:27</span><span class="name">马仲刚</span></div><div class="text">假如用大地上所有的树做成笔，以海水做墨汁，并且再加上七个海的海水做墨汁，也不能写尽<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的语言[注]。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是全能的，最睿智的。</div></div><div class="tcard"><div class="meta"><span>第 31:27</span><span class="name">马金鹏</span></div><div class="text">假若地上的树是笔，而海和其后的七个海供给[墨汁][注1]，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的话是无穷尽的[注2]。的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是大能动、巧妙的。</div></div><div class="tcard"><div class="meta"><span>第 31:27</span><span class="name">仝道章</span></div><div class="text">如果地上所有的树都是笔，海洋都是墨水，和再给它加上七大洋的(供应)，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的话也不能被写完。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是大能的、大智的。</div></div><div class="tcard"><div class="meta"><span>第 31:27</span><span class="name">王静斋</span></div><div class="text">设若地上的树是些个笔，一海之外另有七海助长它，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的话未尝尽没。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>实是优胜的，明哲的。</div></div><div class="tcard"><div class="meta"><span>第 31:27</span><span class="name">马坚</span></div><div class="text">假若用大地上所有的树来制成笔，用海水作墨汁，再加上七海的墨汁，终不能写尽真主的言语。真主确是万能的，确是至睿的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:28</span><span class="name">马仲刚</span></div><div class="text">创造你们和复活你们，犹如[创造和复活]一个人那样[简单]。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是全闻的，全视的。</div></div><div class="tcard"><div class="meta"><span>第 31:28</span><span class="name">马金鹏</span></div><div class="text">你们的造化和你们的复活[注1]，只是像一个人[注2]。的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是全听的、全观的。</div></div><div class="tcard"><div class="meta"><span>第 31:28</span><span class="name">仝道章</span></div><div class="text">你们的造化，你们的复活，只不过和(造化和复活)一个人一样。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是能听的、能见的。</div></div><div class="tcard"><div class="meta"><span>第 31:28</span><span class="name">王静斋</span></div><div class="text">造化你们和复活你们，只像（造化）一个人。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>实是能听的，能见的。</div></div><div class="tcard"><div class="meta"><span>第 31:28</span><span class="name">马坚</span></div><div class="text">创造你们和复活你们，只像创造一个人和复活一个人一祥。真主确是全聪的，确是全明的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:29</span><span class="name">马仲刚</span></div><div class="text">难道你没有看见吗？<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>使黑夜进入白昼，使白昼进入黑夜，并使日月[为你们]服务，每个都按规定的程序运行。凡是你们所做的，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是彻知的。</div></div><div class="tcard"><div class="meta"><span>第 31:29</span><span class="name">马金鹏</span></div><div class="text">你岂未见[注1]？的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>使黑夜进入白昼中，使白昼进入黑夜中。他控制了太阳和月亮，每个都运行至定期[注2]。而<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是洞悉你们的所作所为的。</div></div><div class="tcard"><div class="meta"><span>第 31:29</span><span class="name">仝道章</span></div><div class="text">你没看见<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>使夜进入昼中，和他使昼进入夜中；他驯伏日月，使它们各自循其轨道运行，直到规定的时期；和<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是熟知你们所做的吗?</div></div><div class="tcard"><div class="meta"><span>第 31:29</span><span class="name">王静斋</span></div><div class="text">你岂未看见<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>纳夜于昼，纳昼于夜，并降服了日月，每一个行至一定的时期，且（未看见）<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>尽知你们的作为吗?</div></div><div class="tcard"><div class="meta"><span>第 31:29</span><span class="name">马坚</span></div><div class="text">难道你不知道吗？真主使黑夜侵入白昼，使白昼侵入黑夜，并制服日月，各自运行，至一定期。真主是彻知你们的行为的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:30</span><span class="name">马仲刚</span></div><div class="text">这是因为，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是真宰，他们舍他而祈求的确是虚妄的。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是至高无上的，至大的。</div></div><div class="tcard"><div class="meta"><span>第 31:30</span><span class="name">马金鹏</span></div><div class="text">那是因为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是真实的，而他们于他以外所乞求[注]的是虚伪的。的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是崇高的、伟大的。</div></div><div class="tcard"><div class="meta"><span>第 31:30</span><span class="name">仝道章</span></div><div class="text">这因为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是真实的，和因为你们在他之外所祈求的都是虚假的，和因为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是至高的、至大的。</div></div><div class="tcard"><div class="meta"><span>第 31:30</span><span class="name">王静斋</span></div><div class="text">这是由于<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>就是真的，他们撇开他所拜的是假的，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>就是尊大玄高的。</div></div><div class="tcard"><div class="meta"><span>第 31:30</span><span class="name">马坚</span></div><div class="text">那是因为真主确是真实的；他们舍他而祈祷的，确是虚伪的；真主确是至尊的，确是至大的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:31</span><span class="name">马仲刚</span></div><div class="text">难道你没有看见吗？船舶依<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的恩惠航行于大海中，以便他向你们显示他的一些迹象。对每个坚忍者和感恩者，此中确有许多迹象。</div></div><div class="tcard"><div class="meta"><span>第 31:31</span><span class="name">马金鹏</span></div><div class="text">你岂未见船只吗？它凭借<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的恩典[注1]行驶在海洋里，以便让你们看到他的迹象。的确，那里面有对每个忍耐者和感谢者的迹象[注2]。</div></div><div class="tcard"><div class="meta"><span>第 31:31</span><span class="name">仝道章</span></div><div class="text">你没看见船舶藉<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的慈悯航行海洋，以便他能对你们显示他的迹象吗?对于坚忍和知感的人，在这当中确有种种迹象。</div></div><div class="tcard"><div class="meta"><span>第 31:31</span><span class="name">王静斋</span></div><div class="text">你岂未见船在海中借着<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的恩惠航行，为的是教你们看见他的一部分表征?此中对于一切忍耐与感恩的人确含有种种表征。</div></div><div class="tcard"><div class="meta"><span>第 31:31</span><span class="name">马坚</span></div><div class="text">难道你不知道吗？船舶在海中带着真主的恩惠而航行，以便他指示你们他的一部分迹象，对于每个坚忍的、感谢的人，此中确有许多迹象。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:32</span><span class="name">马仲刚</span></div><div class="text">当山一般的波涛笼罩着他们时，他们就虔诚敬意地祈求<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。但当他使他们平安登陆时，他们中有些人就采取折中之道[介于信仰与不信仰之间]。唯每个背信弃义者和忘恩负义者才会否认我的迹象。</div></div><div class="tcard"><div class="meta"><span>第 31:32</span><span class="name">马金鹏</span></div><div class="text">在像山岳般的波浪笼罩他们时，他们便虔诚地乞求<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>。当他们得救登陆时，则他们中有折中行事者[注]，不信我的迹象的，只是每个奸诈、隐昧者。</div></div><div class="tcard"><div class="meta"><span>第 31:32</span><span class="name">仝道章</span></div><div class="text">当浪象天篷似地盖着他们时，他们呼求<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>，对他全心全意地信仰。但是当他把他们救上陆地时，他们当中就有千些人(在真与伪之间)采取折中之道了。除了(那些)离经叛道，忘恩负义的(人)之外，没有人不信我的迹象!</div></div><div class="tcard"><div class="meta"><span>第 31:32</span><span class="name">王静斋</span></div><div class="text">像阴影的浪涛遮覆他们的时候，他们就呼求<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>对他竭诚顺服着；当他解救他们达到陆地的时候，他们内里有持中的。不信我表征的，只是一切失信忘恩的人。</div></div><div class="tcard"><div class="meta"><span>第 31:32</span><span class="name">马坚</span></div><div class="text">当山岳般的波涛笼罩他们的时候，他们虔诚地祈祷真主，当他使他们平安登陆的时候，他们中有中和的人；只有每个狡猾的、孤恩的人，否认我的迹象。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:33</span><span class="name">马仲刚</span></div><div class="text">人们啊！你们当敬畏你们的主。你们当畏惧那一天，父亲对儿子毫无益处，儿子对父亲也毫无益处。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的诺言确是真实的，所以，不要让今世生活欺骗你们，不要让骗贼[恶魔]借<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的名义欺骗你们。</div></div><div class="tcard"><div class="meta"><span>第 31:33</span><span class="name">马金鹏</span></div><div class="text">哎人们啊！要敬畏你们的养主！要骇怕父亲对儿子毫无益处，和儿子对父亲毫无裨益的那天[注1]！的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的许约[注2]是真实的，所以切不要受眼前生活的欺骗！不要凭借<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>[注3]而让魔鬼欺骗了你们。</div></div><div class="tcard"><div class="meta"><span>第 31:33</span><span class="name">仝道章</span></div><div class="text">人类啊! 你们要敬畏你们的主，并畏惧(那即将降临的)日子，那时父亲不能对他的儿子有任何益处，儿子也不能对他的父亲有任何裨益。的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的诺言是真实的，所以不要让今世生活蒙骗了你们，也不要让骗徒借<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>来蒙骗你们。</div></div><div class="tcard"><div class="meta"><span>第 31:33</span><span class="name">王静斋</span></div><div class="text">众人哪，你们当畏惧养主；你们当骇怕那么一日。父不能替子，子不能替父料理一事。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的约是切实的。你们不要被今生所骗，也不要被欺骗的借着<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>来欺骗。</div></div><div class="tcard"><div class="meta"><span>第 31:33</span><span class="name">马坚</span></div><div class="text">人们啊！你们应当敬畏你们的主，你们应当畏惧那一日，父亲对于儿子毫无裨益，儿子对于父亲也毫无裨益。真主的应许，确是真实的，绝不要让今世的生活欺骗你们，绝不要让猾贼以真主的容忍欺骗你们。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 31:34</span><span class="name">马仲刚</span></div><div class="text">唯<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>知道复活的时间，他降下雨水，他知道子宫中所怀的[胎儿及其性别]；任何人都不知道自己明天将做什么，任何人都不知道自己将死于何地[注]。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是全知的，彻知的。</div></div><div class="tcard"><div class="meta"><span>第 31:34</span><span class="name">马金鹏</span></div><div class="text">的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>那里有末日的知识[注1]，他降下甘霖[注2]，他知道子宫中的东西[注3]，每个人不知道他明天干什么[注4]，每个人不知道他将死在何地[注5]。的确，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是全知的、洞悉的。</div></div><div class="tcard"><div class="meta"><span>第 31:34</span><span class="name">仝道章</span></div><div class="text">时间的知识是踉<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>在一起的，(只有<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>知道。)是他降雨和知道在子宫中的是什么。没有人会知道他自己在明天将做些什么。也没有人知道他自己将死在何处，<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是全知的、熟悉(万事万物)的。</div></div><div class="tcard"><div class="meta"><span>第 31:34</span><span class="name">王静斋</span></div><div class="text">的确，惟<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>自知复生；他降下雨来，他知道子宫以内的。人不知道自己在明天要作何事；人不知道自己将死在什么地方。<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>确是深知的，尽知的。</div></div><div class="tcard"><div class="meta"><span>第 31:34</span><span class="name">马坚</span></div><div class="text">在真主那里，的确有关于复活时的知识，他常降及时雨，他知道胎儿的（性别）；而任何人都不知道自己明日将做甚么事，任何人都不知道自己将死在甚么地方。真主确是全知的，确是彻知的。</div></div></div></div>
+    <details class="rag-container" style="margin:20px; padding:15px; background:var(--bg-card, #f9f9f9); border:1px solid var(--border, #eee); border-radius:8px;">
+        <summary style="cursor:pointer; font-weight:bold; color:var(--primary, #2A5D34);">[+] 打开 AI & RAG 语义索引库 (LLM Dataset Context)</summary>
+        <div class="rag-content" style="margin-top:15px; font-size:0.9em; line-height:1.6;">
+            <h2>《古兰经》第31章（鲁格曼）中文翻译 RAG 语义索引库</h2>
+<article><h3>User Prompt: 提问：古兰经第 31 章第 1 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第1节的翻译如下：<br/>马仲刚: 艾利夫，俩目，米目[阿拉伯语三个字母的音译，唯安拉最知道其意]。<br/>马金鹏: 艾立夫，俩姆，米姆[注]。<br/>仝道章: 阿立甫、俩目、敏目。<br/>王静斋: （阿里甫、俩模、密默。）<br/>马坚: 艾列弗，俩目，米目。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 2 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第2节的翻译如下：<br/>马仲刚: 这些是智慧的经典[《古兰经》]的经文，<br/>马金鹏: 这是[注1]奥妙经典[注2]的迹象。<br/>仝道章: 这是智慧的经典的章节，<br/>王静斋: 这是固典的文词。<br/>马坚: 这些是有智慧的经典的节文，</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 3 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第3节的翻译如下：<br/>马仲刚: 是对行善者的引导和慈悯。<br/>马金鹏: [是][注]对行善者们的引导和慈悯。<br/>仝道章: 是对行善的人的引导和慈悯。<br/>王静斋: 引导与慈惠一般为善的人；<br/>马坚: 是行善者的向导和恩惠。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 4 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第4节的翻译如下：<br/>马仲刚: 他们[行善者]谨守拜功，完纳天课，笃信后世[注]。<br/>马金鹏: 那些履行拜功、缴纳天课的，他们对末日是确信的[注]。<br/>仝道章: 那些。人是守拜功、纳天课，并坚信后世的人。<br/>王静斋: 就是一般立拜功，施天课，并且坚信后世的。<br/>马坚: 行善者，谨守拜功，完纳天课，且确信后世。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 5 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第5节的翻译如下：<br/>马仲刚: 这些人遵行从他们的主启示的正道，这些人确是成功者。<br/>马金鹏: 这些人是在他们养主之正道上的，这些人他们是得救的。<br/>仝道章: 这些(人)遵从他们的主的引导，这些人是成功的(人)。<br/>王静斋: 他们是守其养主正道的，这般人均是得意的，<br/>马坚: 这等人，是遵守他们的主的正道的，这等人确是成功的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 6 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第6节的翻译如下：<br/>马仲刚: 人们中有人[以宝贵的时间]换取无聊之言[如唱歌和音乐等]，以便无知地使人们背离安拉之道，并把它[安拉之道]当笑柄。[复活日]这些人[在火狱里]必受凌辱的刑罚。<br/>马金鹏: 人们中有那买得嬉言[注1]的，以便无知地迷失安拉之路[注2]，并把它当作嘲讽[注3]。这些人，他们应受卑刑[注4]。<br/>仝道章: 人群中有些没有(天经)知识的人交换无稽的闲谈，以便(把人们)由安拉的道上误导，并拿它(天经)当作笑柄。这些人得到的是羞辱的刑罚。<br/>王静斋: 人类中有的接受戏言，而致无知识地诱人错过安拉的道，并以它为可戏的；这般人应遭辱刑。<br/>马坚: 有人购买无谓的谈话，以便他无知无识地使人背离真主的正道，而且把它当作笑柄。这等人，将受凌辱的刑罚。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 7 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第7节的翻译如下：<br/>马仲刚: 当有人向他诵读我的启示时，他就傲慢[注]地避开，好像没有听见一样，好像他的耳是聋钝的，所以，你[穆圣]当向他宣布[他必受]痛苦的刑罚。<br/>马金鹏: 我的迹象[注1]被读给他时，他便高傲地背弃，像没听到似的，像他的两耳中有些沉重似的。所以你用痛刑给他报喜[注2]吧！<br/>仝道章: 当有人对他诵读我的启示时，他就高傲地避开了，好象他不曾听到它们，好象他的两耳都聋了，所以你要对他宣告一个痛苦的刑罚的消息。<br/>王静斋: 一旦有人把我的表征读给他了，他就高傲着转去，好像他未听到，好像他的两耳重听。你就以痛刑报告他吧，<br/>马坚: 有人对他宣读我的迹象的时候，他自大地退避，彷佛没有听见一样，彷佛他的两耳重听一样。你以痛苦的刑罚，向他报喜吧。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 8 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第8节的翻译如下：<br/>马仲刚: 凡信仰并行善者，他们将获得恩泽的乐园，<br/>马金鹏: 的确，那些归信，并干善功的人们，则享受恩典天堂[注]。<br/>仝道章: 那些信仰并做善事的人，他们得到的是快乐的天园，<br/>王静斋: 归信并作善举的人，必得到乐园，永居其中。<br/>马坚: 信道而且行善者，必将享受极乐园，</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 9 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第9节的翻译如下：<br/>马仲刚: 永居其中。安拉的诺言是真实的。他是全能的，最睿智的。<br/>马金鹏: 永居其中，[作为]安拉的真实许约。他是有力的、巧安排的。<br/>仝道章: 他们将住在其中。安拉的诺言是真实的，他是大能的、大智的。<br/>王静斋: 安拉决定的约。他是优胜的，明哲的。<br/>马坚: 而永居其中。这是真主的真实的应许，他确是万能的，确是至睿的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 10 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第10节的翻译如下：<br/>马仲刚: 他用你们看不见的柱子建造诸天，并在大地上稳固地安置群山，以免你们随大地而摇荡，且在大地上散布各种动物。我从天空降下雨水，借此而生长出各种美丽的植物。<br/>马金鹏: 他用你们看不到的柱子造化了天。在地上投下了防止带着你们而震动的山岳，在地上散布了各种动物。他从天上降下了水，于是他在其中[注1]让各类美好的[注2]生长。<br/>仝道章: 你们可以看到，他不需支柱造化诸天，他在大地上放置稳固的山岳，以免它跟你们一起动摇。他并在它上面散布各种动物。我也从天空降下雨来，并使各种优良的生物在其中生长。<br/>王静斋: 他造化诸天，并无你们看见的楹柱。他把定山置在地上，以免它摇动你们。他把各样动物散播在地上；并由上空降下水来，而用它发长各色美丽的。<br/>马坚: 他创造诸天，而不用你们所能见的支柱；他在大地上安置许多山岳，以免大地动摇，使你们不安；他在大地上散布各种动物。他从云中降下雨水，而在大地上滋生各种优良的植物。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 11 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第11节的翻译如下：<br/>马仲刚: 这就是安拉的创造。你们告诉我吧！你们舍他[安拉]而崇拜的[偶像]究竟能创造什么呢？不，不义者是在明显的迷误中。<br/>马金鹏: 这就是安拉的造化。你们可让我看看：他以外的那些[注1]造化了些什么？而亏害者们[注2]，是在明明的迷歧之中。<br/>仝道章: 这就是安拉的造化。你们现在能显示给我(你们)在他之外(所崇拜的)其它的(伪神)曾经造化了些什么吗?没有，作恶的人是在明显的错误当中。<br/>王静斋: 这是安拉的造化；你们告诉我：除他以外的那一切造化什么了? 背义的人实是在显著的迷误中。<br/>马坚: 这是真主所创造的，你们指示我吧，你们舍真主而崇拜的（偶像〕究竟创造了甚么呢？不然，不义的人是在明显的迷误中的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 12 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第12节的翻译如下：<br/>马仲刚: 我确已赐给鲁格曼智慧[和宗教知识]。[我说]：“你当感谢安拉[的恩惠]。”谁感恩，谁自受其益；谁忘恩负义，[谁自受其害]。安拉确是无所求的，受赞颂的。<br/>马金鹏: 我确已把哲理[注1]给了鲁格曼[注2]：“你要感谢安拉！凡感谢者，则是为自己而感谢[注3]。凡隐昧者，则安拉是无求的[注4]，受赞的。”<br/>仝道章: 我曾赐给陆格曼智慧，(说道：)“你要对安拉感激。”任何人知感是对他自己(有益)，倘若任何人忘恩负义，安拉确是无求的、受一切赞美的。<br/>王静斋: 我确曾赐给鲁格曼卓识了，（说：）你当感念安拉，感念的人，那就是利其自身作感念。忘恩的人，安拉一定是无求的，受赞的。那时候，<br/>马坚: 我确已把智慧赏赐鲁格曼，（我说）：「你当感谢真主。感谢的人，只为自己而感谢，孤负的人，须知真主确是无求的，确是可颂的。」</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 13 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第13节的翻译如下：<br/>马仲刚: 当时，鲁格曼劝戒他的儿子说：“我的儿子啊！你不要给安拉设置伙伴，给安拉设置伙伴确是大逆不道[注]。”<br/>马金鹏: 当时，鲁格曼规劝他的儿子[注1]说：“哎！我的孩子呀！你不要举伴安拉！的确，举伴是巨大的亏害[注2]。”<br/>仝道章: 那时陆格曼劝诫他的儿子道：“我的儿啊! 不要为安拉添附伙伴。信奉多神确实是严重的罪恶。”<br/>王静斋: 鲁格曼劝他儿子说：（我的小儿呀，你不要给安拉拟匹偶；举匹偶实是一大背义。<br/>马坚: 当日，鲁格曼曾教训他的儿子说：「我的小子啊！你不要以任何物配主。以物配主，确是大逆不道的。」</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 14 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第14节的翻译如下：<br/>马仲刚: 我已命人当孝敬父母[注]。他的母亲弱上加弱艰难地怀他，他的断奶是在两年内。[我说]：“你当感谢我及你的父母，唯我[安拉]这里是最后的归宿。<br/>马金鹏: 我嘱咐人要[孝]其双亲，他母亲弱上加弱[注]地怀了他，他的离开是在两周年里。“你要感谢我和你的双亲！归处是至我。<br/>仝道章: 我已命人对他的父母孝顺。他的母亲在疲弱中孕育着他，他又需两年，断奶。(我说：)“你们要对我和你的父母知恩感德，你们的归宿是我。<br/>王静斋: 我嘱告世人孝他父母——其母备极疲乏着怀他；他的离乳是在二年。你当感念我和你的父母。归惟归于我。<br/>马坚: 我曾命人孝敬父母——他母亲弱上加弱地怀着他，他的断乳，是在两年之中——（我说）：「你应当感谢我和你的父母；惟我是最后的归宿。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 15 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第15节的翻译如下：<br/>马仲刚: 假如他俩强迫你用你所不知道的给我设置伙伴，那么，你就不要服从他俩，但在今世要善待他俩。你当遵行归信我的人的道，然后，你们都将归到我这里来，我将把你们曾经所做的告诉你们。”<br/>马金鹏: 如他俩迫使你用你所不知道的[注]举伴我时，你不要顺从他俩，你要在尘世中同他俩好好相处。你要跟从那要归至我者的路！后来你们归至我，则我把你们的作为告诉你们。”<br/>仝道章: “倘若他们勉强你把你所不知道的(东西)添附作我的伙伴，你不要服从他们。不过在今世仍要(关怀地)侍奉他们，并追随归依我的人的道。你们终将回到我这里，我将会告诉你们所做过的一切。”<br/>王静斋: 如果他俩强你把自所不知的给我作匹偶，你不要服从他俩。在今世你要善待父母；你要追随那归向我的人的道路。而后你们惟归于我，我再把你们所作过的宣告你们——<br/>马坚: 如果他俩勒令你以你所不知道的东西配我，那么，你不要服从他俩，在今世，你应当依礼义而奉事他俩，你应当遵守归依我者的道路；惟我是你们的归宿，我要把你们的行为告诉你们。」</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 16 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第16节的翻译如下：<br/>马仲刚: [鲁格曼说]：“我的儿子啊！善恶的行为，虽小如一粒芥子的重量，即使它隐藏在岩石中，或在天上，或在地下，安拉也要把它显示出来。安拉确是最敏锐的，彻知的。<br/>马金鹏: [鲁格曼说)：“哎！我的孩子呀！的确，若它[注1]是一粒芥籽重，而它是在磐石中，或在天上，或在地下，安拉都把它拿来，的确，安拉是仔细[注2]的，洞知的。<br/>仝道章: “我的儿啊！”(陆格曼说，)“即使一粒芥子的重量， 即使它是(藏)在岩石中，或是藏在天地间的(任何所在)，安拉都会把它显示出来。因为安拉是深知秘奥的、洞悉的。<br/>王静斋: 我的小儿呀！差错若是芥菜粒重，它是在盘石里，或在天，或在地，安拉即将拿它来。安拉是妙知的，尽知的。<br/>马坚: 鲁格曼说：「我的小子啊！善恶的行为，虽小如芥子，隐藏在盘石里，或在天空中，或在地底下，真主都要显示它。真主确是明察的，确是彻知的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 17 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第17节的翻译如下：<br/>马仲刚: 我的儿子啊！你当谨守拜功，劝人行善，止人作恶，忍受你所遭遇的不幸。这确是[安拉颁布的]一些命令。<br/>马金鹏: 哎！我的孩子呀！要履行拜功！要命人行善！要止人干歹！对所遭遇的[注]要忍耐！的确，那是已定的事。<br/>仝道章: “我的儿啊!你要保持礼拜，劝人行善和禁止人为非作歹，并对任何降临到你的(不幸)坚忍。这些的确都是(需要)很大决心的事。<br/>王静斋: 我的小儿呀，你当立拜功，当命以合法的，禁止非理的，并忍受自所遭遇的。这确属于意志坚决的事情。<br/>马坚: 我的小子啊！你应当谨守拜功，应当劝善戒恶，应当忍受患难，这确是应该决心做的事情。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 18 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第18节的翻译如下：<br/>马仲刚: 你不要傲视人们，不要傲慢地在大地上行走。安拉绝不喜欢任何自大自夸者。<br/>马金鹏: 你不要使你的脸腮背向人们[注]！你不要在地上傲慢行走！的确，安拉不喜每个傲慢夸耀而行者。<br/>仝道章: “你不要对人们(骄傲地)掉转你的脸，也不要在地上横行霸道。因为安拉不喜爱任何高傲的大言不惭的人。<br/>王静斋: 你不要对人骄傲：你不要在地上狂行：安拉实不喜骄傲自矜的人。<br/>马坚: 你不要为藐视众人而转脸，不要洋洋得意地在大地上行走，真主确是不喜爱一切傲慢者、矜夸者的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 19 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第19节的翻译如下：<br/>马仲刚: 你当步伐稳健[显示不傲慢]，当压低你的声音，因为最讨厌的声音确是驴的叫声。”<br/>马金鹏: 你在步行时要端正[注]，要低声！的确，最丑的声音，确是驴的叫声。”<br/>仝道章: “你要举止雍容，言语温文。的确一切声音中最粗鲁的声音就是驴叫。”<br/>王静斋: 你在步行上要得守中： 你要低声。的确，声音最可憎的实是驴声。<br/>马坚: 你应当节制你的步伐，你应当抑制你的声音；最讨厌的声音，确是驴子的声音。」</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 20 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第20节的翻译如下：<br/>马仲刚: [人们啊！]难道你们不知道吗？安拉使天地间的一切为你们服务，并把看得见之物[如树木、动物、雨水、日月等]和看不见之物[如信仰安拉和后世等]的恩惠广施给你们。但人们中仍有人争论安拉，他既无知识，也未受引导，且没有一部光明的经典。<br/>马金鹏: 你们岂不知道[注1]？的确，安拉为你们控制了天与地中的，他把那表面的和内部的恩典全给了你们。人们中[注2]却有那毫无知识、正道与没有明明的经典的人而争论安拉[之事]的。<br/>仝道章: 你们没看到安拉已使天地间的万物都驯服于你们，并在明中或暗中大量地供给你们他的恩赏吗?但是在人们当中仍有一些没有知识、没有引导和没有一本启发他们的经典的人在争论安拉。<br/>王静斋: 你们岂未看见：安拉为你们降服在天在地的，并把自己内外的恩典完全施给你们吗?有的人无知识，无引导，也无光明的经典着，因为安拉起辩论。<br/>马坚: 难道你们不知道吗？真主曾为你们制服天地间的一切，他博施你们表里的恩惠。有人争论真主的德性，但他们既无知识，又无向导，且无灿烂的经典。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 21 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第21节的翻译如下：<br/>马仲刚: 当有人对他们说：“你们来遵行安拉所降示的经典[《古兰经》]吧！”他们就说：“不，我们只遵行我们发现我们的祖先所遵行的遗教。”要是恶魔召唤他们去受火狱的刑罚，[难道他们也要遵行他们的祖先的遗教吗？]<br/>马金鹏: 如果有人对他们说：“你们跟从安拉所降的吧！”他们说：“我们只跟从我们所发现我们的父辈们所跟从的[注]。”即使魔鬼把他们唤到烈火之刑吗？<br/>仝道章: 如果有人告诉他们“追随安拉已经降下的(经典或启示)”时，他们说：“不，我们遵循我们祖先(所遵循)的。”(什么!)甚至连魔鬼召唤他们到烈焰的刑罚中(也要遵循)吗?<br/>王静斋: 一旦有人对他们说：（你们追随安拉降下的吧！）他们就说：（不，我们追随曾见自己列祖所守的。）设若恶魔把他们唤至火刑，（他们也肯追随吗?）<br/>马坚: 如果有人对他们说：「你们应当遵守真主所降示的（经典）。」他们就说：「不然，我们遵守我们祖先的遗教。」即使恶魔叫他们去受烈火的刑罚，（他们仍要遵循）吗？</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 22 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第22节的翻译如下：<br/>马仲刚: 谁彻底归顺安拉，且是行善者，谁确已握住了最坚固的支柱[注]。万事最终都将归到安拉那里去[受审]。<br/>马金鹏: 凡使其面容顺从安拉[注1]，而他是行善者[注2]，则他确已把握住坚固的环节[注3]，事物的归结[注4]是至安拉。<br/>仝道章: 谁全心全意归信安拉，并且是一个行善的人，他的确已抓住了最牢固的手把， 一切事务的结局都归于安拉。<br/>王静斋: 那在为善着倾向安拉的人，确已抓住至坚固的把柄了。诸事的归宿惟归于安拉。<br/>马坚: 诚心归顺真主而且常行善事者，确已把握住坚固的把柄。万事的结局，只归真主。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 23 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第23节的翻译如下：<br/>马仲刚: 至于不信仰者，绝不要让他的不信使你[穆圣]忧愁。他们都将归到我这里来，我将把他们曾经所做的告诉他们。安拉的确全知[人类]胸中的一切。<br/>马金鹏: 凡隐昧者，则他的隐昧不要使你担忧[注]，他们的归处是至我。我把他们所干的告诉他们。的确，安拉是全知有心胸者的。<br/>仝道章: 倘若任何人不信，莫让他的不信使你忧伤。他们的归宿是我，那时我将把他们所做过的(行为)告诉他们。安拉熟知(人们)心中的一切。<br/>王静斋: 不信的人，其不信可莫贻你忧虑。他们惟独返回于我而后我把他们所干过的宣告给他们。安拉深知胸中所怀的。<br/>马坚: 不信道者，你不要为他们的不信而忧愁，他们只归于我，我要把他们的行为告诉他们。真主确是全知他们的胸怀的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 24 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第24节的翻译如下：<br/>马仲刚: 我使他们暂时享乐，然后，我将迫使他们去受酷刑。<br/>马金鹏: 我使他们稍稍享受[注]，以后，迫使他们至严厉的处罚。<br/>仝道章: 我赐给他们(今世)片刻的欢乐(享受)，然后我将驱使他们去受重刑。<br/>王静斋: 我教他们享受少时，而后我把他们迫至重刑。<br/>马坚: 我使他们稍稍享受幸福，然后，强迫他们去受严厉的刑罚。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 25 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第25节的翻译如下：<br/>马仲刚: 假如你问他们：“谁创造了天地？”他们必说：“安拉。”你[对他们]说：“一切赞颂，全归安拉。”不，他们大多数人并不知道。<br/>马金鹏: 你若是询问他们：“谁造化了天和地呀？”他们必定说：“是安拉！”你说：“万赞归安拉[注]！”而他们的大多是不知道的。<br/>仝道章: 如果你问他们：“是谁造化了天地?”他们一定会说：“安拉。”你说：“赞美安拉!”但是他们大多不知道。<br/>王静斋: 你若问他们：（谁造化了天地?）他们必说：（安拉。）你说：（赞颂安拉。）不然，他们的多半不知道。<br/>马坚: 如果你问他们：「谁创造了大地？」他们必定说：「真主。」你说：「一切赞颂，全归真主！」不然，他们大半不知道。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 26 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第26节的翻译如下：<br/>马仲刚: 天地间的一切都是安拉的。安拉确是无所求的，受赞颂的。<br/>马金鹏: 天与地中的归安拉，的确，安拉是无求的、受赞的。<br/>仝道章: 天地间的万物都属于安拉。安拉确实是无求的、最应受赞美的。<br/>王静斋: 天地间所有的惟独安拉执掌。安拉实是无求的，受赞的。<br/>马坚: 天地万物只是真主的，真主确是无求的，确是可颂的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 27 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第27节的翻译如下：<br/>马仲刚: 假如用大地上所有的树做成笔，以海水做墨汁，并且再加上七个海的海水做墨汁，也不能写尽安拉的语言[注]。安拉确是全能的，最睿智的。<br/>马金鹏: 假若地上的树是笔，而海和其后的七个海供给[墨汁][注1]，安拉的话是无穷尽的[注2]。的确，安拉是大能动、巧妙的。<br/>仝道章: 如果地上所有的树都是笔，海洋都是墨水，和再给它加上七大洋的(供应)，安拉的话也不能被写完。安拉是大能的、大智的。<br/>王静斋: 设若地上的树是些个笔，一海之外另有七海助长它，安拉的话未尝尽没。安拉实是优胜的，明哲的。<br/>马坚: 假若用大地上所有的树来制成笔，用海水作墨汁，再加上七海的墨汁，终不能写尽真主的言语。真主确是万能的，确是至睿的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 28 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第28节的翻译如下：<br/>马仲刚: 创造你们和复活你们，犹如[创造和复活]一个人那样[简单]。安拉确是全闻的，全视的。<br/>马金鹏: 你们的造化和你们的复活[注1]，只是像一个人[注2]。的确，安拉是全听的、全观的。<br/>仝道章: 你们的造化，你们的复活，只不过和(造化和复活)一个人一样。安拉是能听的、能见的。<br/>王静斋: 造化你们和复活你们，只像（造化）一个人。安拉实是能听的，能见的。<br/>马坚: 创造你们和复活你们，只像创造一个人和复活一个人一祥。真主确是全聪的，确是全明的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 29 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第29节的翻译如下：<br/>马仲刚: 难道你没有看见吗？安拉使黑夜进入白昼，使白昼进入黑夜，并使日月[为你们]服务，每个都按规定的程序运行。凡是你们所做的，安拉确是彻知的。<br/>马金鹏: 你岂未见[注1]？的确，安拉使黑夜进入白昼中，使白昼进入黑夜中。他控制了太阳和月亮，每个都运行至定期[注2]。而安拉是洞悉你们的所作所为的。<br/>仝道章: 你没看见安拉使夜进入昼中，和他使昼进入夜中；他驯伏日月，使它们各自循其轨道运行，直到规定的时期；和安拉是熟知你们所做的吗?<br/>王静斋: 你岂未看见安拉纳夜于昼，纳昼于夜，并降服了日月，每一个行至一定的时期，且（未看见）安拉尽知你们的作为吗?<br/>马坚: 难道你不知道吗？真主使黑夜侵入白昼，使白昼侵入黑夜，并制服日月，各自运行，至一定期。真主是彻知你们的行为的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 30 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第30节的翻译如下：<br/>马仲刚: 这是因为，安拉确是真宰，他们舍他而祈求的确是虚妄的。安拉确是至高无上的，至大的。<br/>马金鹏: 那是因为安拉是真实的，而他们于他以外所乞求[注]的是虚伪的。的确，安拉是崇高的、伟大的。<br/>仝道章: 这因为安拉是真实的，和因为你们在他之外所祈求的都是虚假的，和因为安拉是至高的、至大的。<br/>王静斋: 这是由于安拉就是真的，他们撇开他所拜的是假的，安拉就是尊大玄高的。<br/>马坚: 那是因为真主确是真实的；他们舍他而祈祷的，确是虚伪的；真主确是至尊的，确是至大的。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 31 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第31节的翻译如下：<br/>马仲刚: 难道你没有看见吗？船舶依安拉的恩惠航行于大海中，以便他向你们显示他的一些迹象。对每个坚忍者和感恩者，此中确有许多迹象。<br/>马金鹏: 你岂未见船只吗？它凭借安拉的恩典[注1]行驶在海洋里，以便让你们看到他的迹象。的确，那里面有对每个忍耐者和感谢者的迹象[注2]。<br/>仝道章: 你没看见船舶藉安拉的慈悯航行海洋，以便他能对你们显示他的迹象吗?对于坚忍和知感的人，在这当中确有种种迹象。<br/>王静斋: 你岂未见船在海中借着安拉的恩惠航行，为的是教你们看见他的一部分表征?此中对于一切忍耐与感恩的人确含有种种表征。<br/>马坚: 难道你不知道吗？船舶在海中带着真主的恩惠而航行，以便他指示你们他的一部分迹象，对于每个坚忍的、感谢的人，此中确有许多迹象。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 32 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第32节的翻译如下：<br/>马仲刚: 当山一般的波涛笼罩着他们时，他们就虔诚敬意地祈求安拉。但当他使他们平安登陆时，他们中有些人就采取折中之道[介于信仰与不信仰之间]。唯每个背信弃义者和忘恩负义者才会否认我的迹象。<br/>马金鹏: 在像山岳般的波浪笼罩他们时，他们便虔诚地乞求安拉。当他们得救登陆时，则他们中有折中行事者[注]，不信我的迹象的，只是每个奸诈、隐昧者。<br/>仝道章: 当浪象天篷似地盖着他们时，他们呼求安拉，对他全心全意地信仰。但是当他把他们救上陆地时，他们当中就有千些人(在真与伪之间)采取折中之道了。除了(那些)离经叛道，忘恩负义的(人)之外，没有人不信我的迹象!<br/>王静斋: 像阴影的浪涛遮覆他们的时候，他们就呼求安拉对他竭诚顺服着；当他解救他们达到陆地的时候，他们内里有持中的。不信我表征的，只是一切失信忘恩的人。<br/>马坚: 当山岳般的波涛笼罩他们的时候，他们虔诚地祈祷真主，当他使他们平安登陆的时候，他们中有中和的人；只有每个狡猾的、孤恩的人，否认我的迹象。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 33 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第33节的翻译如下：<br/>马仲刚: 人们啊！你们当敬畏你们的主。你们当畏惧那一天，父亲对儿子毫无益处，儿子对父亲也毫无益处。安拉的诺言确是真实的，所以，不要让今世生活欺骗你们，不要让骗贼[恶魔]借安拉的名义欺骗你们。<br/>马金鹏: 哎人们啊！要敬畏你们的养主！要骇怕父亲对儿子毫无益处，和儿子对父亲毫无裨益的那天[注1]！的确，安拉的许约[注2]是真实的，所以切不要受眼前生活的欺骗！不要凭借安拉[注3]而让魔鬼欺骗了你们。<br/>仝道章: 人类啊! 你们要敬畏你们的主，并畏惧(那即将降临的)日子，那时父亲不能对他的儿子有任何益处，儿子也不能对他的父亲有任何裨益。的确，安拉的诺言是真实的，所以不要让今世生活蒙骗了你们，也不要让骗徒借安拉来蒙骗你们。<br/>王静斋: 众人哪，你们当畏惧养主；你们当骇怕那么一日。父不能替子，子不能替父料理一事。安拉的约是切实的。你们不要被今生所骗，也不要被欺骗的借着安拉来欺骗。<br/>马坚: 人们啊！你们应当敬畏你们的主，你们应当畏惧那一日，父亲对于儿子毫无裨益，儿子对于父亲也毫无裨益。真主的应许，确是真实的，绝不要让今世的生活欺骗你们，绝不要让猾贼以真主的容忍欺骗你们。</p></article><article><h3>User Prompt: 提问：古兰经第 31 章第 34 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第31章（鲁格曼）第34节的翻译如下：<br/>马仲刚: 唯安拉知道复活的时间，他降下雨水，他知道子宫中所怀的[胎儿及其性别]；任何人都不知道自己明天将做什么，任何人都不知道自己将死于何地[注]。安拉确是全知的，彻知的。<br/>马金鹏: 的确，安拉那里有末日的知识[注1]，他降下甘霖[注2]，他知道子宫中的东西[注3]，每个人不知道他明天干什么[注4]，每个人不知道他将死在何地[注5]。的确，安拉是全知的、洞悉的。<br/>仝道章: 时间的知识是踉安拉在一起的，(只有安拉知道。)是他降雨和知道在子宫中的是什么。没有人会知道他自己在明天将做些什么。也没有人知道他自己将死在何处，安拉确是全知的、熟悉(万事万物)的。<br/>王静斋: 的确，惟安拉自知复生；他降下雨来，他知道子宫以内的。人不知道自己在明天要作何事；人不知道自己将死在什么地方。安拉确是深知的，尽知的。<br/>马坚: 在真主那里，的确有关于复活时的知识，他常降及时雨，他知道胎儿的（性别）；而任何人都不知道自己明日将做甚么事，任何人都不知道自己将死在甚么地方。真主确是全知的，确是彻知的。</p></article>
+        </div>
+    </details>
+    
+    </main>
+  </div>
+
+  <div class="loading">
+    <div class="spinner">加载中…</div>
+  </div>
+
+  <!-- Data Scripts (Offline Compatible) -->
+  <script src="../sura-names.js"></script>
+
+  <!-- Translator Data: 5 Versions -->
+  <script src="../data/majian.data.js"></script>
+  <script src="../data/mazhonggang.data.js"></script>
+  <script src="../data/majinpeng.data.js"></script>
+  <script src="../data/tongdaozhang.data.js"></script>
+  <script src="../data/wangjingzhai.data.js"></script>
+
+  <!-- Application Logic -->
+  <script src="../assets/app.js"></script>
+<script>window.addEventListener('DOMContentLoaded', () => { window.location.hash = '#31'; });</script>
+</body>
+
+</html>

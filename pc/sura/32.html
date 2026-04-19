@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    // Device Detection & Redirection
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768) {
+      // Prevent redirect loop if already on mobile (though this is the PC page)
+      if (window.location.href.indexOf("mobile") === -1) {
+        return; /* SSR bypass */;
+      }
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>第 32 章：叩头(赛直德) - 古兰经中文翻译搜索工具</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+
+  <!-- SEO & Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://salaamalykum.com/cn/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "古兰经中文",
+            "item": "https://salaamalykum.com/cn/qurancn/pc/"
+          }]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "古兰经中文翻译搜索工具 PC版",
+          "alternateName": "Quran CN Search Offline PC",
+          "applicationCategory": "ReferenceApplication",
+          "operatingSystem": "Web Browser",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+          "description": "专业的古兰经全文检索工具，包含114章完整经文与5个中文翻译版本。支持多关键词布尔搜索、正则表达式匹配以及离线阅读功能。",
+          "author": { "@type": "Organization", "name": "Salaam Alykum" }
+        }
+      ]
+    }
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 1 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 艾利夫，俩目，米目[阿拉伯语三个字母的音译，唯安拉最知道其意]。\n马金鹏: 艾立夫，俩姆，米姆[注]。\n仝道章: 阿立甫、俩目、敏目。\n王静斋: （阿里甫、俩模、密默。）\n马坚: 艾列弗，俩目，米目。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 2 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 这部经典[《古兰经》]是从众世界的主[安拉]降示的，其中确实无疑。\n马金鹏: 其中无疑的经典[注]，是降自万世之养主的。\n仝道章: 这本确实无疑的经典是由众世界的主颁降的。\n王静斋: 降下无可疑的经典，是从调养众世界的主上。\n马坚: （这）是从全世界的主降示的经典，其中毫无疑义。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 3 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 难道他们要说：“《古兰经》是他[穆圣]伪造的吗？”不，《古兰经》是从你[穆圣]的主降示的真理，以便你警告在你之前没有任何警告者到达过的民众，以便他们遵行正道。\n马金鹏: 而他们[注1]却说是他[注2]编造的。它确是来自你养主的真理，以便你[注3]警告你以前没有一位警告者来至[注4]他们的族人。愿他们得正道。\n仝道章: 可是他们却说：“是他伪造它的吧?”不是的，它是来自你的主的真理，以便你能警告一群在你以前没有警告者到达过的人民，也许他们能够获得引导。\n王静斋: 不然，他们说：（他造作了它）吗? 不然，那是出自养主的真理，好教你警告一伙在你以前未得到警告的人，以便他们得正道。\n马坚: 他们说：「他捏造它吗？」不然！它是从你的主降示的真理，以便你警告在你之前没有任何警告者来临过的一群民众，以便他们遵循正道。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 4 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 是安拉在六日内创造了天地万物，然后升上宝座。除他外，你们绝没有任何保护者和求情者。难道你们还不接受教诲吗？\n马金鹏: 安拉是那在六天内[注1]造化了天与地和在两者之间的。后来，他升上阿尔史，你们在他以外没有一位挚友[注2]。没有一位说情者[注3]。你们还不思索吗？\n仝道章: 安拉在六天中造化了天地， 以及其间的万物，然后登上(权威的)宝座。在他之外，你们没有保护者或求情者，你们难道还不纪念(他)吗?\n王静斋: 安拉在六日造化了天地万有，而后操纵「阿勒世」。在你们除他以外无一爱护的，也无一告赦的。你们怎不受劝呢?\n马坚: 真主曾在六日内创造天地万物，然后，升上宝座，除他外，你们没有任何监护者和说情者。你们怎么不记念呢？"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 5 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他处理自天至地的事务，然后，那些事务将在一日内上升到他那里。那一日的长度，是你们[在尘世]所计算的一千年。\n马金鹏: 他从天上安排事情至地上[注1]，后来，它[注2]在一日——你们所计算的一千年——之内再回至他[注3]，\n仝道章: 他规划从诸天到大地的(一切)事务。然后，在(某)一天当中(一切的事务)都将上升到他(那里)。这一天的长度照你们的计算是一千年。\n王静斋: 他治理事情，自天至地；而后那事件在它的限度是你们所计算的一千年的那一天升至真主。\n马坚: 他治理自天至地的事物，然后那事物在一日之内上升到他那里，那一日的长度，是你们所计算的一千年。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 6 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 这是全知一切看不见之物[注]和看得见之物的主[安拉]，[他]是全能的，是特慈的。\n马金鹏: 那是未见和可见的深知者、有力者、特慈者。\n仝道章: 这就是深知隐秘的(不可见的)、公开的(可见的)、大能的、大慈的主。\n王静斋: 这是知目不能见的与显见的优胜特慈的主。\n马坚: 那是全知幽明的、万能的、至慈的主。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 7 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他完善他所创造的万物，他最初用泥土创造了人。\n马金鹏: 是那使万物的造化美好的，他从土上创造了人[注]。\n仝道章: 他使他所造化的每一件事物美好，他以泥土开始造人。\n王静斋: 那真主把自所造化的每一物造成完美的。他由泥上开始造化人类，\n马坚: 他精制他所创造的万物，他最初用泥土创造人。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 8 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 然后，他用无用的精液的精华创造他的后裔。\n马金鹏: 后来，从血块，从卑贱的水上创造了他的后裔[注]。\n仝道章: 然后，他(主)以一滴不受重视的液体造化他的后裔。\n王静斋: 并由微贱的清水上造化它的子孙。\n马坚: 然后用贱水的精华创造他的子孙。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 9 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 然后，他[安拉]匀称地成型他[人]，并把灵魂吹入他的体内。他为你们创造了耳[听觉]目[视觉]心[思维]，但你们很少感恩。\n马金鹏: 后来，他使他[注1]端正，把他的鲁哈吹入其中[注2]，为你们造化了听觉、视觉和心，你们却很少感谢。\n仝道章: 然后他(按照应有的比例)形成他，并把他(主)的灵吹进他的当中，他又给你们听觉、视觉和感觉(的官能)，而你们却很少感谢!\n王静斋: 主且造它为齐整的，为它吹入灵魂。主为你们造化耳、眼、心，你们绝少感念。\n马坚: 然后使他健全，并将他的精神吹在他的身体中，又为你们创造耳目心灵。你们很少感谢。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 10 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们说：“当我们[死后]消失在地下时，难道我们真的还要被复活成一个新的生命吗？”不，他们在否认[后世]与他们的主相会[注]。\n马金鹏: 他们[注1]说：“当我们消失在地里时，我们是在新的造化中[注2]吗？”而他们对与他们的养主相遇是隐昧的。\n仝道章: 他们说：“(什么话!)当我们已经消失在地下时，那时我们还会被重新造化吗?”不然，他们不信会见他们的主!\n王静斋: 他们说：（我们消失在地中的时候，必须重新被造吗?）不然，他们是不信看见养主的。\n马坚: 他们说：「我们消失在地下之后，难道我们必定重新受造吗？」不然！他们不信将与他们的主相会。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 11 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你[对他们]说：“奉命管理你们死亡的天使将使你们死亡，然后，你们都将归到你们的主那里去。”\n马金鹏: 你说[注1]：“把你们委托给它的死亡天仙，他是结束你们的，后来，你们是被送回你们的养主[注2]的。”\n仝道章: 你说：“负责管你们的死亡的天仙将会使你们死亡。然后你们将被带回到你们的主(那里)。”\n王静斋: 你说，（那负责经管你们的，掌理死亡的天使，取去你们的性命，然后你们惟被归到养主。）\n马坚: 你说：「奉命主管你们的生命的死神，将使你们死亡，然后你们将被召归于你们的主。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 12 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 要是你能看见犯罪者在他们的主那里垂头丧气的情况多好啊！[他们将说]：“我们的主啊！我们看见了，我们听见了，求你送我们回[尘世]去吧！我们一定做善事，我们真的信仰了。”\n马金鹏: 假若你看到，当时犯罪者们低着头在他们养主前面[说]：“我们的养主哇！我们看到了[注1]，我们听到了[注2]，让我们回去干善功吧！我们是确信者。”\n仝道章: 如果你能看见那些有罪的人在他们的主跟前垂下他们的头说道：“我们的主啊! 我们已看见了，我们已听到了，求你现在送我们回(到尘世)去吧! (这一回)我们一定会作善事，我们(现在)的确信仰了。”\n王静斋: 为恶的人在养主御前俯首说：（养主啊！我们看见了，听到了；你让我们转回去作善举，我们实是坚信的。）当这时候，设若你看见了，……\n马坚: 假若你得见犯罪者在他们的主那里垂头丧气地说：「我们的主啊！我们已经看见了，听见了，求你让我们转回去，我们将做善事，我们确是确信者。」假若你看见这种情状……。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 13 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 假如我意欲，我必赐给每个人正道，但从我发出的[对作恶者的]判决已生效，我必用精灵和人类一起填满火狱。\n马金鹏: 假若我要时，我必定把正道给予每个人。但发自我的话落实了，我必定让全部镇尼和人填满了折汉难[注]。\n仝道章: 如果我曾经愿意，我一定能给每一个人引导，但是我对作恶者的话已经实现了，我一定会以精灵和人一同填满地狱。\n王静斋: 设我意欲……了，我必赐给每一个人正道。虽然，我的话：（必以镇呢与人类一同充满火狱）已然决定了。\n马坚: 假若我意欲，必以向导赋予每个人，但从我发出的判词已确定了，我必以精灵和人类一起填满火狱。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 14 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你们尝试[火狱的]刑罚吧！因为你们忘记了你们今日[与我]的相会。我的确也将忘记你们。你们尝试永久的刑罚吧！因为你们常作恶。\n马金鹏: 则因你们忘记了与你们的这天相遇，所以你们品尝[注1]吧！的确，我也忘了你们[注2]！你们因你们的所作所为[注3]，就品尝永久处罚吧！\n仝道章: “现在你们尝试吧! 由于你们忘了你们在这一天(跟我)的会见，我(现在)也忘记了你们。为了你们所曾做过的尝试永恒的惩罚吧!”\n王静斋: 你们由于忘掉看见今日而尝试吧：我忘却你们了，你们因自所作过的尝试永久的刑罚吧！\n马坚: 你们尝试吧！因为你们忘记今日的相会，我确已忘记你们了。你们因为自己的行为而尝试永久的刑罚吧。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 15 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 唯这些人信仰我的启示：当有人以我的启示劝戒他们时，他们就俯首叩头并赞美颂扬他们的主，而且他们不骄傲自大；叩头处\n马金鹏: 归信我的迹象[注]的只是那些人，如果他们以它受劝，他们便伏地叩头，他们以赞美他们的养主而赞[他]清高！他们是不高傲的。\n仝道章: 只有那些信仰我的启示的人，当他们被提醒(我的启示)时，他们就俯伏叩头，并赞念他们的主(安拉)。他们也不自高自大。\n王静斋: 信我的表征惟有一般遇人以这个劝他的时候，遂就倒身下拜，以赞其养主称颂清净，并不高傲的人。\n马坚: 信仰我的迹象的，只有那等人：别人以我的迹象劝戒他们的时候，他们便俯伏叩头并赞颂他们的那超绝万物的主，他们不敢妄自尊大，※"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 16 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们体不落床，他们在畏惧和期望中祈求他们的主，并[为安拉之道]施舍我所赐予他们的财物。\n马金鹏: 他们的身躯离开卧铺[注]，骇怕与希望地乞求他们的养主，和从我赐予他们的上施费的。\n仝道章: 当他们在畏惧与希望中祈求他们的主时，他们体不沾床，他们使用我已赐给他们的(财物于善举)。\n王静斋: 他们的两肋离开卧所，在骇怕希望着呼求养主；并就着我所赐与的作使用。\n马坚: 他们肋不落床，他们以恐惧和希望的心情祈祷他们的主；他们分舍我所赐予他们的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 17 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 任何人都不知道已[在乐园中]为他们储藏了何种极乐之福，以报酬他们所做的善功[注]。\n马金鹏: 所以每个人不知道为他们所掩盖的开心悦目的事，作为对他们所干的报酬。\n仝道章: 没有人知道我为他们(在天园中)藏着什么样令他们目畅心怡的(福泽)，作为他们所做过的(善行的)回赐。\n王静斋: 人不知道已为他们隐伏的愉快。这是因着他们所作过的施以报偿。\n马坚: 任何人都不知道已为他们贮藏了甚么慰藉，以报酬他们的行为。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 18 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 难道信士与悖逆者[违抗安拉的不信仰者等]是一样的吗？他们绝不是一样的。\n马金鹏: 那归信者可像他是坏人的吗？他们是不一样的。\n仝道章: 那么信仰的人象背叛的人(一样)吗?他们是不相等的。\n王静斋: 为穆民的安能像是作恶的人呢?他们本不一样。\n马坚: 信道者与悖逆者一样吗？他们是不相等的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 19 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 至于信仰并行善者，乐园就是他们的归宿，这是对他们所做善功的款待。\n马金鹏: 至于那些归信并干善功的人，则他们以他们所干的享受归宿的天堂。\n仝道章: 至于那些信仰并作善行的人，给他们的居处是天园，那是一项对他们所做过的(善行的)款待。\n王静斋: 归信并作善举的人，可以其所作过的获得路筵般的长住的园林。\n马坚: 至于信道而且行善者，将来得以乐园为归宿，那是为了报酬他们的行为的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 20 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 至于悖逆者，火狱就是他们的归宿。每当他们想逃离火狱时，他们又被赶回去。有话声对他们说：“你们尝试你们[在尘世]所否认的火狱的刑罚吧！”\n马金鹏: 至于那些为非干歹的[注1]人们，则他们的归宿是火狱。每当他们要从它[注2]中出去时，他们便被赶了回来，有人[注3]对他们说：“你们尝尝你们所不信的火狱处罚吧！”\n仝道章: 但是那些背叛的人，他们的居处是火(狱)，每当他们希望离开那里时，他们就会(被强迫)回到其中，并将对他们说：“你们尝试火刑吧，那是你们曾经不信的。”\n王静斋: 作恶的人，其居所是火狱。有时他们欲从那里出去，复被投在其中；有的对他们说：（你们尝试曾所不信的火刑吧！）\n马坚: 至于悖逆者，他们的归宿，只是火狱，每当他们要想逃出，都被拦回去。有声音对他们说：「你们尝试以前你们所否认的火刑吧！」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 21 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 在[后世]最大的刑罚来临前，我必使他们尝试最近的[小]刑罚[如今世所遭的灾难]，以便他们悔过自新。\n马金鹏: 我必使他们品尝在大处罚[注1]前的眼前处罚[注2]！愿他们返回[注3]。\n仝道章: 我一定会使他们在受到更大的惩罚之前使他们尝试较近的(即今世的)刑罚，以便他们或许能够(忏悔和)回头。\n王静斋: 我必教他们尝试次于极大刑罚的最近的刑罚，好教他们转回。\n马坚: 在最大的刑罚之前，我必使他们尝试最近的刑罚，以便他们悔悟。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 22 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 有人以他的主的启示劝戒他，而他却背弃它，谁比这种人更不义呢？我必将惩罚犯罪者。\n马金鹏: 谁比那人更为亏折的呢？有人把他养主的迹象[注1]读给他，而他竞背弃了它！的确，我从犯罪者们[注2]上，是报复的。\n仝道章: 还有谁比他的主的启示向他提起时而避开的人更不义?我确将报复有罪的人。\n王静斋: 遇人劝以安拉的表征遂就远避，谁是比这类人更属背义的。我义报复作恶的人。\n马坚: 有人以主的迹象劝戒他，而他不肯听从，这样的人，谁比他还不义呢？我必然要惩浩犯罪的人。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 23 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 我确已赐给穆萨经典[《讨拉特》]，所以，你不要怀疑会与他相会[如穆圣升霄之夜与穆萨的相会]。我曾使那部经典成为以色列的后裔的指南。\n马金鹏: 我确已把经典[注1]授给了穆萨，你不要对相遇他[注2]处于怀疑之中，我使他成为以色列人的引导。\n仝道章: 我的确在以前赐经典给姆撒，所以 你不要怀疑它，我并曾使它作为以色列子孙的引导。\n王静斋: 我确把经典赐给母撒了。你对于见他上不要怀疑。我委他引导以斯拉衣来的子孙。\n马坚: 我确已把经典赏赐穆萨，所以你们对于接受经典，不要陷于犹豫中，我曾以那部经典为以色列后裔的向导。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 24 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 当他们[以色列的后裔]坚忍并确信我的启示时，我曾任命他们中的一些人做领袖，他们[那些领袖]奉我的命令引导人们[遵行正道]。\n马金鹏: 我使他们中的部分人，当他们忍耐[注1]时，奉我的命令作为引导人们的领导者，他们对我的迹象[注2]是确信的。\n仝道章: 只要他们坚忍，并确信我的启示，我就从他们当中委派一些人作领袖，奉我的命令引导他们(以色列的子孙)。\n王静斋: 我于他们之间发现一般教领，奉我的命令作引导，彼时他们忍耐， 他们坚信我的种种表征。\n马坚: 我曾以他们中的一部分人为表率，当他们忍受艰难，确信我的迹象的时候，奉我的命令去引导众人。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 25 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 复活日，你的主必为他们判决他们所分歧的。\n马金鹏: 的确，你的养主于复活之日，对他们所分歧的[注]加以分析。\n仝道章: 你的主确将在复活日，在他们之间裁判他们所曾(互相)争论的歧见。\n王静斋: 你的养主将在复生日对他们所争议的从中判明。\n马坚: 复活日，你的主必定判决他们所争论的是非。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 26 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 难道他们没有获得引导[或难道他们不知道]吗？在他们之前，我曾毁灭了许多世代，他们常从这些人的故居上走过。此中确有许多迹象，他们为何不听从呢？\n马金鹏: 我在他们以前使多少民族灭亡，还没有对他们说明吗？他们在他们的住地中行走[注1]。的确，其中确有一些迹象。他们没听到[注2]吗？\n仝道章: 我在他们之前毁灭了多少世代，他们行走在这些人的故居上，这难道对于他们不是一项引导吗?这当中确有迹象，他们还没有听到吗?\n王静斋: 我在他们 以前灭绝了若干代，他们经过那般人的居处，这在他们尚未明白吗?此中确含有种种表征，他们怎不听从呢?\n马坚: 难道他们还不晓得吗？在他们之前，我曾毁灭了许多世代，他们常常经过那些人的故乡，在那里确有许多迹象。他们怎么不听从呢？"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 27 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 难道他们没看见吗？我把雨水[含雨的云]赶到无植物生长的干地，借此而生长出庄稼[注1]，供他们的牲畜[注2]和他们自己吃吗？难道他们没有看见吗？\n马金鹏: 他们没看到吗？的确，我把水驱至干涸不毛之地，于是我用它让庄稼长出，供你们的牲畜和你们自己食用，你们没有看到吗？\n仝道章: 他们没看见我驱使水至(寸草不生的)荒土，然后我在那里生长谷物，供给他们的牲口和他们自己食用吗?他们还没有看见吗?\n王静斋: 他们岂未看见，我把水驱至不毛之地，而用它发生禾谷。他们的牲畜与个人就着它吃，他们怎不观察呢?\n马坚: 他们还不知道吗？我把雨水赶到无草的地方，而借它生出他们的牲畜和他们自己所食的庄稼。难道他们看不见吗？"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 28 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 他们说：“假如你们是诚实者，[我们与你们之间的]这个判决何时实现呢？”\n马金鹏: 他们说[注1]：“这个判断[注2]是何时呀？若你们是忠实者时。”\n仝道章: 他们说：“如果你是诚实的，(告诉我们)审判(你们的胜利)在什么时候到来?”\n王静斋: 他们说：（这判明是在何时? 如果你们所言属实了，……）\n马坚: 他们说：「这种判决甚么时候实现呢？如果你们是说实话的。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 29 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你说：“审判日，对不信仰者来说，[那时]即使他们信仰，对他们也是无益的，他们将不被缓刑。”\n马金鹏: 你说：“判断之日[注1]，那些隐昧者们的信念对他们无益，他们不受宽容[注2]。”\n仝道章: 你说：“在审判(我们胜利)的那天，不信者的信仰将对他们无益，他们也不被给予宽限。”\n王静斋: 你说：（在判断{实现}的那一天，逆徒们的归信无济，他们也得不到姑容。）\n马坚: 你说：「不信道者，在判决日，虽信无益，并且不获得宽待。」"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "《古兰经》第 32 章第 30 节的中文翻译是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "马仲刚: 你[穆圣]当避开他们，你当等待。他们的确也在等待。\n马金鹏: 所以你背弃他们，你等待吧！的确，他们是等待者[注]。\n仝道章: 因此你要避开他们，并且等候，他们也一定在等候着。\n王静斋: 你要远避他们。你等侯吧！他们也必是等侯的。\n马坚: 你应当避开他们，你应当等待，他们必定是等待的。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "《古兰经》第 32 章：叩头(赛直德) (多版本中文翻译对比)",
+      "author": {
+        "@type": "Organization",
+        "name": "Salaam Alykum"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Salaam Alykum"
+      },
+      "description": "精良优化的古兰经第 32 章 叩头(赛直德) 中文多版本对比翻译。极其适合学术研究与LLM语义检索。"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="#">
+          <span class="mark"><img src="../assets/icons/logo.png" alt="Logo" width="24" height="24"></span>
+          <span class="brand">古兰经中文翻译搜索工具</span>
+        </a>
+        <div class="searchbar">
+          <input id="q" type="text" placeholder="搜索关键词（支持多关键词：用空格分隔；或开启正则表达式）">
+          <button id="go" class="button">搜索</button>
+        </div>
+        <button id="btn-theme" class="button"
+          style="background:transparent; border-color:var(--border); color:var(--ink); box-shadow:none; padding:12px;"
+          title="切换日间/夜间模式">
+          🌗
+        </button>
+      </div>
+
+      <div class="filters">
+        <div class="group" id="filter-translators" title="按译者筛选">
+          <!-- Checkboxes generated by JS -->
+        </div>
+        <div class="group">
+          <label class="toggle-label"><input type="checkbox" id="regex"> <span>正则表达式</span></label>
+        </div>
+        <div class="group info-tip" title="提示">
+          <span>提示：多关键词为空格分隔（“且”逻辑）。</span>
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <ul class="slist" aria-label="章节导航"></ul>
+    </aside>
+
+    <main class="main">
+      <div class="result-header">
+        <h2 id="mode-title">第 32 章：叩头(赛直德)</h2>
+      </div>
+      <div class="results"><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:1</span><span class="name">马仲刚</span></div><div class="text">艾利夫，俩目，米目[阿拉伯语三个字母的音译，唯<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>最知道其意]。</div></div><div class="tcard"><div class="meta"><span>第 32:1</span><span class="name">马金鹏</span></div><div class="text">艾立夫，俩姆，米姆[注]。</div></div><div class="tcard"><div class="meta"><span>第 32:1</span><span class="name">仝道章</span></div><div class="text">阿立甫、俩目、敏目。</div></div><div class="tcard"><div class="meta"><span>第 32:1</span><span class="name">王静斋</span></div><div class="text">（阿里甫、俩模、密默。）</div></div><div class="tcard"><div class="meta"><span>第 32:1</span><span class="name">马坚</span></div><div class="text">艾列弗，俩目，米目。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:2</span><span class="name">马仲刚</span></div><div class="text">这部经典[《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》]是从众世界的主[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]降示的，其中确实无疑。</div></div><div class="tcard"><div class="meta"><span>第 32:2</span><span class="name">马金鹏</span></div><div class="text">其中无疑的经典[注]，是降自万世之养主的。</div></div><div class="tcard"><div class="meta"><span>第 32:2</span><span class="name">仝道章</span></div><div class="text">这本确实无疑的经典是由众世界的主颁降的。</div></div><div class="tcard"><div class="meta"><span>第 32:2</span><span class="name">王静斋</span></div><div class="text">降下无可疑的经典，是从调养众世界的主上。</div></div><div class="tcard"><div class="meta"><span>第 32:2</span><span class="name">马坚</span></div><div class="text">（这）是从全世界的主降示的经典，其中毫无疑义。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:3</span><span class="name">马仲刚</span></div><div class="text">难道他们要说：“《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》是他[穆圣]伪造的吗？”不，《<a href="https://zh.wikipedia.org/zh-hans/%E5%8F%A4%E5%85%B0%E7%BB%8F" target="_blank" rel="noopener noreferrer" class="kg-link">古兰经</a>》是从你[穆圣]的主降示的真理，以便你警告在你之前没有任何警告者到达过的民众，以便他们遵行正道。</div></div><div class="tcard"><div class="meta"><span>第 32:3</span><span class="name">马金鹏</span></div><div class="text">而他们[注1]却说是他[注2]编造的。它确是来自你养主的真理，以便你[注3]警告你以前没有一位警告者来至[注4]他们的族人。愿他们得正道。</div></div><div class="tcard"><div class="meta"><span>第 32:3</span><span class="name">仝道章</span></div><div class="text">可是他们却说：“是他伪造它的吧?”不是的，它是来自你的主的真理，以便你能警告一群在你以前没有警告者到达过的人民，也许他们能够获得引导。</div></div><div class="tcard"><div class="meta"><span>第 32:3</span><span class="name">王静斋</span></div><div class="text">不然，他们说：（他造作了它）吗? 不然，那是出自养主的真理，好教你警告一伙在你以前未得到警告的人，以便他们得正道。</div></div><div class="tcard"><div class="meta"><span>第 32:3</span><span class="name">马坚</span></div><div class="text">他们说：「他捏造它吗？」不然！它是从你的主降示的真理，以便你警告在你之前没有任何警告者来临过的一群民众，以便他们遵循正道。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:4</span><span class="name">马仲刚</span></div><div class="text">是<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>在六日内创造了天地万物，然后升上宝座。除他外，你们绝没有任何保护者和求情者。难道你们还不接受教诲吗？</div></div><div class="tcard"><div class="meta"><span>第 32:4</span><span class="name">马金鹏</span></div><div class="text"><a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>是那在六天内[注1]造化了天与地和在两者之间的。后来，他升上阿尔史，你们在他以外没有一位挚友[注2]。没有一位说情者[注3]。你们还不思索吗？</div></div><div class="tcard"><div class="meta"><span>第 32:4</span><span class="name">仝道章</span></div><div class="text"><a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>在六天中造化了天地， 以及其间的万物，然后登上(权威的)宝座。在他之外，你们没有保护者或求情者，你们难道还不纪念(他)吗?</div></div><div class="tcard"><div class="meta"><span>第 32:4</span><span class="name">王静斋</span></div><div class="text"><a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>在六日造化了天地万有，而后操纵「阿勒世」。在你们除他以外无一爱护的，也无一告赦的。你们怎不受劝呢?</div></div><div class="tcard"><div class="meta"><span>第 32:4</span><span class="name">马坚</span></div><div class="text">真主曾在六日内创造天地万物，然后，升上宝座，除他外，你们没有任何监护者和说情者。你们怎么不记念呢？</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:5</span><span class="name">马仲刚</span></div><div class="text">他处理自天至地的事务，然后，那些事务将在一日内上升到他那里。那一日的长度，是你们[在尘世]所计算的一千年。</div></div><div class="tcard"><div class="meta"><span>第 32:5</span><span class="name">马金鹏</span></div><div class="text">他从天上安排事情至地上[注1]，后来，它[注2]在一日——你们所计算的一千年——之内再回至他[注3]，</div></div><div class="tcard"><div class="meta"><span>第 32:5</span><span class="name">仝道章</span></div><div class="text">他规划从诸天到大地的(一切)事务。然后，在(某)一天当中(一切的事务)都将上升到他(那里)。这一天的长度照你们的计算是一千年。</div></div><div class="tcard"><div class="meta"><span>第 32:5</span><span class="name">王静斋</span></div><div class="text">他治理事情，自天至地；而后那事件在它的限度是你们所计算的一千年的那一天升至真主。</div></div><div class="tcard"><div class="meta"><span>第 32:5</span><span class="name">马坚</span></div><div class="text">他治理自天至地的事物，然后那事物在一日之内上升到他那里，那一日的长度，是你们所计算的一千年。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:6</span><span class="name">马仲刚</span></div><div class="text">这是全知一切看不见之物[注]和看得见之物的主[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]，[他]是全能的，是特慈的。</div></div><div class="tcard"><div class="meta"><span>第 32:6</span><span class="name">马金鹏</span></div><div class="text">那是未见和可见的深知者、有力者、特慈者。</div></div><div class="tcard"><div class="meta"><span>第 32:6</span><span class="name">仝道章</span></div><div class="text">这就是深知隐秘的(不可见的)、公开的(可见的)、大能的、大慈的主。</div></div><div class="tcard"><div class="meta"><span>第 32:6</span><span class="name">王静斋</span></div><div class="text">这是知目不能见的与显见的优胜特慈的主。</div></div><div class="tcard"><div class="meta"><span>第 32:6</span><span class="name">马坚</span></div><div class="text">那是全知幽明的、万能的、至慈的主。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:7</span><span class="name">马仲刚</span></div><div class="text">他完善他所创造的万物，他最初用泥土创造了人。</div></div><div class="tcard"><div class="meta"><span>第 32:7</span><span class="name">马金鹏</span></div><div class="text">是那使万物的造化美好的，他从土上创造了人[注]。</div></div><div class="tcard"><div class="meta"><span>第 32:7</span><span class="name">仝道章</span></div><div class="text">他使他所造化的每一件事物美好，他以泥土开始造人。</div></div><div class="tcard"><div class="meta"><span>第 32:7</span><span class="name">王静斋</span></div><div class="text">那真主把自所造化的每一物造成完美的。他由泥上开始造化人类，</div></div><div class="tcard"><div class="meta"><span>第 32:7</span><span class="name">马坚</span></div><div class="text">他精制他所创造的万物，他最初用泥土创造人。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:8</span><span class="name">马仲刚</span></div><div class="text">然后，他用无用的精液的精华创造他的后裔。</div></div><div class="tcard"><div class="meta"><span>第 32:8</span><span class="name">马金鹏</span></div><div class="text">后来，从血块，从卑贱的水上创造了他的后裔[注]。</div></div><div class="tcard"><div class="meta"><span>第 32:8</span><span class="name">仝道章</span></div><div class="text">然后，他(主)以一滴不受重视的液体造化他的后裔。</div></div><div class="tcard"><div class="meta"><span>第 32:8</span><span class="name">王静斋</span></div><div class="text">并由微贱的清水上造化它的子孙。</div></div><div class="tcard"><div class="meta"><span>第 32:8</span><span class="name">马坚</span></div><div class="text">然后用贱水的精华创造他的子孙。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:9</span><span class="name">马仲刚</span></div><div class="text">然后，他[<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>]匀称地成型他[人]，并把灵魂吹入他的体内。他为你们创造了耳[听觉]目[视觉]心[思维]，但你们很少感恩。</div></div><div class="tcard"><div class="meta"><span>第 32:9</span><span class="name">马金鹏</span></div><div class="text">后来，他使他[注1]端正，把他的鲁哈吹入其中[注2]，为你们造化了听觉、视觉和心，你们却很少感谢。</div></div><div class="tcard"><div class="meta"><span>第 32:9</span><span class="name">仝道章</span></div><div class="text">然后他(按照应有的比例)形成他，并把他(主)的灵吹进他的当中，他又给你们听觉、视觉和感觉(的官能)，而你们却很少感谢!</div></div><div class="tcard"><div class="meta"><span>第 32:9</span><span class="name">王静斋</span></div><div class="text">主且造它为齐整的，为它吹入灵魂。主为你们造化耳、眼、心，你们绝少感念。</div></div><div class="tcard"><div class="meta"><span>第 32:9</span><span class="name">马坚</span></div><div class="text">然后使他健全，并将他的精神吹在他的身体中，又为你们创造耳目心灵。你们很少感谢。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:10</span><span class="name">马仲刚</span></div><div class="text">他们说：“当我们[死后]消失在地下时，难道我们真的还要被复活成一个新的生命吗？”不，他们在否认[后世]与他们的主相会[注]。</div></div><div class="tcard"><div class="meta"><span>第 32:10</span><span class="name">马金鹏</span></div><div class="text">他们[注1]说：“当我们消失在地里时，我们是在新的造化中[注2]吗？”而他们对与他们的养主相遇是隐昧的。</div></div><div class="tcard"><div class="meta"><span>第 32:10</span><span class="name">仝道章</span></div><div class="text">他们说：“(什么话!)当我们已经消失在地下时，那时我们还会被重新造化吗?”不然，他们不信会见他们的主!</div></div><div class="tcard"><div class="meta"><span>第 32:10</span><span class="name">王静斋</span></div><div class="text">他们说：（我们消失在地中的时候，必须重新被造吗?）不然，他们是不信看见养主的。</div></div><div class="tcard"><div class="meta"><span>第 32:10</span><span class="name">马坚</span></div><div class="text">他们说：「我们消失在地下之后，难道我们必定重新受造吗？」不然！他们不信将与他们的主相会。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:11</span><span class="name">马仲刚</span></div><div class="text">你[对他们]说：“奉命管理你们死亡的天使将使你们死亡，然后，你们都将归到你们的主那里去。”</div></div><div class="tcard"><div class="meta"><span>第 32:11</span><span class="name">马金鹏</span></div><div class="text">你说[注1]：“把你们委托给它的死亡天仙，他是结束你们的，后来，你们是被送回你们的养主[注2]的。”</div></div><div class="tcard"><div class="meta"><span>第 32:11</span><span class="name">仝道章</span></div><div class="text">你说：“负责管你们的死亡的天仙将会使你们死亡。然后你们将被带回到你们的主(那里)。”</div></div><div class="tcard"><div class="meta"><span>第 32:11</span><span class="name">王静斋</span></div><div class="text">你说，（那负责经管你们的，掌理死亡的天使，取去你们的性命，然后你们惟被归到养主。）</div></div><div class="tcard"><div class="meta"><span>第 32:11</span><span class="name">马坚</span></div><div class="text">你说：「奉命主管你们的生命的死神，将使你们死亡，然后你们将被召归于你们的主。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:12</span><span class="name">马仲刚</span></div><div class="text">要是你能看见犯罪者在他们的主那里垂头丧气的情况多好啊！[他们将说]：“我们的主啊！我们看见了，我们听见了，求你送我们回[尘世]去吧！我们一定做善事，我们真的信仰了。”</div></div><div class="tcard"><div class="meta"><span>第 32:12</span><span class="name">马金鹏</span></div><div class="text">假若你看到，当时犯罪者们低着头在他们养主前面[说]：“我们的养主哇！我们看到了[注1]，我们听到了[注2]，让我们回去干善功吧！我们是确信者。”</div></div><div class="tcard"><div class="meta"><span>第 32:12</span><span class="name">仝道章</span></div><div class="text">如果你能看见那些有罪的人在他们的主跟前垂下他们的头说道：“我们的主啊! 我们已看见了，我们已听到了，求你现在送我们回(到尘世)去吧! (这一回)我们一定会作善事，我们(现在)的确信仰了。”</div></div><div class="tcard"><div class="meta"><span>第 32:12</span><span class="name">王静斋</span></div><div class="text">为恶的人在养主御前俯首说：（养主啊！我们看见了，听到了；你让我们转回去作善举，我们实是坚信的。）当这时候，设若你看见了，……</div></div><div class="tcard"><div class="meta"><span>第 32:12</span><span class="name">马坚</span></div><div class="text">假若你得见犯罪者在他们的主那里垂头丧气地说：「我们的主啊！我们已经看见了，听见了，求你让我们转回去，我们将做善事，我们确是确信者。」假若你看见这种情状……。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:13</span><span class="name">马仲刚</span></div><div class="text">假如我意欲，我必赐给每个人正道，但从我发出的[对作恶者的]判决已生效，我必用精灵和人类一起填满火狱。</div></div><div class="tcard"><div class="meta"><span>第 32:13</span><span class="name">马金鹏</span></div><div class="text">假若我要时，我必定把正道给予每个人。但发自我的话落实了，我必定让全部镇尼和人填满了折汉难[注]。</div></div><div class="tcard"><div class="meta"><span>第 32:13</span><span class="name">仝道章</span></div><div class="text">如果我曾经愿意，我一定能给每一个人引导，但是我对作恶者的话已经实现了，我一定会以精灵和人一同填满地狱。</div></div><div class="tcard"><div class="meta"><span>第 32:13</span><span class="name">王静斋</span></div><div class="text">设我意欲……了，我必赐给每一个人正道。虽然，我的话：（必以镇呢与人类一同充满火狱）已然决定了。</div></div><div class="tcard"><div class="meta"><span>第 32:13</span><span class="name">马坚</span></div><div class="text">假若我意欲，必以向导赋予每个人，但从我发出的判词已确定了，我必以精灵和人类一起填满火狱。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:14</span><span class="name">马仲刚</span></div><div class="text">你们尝试[火狱的]刑罚吧！因为你们忘记了你们今日[与我]的相会。我的确也将忘记你们。你们尝试永久的刑罚吧！因为你们常作恶。</div></div><div class="tcard"><div class="meta"><span>第 32:14</span><span class="name">马金鹏</span></div><div class="text">则因你们忘记了与你们的这天相遇，所以你们品尝[注1]吧！的确，我也忘了你们[注2]！你们因你们的所作所为[注3]，就品尝永久处罚吧！</div></div><div class="tcard"><div class="meta"><span>第 32:14</span><span class="name">仝道章</span></div><div class="text">“现在你们尝试吧! 由于你们忘了你们在这一天(跟我)的会见，我(现在)也忘记了你们。为了你们所曾做过的尝试永恒的惩罚吧!”</div></div><div class="tcard"><div class="meta"><span>第 32:14</span><span class="name">王静斋</span></div><div class="text">你们由于忘掉看见今日而尝试吧：我忘却你们了，你们因自所作过的尝试永久的刑罚吧！</div></div><div class="tcard"><div class="meta"><span>第 32:14</span><span class="name">马坚</span></div><div class="text">你们尝试吧！因为你们忘记今日的相会，我确已忘记你们了。你们因为自己的行为而尝试永久的刑罚吧。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:15</span><span class="name">马仲刚</span></div><div class="text">唯这些人信仰我的启示：当有人以我的启示劝戒他们时，他们就俯首叩头并赞美颂扬他们的主，而且他们不骄傲自大；叩头处</div></div><div class="tcard"><div class="meta"><span>第 32:15</span><span class="name">马金鹏</span></div><div class="text">归信我的迹象[注]的只是那些人，如果他们以它受劝，他们便伏地叩头，他们以赞美他们的养主而赞[他]清高！他们是不高傲的。</div></div><div class="tcard"><div class="meta"><span>第 32:15</span><span class="name">仝道章</span></div><div class="text">只有那些信仰我的启示的人，当他们被提醒(我的启示)时，他们就俯伏叩头，并赞念他们的主(<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>)。他们也不自高自大。</div></div><div class="tcard"><div class="meta"><span>第 32:15</span><span class="name">王静斋</span></div><div class="text">信我的表征惟有一般遇人以这个劝他的时候，遂就倒身下拜，以赞其养主称颂清净，并不高傲的人。</div></div><div class="tcard"><div class="meta"><span>第 32:15</span><span class="name">马坚</span></div><div class="text">信仰我的迹象的，只有那等人：别人以我的迹象劝戒他们的时候，他们便俯伏叩头并赞颂他们的那超绝万物的主，他们不敢妄自尊大，※</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:16</span><span class="name">马仲刚</span></div><div class="text">他们体不落床，他们在畏惧和期望中祈求他们的主，并[为<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>之道]施舍我所赐予他们的财物。</div></div><div class="tcard"><div class="meta"><span>第 32:16</span><span class="name">马金鹏</span></div><div class="text">他们的身躯离开卧铺[注]，骇怕与希望地乞求他们的养主，和从我赐予他们的上施费的。</div></div><div class="tcard"><div class="meta"><span>第 32:16</span><span class="name">仝道章</span></div><div class="text">当他们在畏惧与希望中祈求他们的主时，他们体不沾床，他们使用我已赐给他们的(财物于善举)。</div></div><div class="tcard"><div class="meta"><span>第 32:16</span><span class="name">王静斋</span></div><div class="text">他们的两肋离开卧所，在骇怕希望着呼求养主；并就着我所赐与的作使用。</div></div><div class="tcard"><div class="meta"><span>第 32:16</span><span class="name">马坚</span></div><div class="text">他们肋不落床，他们以恐惧和希望的心情祈祷他们的主；他们分舍我所赐予他们的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:17</span><span class="name">马仲刚</span></div><div class="text">任何人都不知道已[在乐园中]为他们储藏了何种极乐之福，以报酬他们所做的善功[注]。</div></div><div class="tcard"><div class="meta"><span>第 32:17</span><span class="name">马金鹏</span></div><div class="text">所以每个人不知道为他们所掩盖的开心悦目的事，作为对他们所干的报酬。</div></div><div class="tcard"><div class="meta"><span>第 32:17</span><span class="name">仝道章</span></div><div class="text">没有人知道我为他们(在天园中)藏着什么样令他们目畅心怡的(福泽)，作为他们所做过的(善行的)回赐。</div></div><div class="tcard"><div class="meta"><span>第 32:17</span><span class="name">王静斋</span></div><div class="text">人不知道已为他们隐伏的愉快。这是因着他们所作过的施以报偿。</div></div><div class="tcard"><div class="meta"><span>第 32:17</span><span class="name">马坚</span></div><div class="text">任何人都不知道已为他们贮藏了甚么慰藉，以报酬他们的行为。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:18</span><span class="name">马仲刚</span></div><div class="text">难道信士与悖逆者[违抗<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的不信仰者等]是一样的吗？他们绝不是一样的。</div></div><div class="tcard"><div class="meta"><span>第 32:18</span><span class="name">马金鹏</span></div><div class="text">那归信者可像他是坏人的吗？他们是不一样的。</div></div><div class="tcard"><div class="meta"><span>第 32:18</span><span class="name">仝道章</span></div><div class="text">那么信仰的人象背叛的人(一样)吗?他们是不相等的。</div></div><div class="tcard"><div class="meta"><span>第 32:18</span><span class="name">王静斋</span></div><div class="text">为穆民的安能像是作恶的人呢?他们本不一样。</div></div><div class="tcard"><div class="meta"><span>第 32:18</span><span class="name">马坚</span></div><div class="text">信道者与悖逆者一样吗？他们是不相等的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:19</span><span class="name">马仲刚</span></div><div class="text">至于信仰并行善者，乐园就是他们的归宿，这是对他们所做善功的款待。</div></div><div class="tcard"><div class="meta"><span>第 32:19</span><span class="name">马金鹏</span></div><div class="text">至于那些归信并干善功的人，则他们以他们所干的享受归宿的天堂。</div></div><div class="tcard"><div class="meta"><span>第 32:19</span><span class="name">仝道章</span></div><div class="text">至于那些信仰并作善行的人，给他们的居处是天园，那是一项对他们所做过的(善行的)款待。</div></div><div class="tcard"><div class="meta"><span>第 32:19</span><span class="name">王静斋</span></div><div class="text">归信并作善举的人，可以其所作过的获得路筵般的长住的园林。</div></div><div class="tcard"><div class="meta"><span>第 32:19</span><span class="name">马坚</span></div><div class="text">至于信道而且行善者，将来得以乐园为归宿，那是为了报酬他们的行为的。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:20</span><span class="name">马仲刚</span></div><div class="text">至于悖逆者，火狱就是他们的归宿。每当他们想逃离火狱时，他们又被赶回去。有话声对他们说：“你们尝试你们[在尘世]所否认的火狱的刑罚吧！”</div></div><div class="tcard"><div class="meta"><span>第 32:20</span><span class="name">马金鹏</span></div><div class="text">至于那些为非干歹的[注1]人们，则他们的归宿是火狱。每当他们要从它[注2]中出去时，他们便被赶了回来，有人[注3]对他们说：“你们尝尝你们所不信的火狱处罚吧！”</div></div><div class="tcard"><div class="meta"><span>第 32:20</span><span class="name">仝道章</span></div><div class="text">但是那些背叛的人，他们的居处是火(狱)，每当他们希望离开那里时，他们就会(被强迫)回到其中，并将对他们说：“你们尝试火刑吧，那是你们曾经不信的。”</div></div><div class="tcard"><div class="meta"><span>第 32:20</span><span class="name">王静斋</span></div><div class="text">作恶的人，其居所是火狱。有时他们欲从那里出去，复被投在其中；有的对他们说：（你们尝试曾所不信的火刑吧！）</div></div><div class="tcard"><div class="meta"><span>第 32:20</span><span class="name">马坚</span></div><div class="text">至于悖逆者，他们的归宿，只是火狱，每当他们要想逃出，都被拦回去。有声音对他们说：「你们尝试以前你们所否认的火刑吧！」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:21</span><span class="name">马仲刚</span></div><div class="text">在[后世]最大的刑罚来临前，我必使他们尝试最近的[小]刑罚[如今世所遭的灾难]，以便他们悔过自新。</div></div><div class="tcard"><div class="meta"><span>第 32:21</span><span class="name">马金鹏</span></div><div class="text">我必使他们品尝在大处罚[注1]前的眼前处罚[注2]！愿他们返回[注3]。</div></div><div class="tcard"><div class="meta"><span>第 32:21</span><span class="name">仝道章</span></div><div class="text">我一定会使他们在受到更大的惩罚之前使他们尝试较近的(即今世的)刑罚，以便他们或许能够(忏悔和)回头。</div></div><div class="tcard"><div class="meta"><span>第 32:21</span><span class="name">王静斋</span></div><div class="text">我必教他们尝试次于极大刑罚的最近的刑罚，好教他们转回。</div></div><div class="tcard"><div class="meta"><span>第 32:21</span><span class="name">马坚</span></div><div class="text">在最大的刑罚之前，我必使他们尝试最近的刑罚，以便他们悔悟。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:22</span><span class="name">马仲刚</span></div><div class="text">有人以他的主的启示劝戒他，而他却背弃它，谁比这种人更不义呢？我必将惩罚犯罪者。</div></div><div class="tcard"><div class="meta"><span>第 32:22</span><span class="name">马金鹏</span></div><div class="text">谁比那人更为亏折的呢？有人把他养主的迹象[注1]读给他，而他竞背弃了它！的确，我从犯罪者们[注2]上，是报复的。</div></div><div class="tcard"><div class="meta"><span>第 32:22</span><span class="name">仝道章</span></div><div class="text">还有谁比他的主的启示向他提起时而避开的人更不义?我确将报复有罪的人。</div></div><div class="tcard"><div class="meta"><span>第 32:22</span><span class="name">王静斋</span></div><div class="text">遇人劝以<a href="https://zh.wikipedia.org/zh-hans/%E5%AE%89%E6%8B%89" target="_blank" rel="noopener noreferrer" class="kg-link">安拉</a>的表征遂就远避，谁是比这类人更属背义的。我义报复作恶的人。</div></div><div class="tcard"><div class="meta"><span>第 32:22</span><span class="name">马坚</span></div><div class="text">有人以主的迹象劝戒他，而他不肯听从，这样的人，谁比他还不义呢？我必然要惩浩犯罪的人。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:23</span><span class="name">马仲刚</span></div><div class="text">我确已赐给穆萨经典[《讨拉特》]，所以，你不要怀疑会与他相会[如穆圣升霄之夜与穆萨的相会]。我曾使那部经典成为以色列的后裔的指南。</div></div><div class="tcard"><div class="meta"><span>第 32:23</span><span class="name">马金鹏</span></div><div class="text">我确已把经典[注1]授给了穆萨，你不要对相遇他[注2]处于怀疑之中，我使他成为以色列人的引导。</div></div><div class="tcard"><div class="meta"><span>第 32:23</span><span class="name">仝道章</span></div><div class="text">我的确在以前赐经典给姆撒，所以 你不要怀疑它，我并曾使它作为以色列子孙的引导。</div></div><div class="tcard"><div class="meta"><span>第 32:23</span><span class="name">王静斋</span></div><div class="text">我确把经典赐给母撒了。你对于见他上不要怀疑。我委他引导以斯拉衣来的子孙。</div></div><div class="tcard"><div class="meta"><span>第 32:23</span><span class="name">马坚</span></div><div class="text">我确已把经典赏赐穆萨，所以你们对于接受经典，不要陷于犹豫中，我曾以那部经典为以色列后裔的向导。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:24</span><span class="name">马仲刚</span></div><div class="text">当他们[以色列的后裔]坚忍并确信我的启示时，我曾任命他们中的一些人做领袖，他们[那些领袖]奉我的命令引导人们[遵行正道]。</div></div><div class="tcard"><div class="meta"><span>第 32:24</span><span class="name">马金鹏</span></div><div class="text">我使他们中的部分人，当他们忍耐[注1]时，奉我的命令作为引导人们的领导者，他们对我的迹象[注2]是确信的。</div></div><div class="tcard"><div class="meta"><span>第 32:24</span><span class="name">仝道章</span></div><div class="text">只要他们坚忍，并确信我的启示，我就从他们当中委派一些人作领袖，奉我的命令引导他们(以色列的子孙)。</div></div><div class="tcard"><div class="meta"><span>第 32:24</span><span class="name">王静斋</span></div><div class="text">我于他们之间发现一般教领，奉我的命令作引导，彼时他们忍耐， 他们坚信我的种种表征。</div></div><div class="tcard"><div class="meta"><span>第 32:24</span><span class="name">马坚</span></div><div class="text">我曾以他们中的一部分人为表率，当他们忍受艰难，确信我的迹象的时候，奉我的命令去引导众人。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:25</span><span class="name">马仲刚</span></div><div class="text">复活日，你的主必为他们判决他们所分歧的。</div></div><div class="tcard"><div class="meta"><span>第 32:25</span><span class="name">马金鹏</span></div><div class="text">的确，你的养主于复活之日，对他们所分歧的[注]加以分析。</div></div><div class="tcard"><div class="meta"><span>第 32:25</span><span class="name">仝道章</span></div><div class="text">你的主确将在复活日，在他们之间裁判他们所曾(互相)争论的歧见。</div></div><div class="tcard"><div class="meta"><span>第 32:25</span><span class="name">王静斋</span></div><div class="text">你的养主将在复生日对他们所争议的从中判明。</div></div><div class="tcard"><div class="meta"><span>第 32:25</span><span class="name">马坚</span></div><div class="text">复活日，你的主必定判决他们所争论的是非。</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:26</span><span class="name">马仲刚</span></div><div class="text">难道他们没有获得引导[或难道他们不知道]吗？在他们之前，我曾毁灭了许多世代，他们常从这些人的故居上走过。此中确有许多迹象，他们为何不听从呢？</div></div><div class="tcard"><div class="meta"><span>第 32:26</span><span class="name">马金鹏</span></div><div class="text">我在他们以前使多少民族灭亡，还没有对他们说明吗？他们在他们的住地中行走[注1]。的确，其中确有一些迹象。他们没听到[注2]吗？</div></div><div class="tcard"><div class="meta"><span>第 32:26</span><span class="name">仝道章</span></div><div class="text">我在他们之前毁灭了多少世代，他们行走在这些人的故居上，这难道对于他们不是一项引导吗?这当中确有迹象，他们还没有听到吗?</div></div><div class="tcard"><div class="meta"><span>第 32:26</span><span class="name">王静斋</span></div><div class="text">我在他们 以前灭绝了若干代，他们经过那般人的居处，这在他们尚未明白吗?此中确含有种种表征，他们怎不听从呢?</div></div><div class="tcard"><div class="meta"><span>第 32:26</span><span class="name">马坚</span></div><div class="text">难道他们还不晓得吗？在他们之前，我曾毁灭了许多世代，他们常常经过那些人的故乡，在那里确有许多迹象。他们怎么不听从呢？</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:27</span><span class="name">马仲刚</span></div><div class="text">难道他们没看见吗？我把雨水[含雨的云]赶到无植物生长的干地，借此而生长出庄稼[注1]，供他们的牲畜[注2]和他们自己吃吗？难道他们没有看见吗？</div></div><div class="tcard"><div class="meta"><span>第 32:27</span><span class="name">马金鹏</span></div><div class="text">他们没看到吗？的确，我把水驱至干涸不毛之地，于是我用它让庄稼长出，供你们的牲畜和你们自己食用，你们没有看到吗？</div></div><div class="tcard"><div class="meta"><span>第 32:27</span><span class="name">仝道章</span></div><div class="text">他们没看见我驱使水至(寸草不生的)荒土，然后我在那里生长谷物，供给他们的牲口和他们自己食用吗?他们还没有看见吗?</div></div><div class="tcard"><div class="meta"><span>第 32:27</span><span class="name">王静斋</span></div><div class="text">他们岂未看见，我把水驱至不毛之地，而用它发生禾谷。他们的牲畜与个人就着它吃，他们怎不观察呢?</div></div><div class="tcard"><div class="meta"><span>第 32:27</span><span class="name">马坚</span></div><div class="text">他们还不知道吗？我把雨水赶到无草的地方，而借它生出他们的牲畜和他们自己所食的庄稼。难道他们看不见吗？</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:28</span><span class="name">马仲刚</span></div><div class="text">他们说：“假如你们是诚实者，[我们与你们之间的]这个判决何时实现呢？”</div></div><div class="tcard"><div class="meta"><span>第 32:28</span><span class="name">马金鹏</span></div><div class="text">他们说[注1]：“这个判断[注2]是何时呀？若你们是忠实者时。”</div></div><div class="tcard"><div class="meta"><span>第 32:28</span><span class="name">仝道章</span></div><div class="text">他们说：“如果你是诚实的，(告诉我们)审判(你们的胜利)在什么时候到来?”</div></div><div class="tcard"><div class="meta"><span>第 32:28</span><span class="name">王静斋</span></div><div class="text">他们说：（这判明是在何时? 如果你们所言属实了，……）</div></div><div class="tcard"><div class="meta"><span>第 32:28</span><span class="name">马坚</span></div><div class="text">他们说：「这种判决甚么时候实现呢？如果你们是说实话的。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:29</span><span class="name">马仲刚</span></div><div class="text">你说：“审判日，对不信仰者来说，[那时]即使他们信仰，对他们也是无益的，他们将不被缓刑。”</div></div><div class="tcard"><div class="meta"><span>第 32:29</span><span class="name">马金鹏</span></div><div class="text">你说：“判断之日[注1]，那些隐昧者们的信念对他们无益，他们不受宽容[注2]。”</div></div><div class="tcard"><div class="meta"><span>第 32:29</span><span class="name">仝道章</span></div><div class="text">你说：“在审判(我们胜利)的那天，不信者的信仰将对他们无益，他们也不被给予宽限。”</div></div><div class="tcard"><div class="meta"><span>第 32:29</span><span class="name">王静斋</span></div><div class="text">你说：（在判断{实现}的那一天，逆徒们的归信无济，他们也得不到姑容。）</div></div><div class="tcard"><div class="meta"><span>第 32:29</span><span class="name">马坚</span></div><div class="text">你说：「不信道者，在判决日，虽信无益，并且不获得宽待。」</div></div></div><div class="verse-row"><div class="tcard"><div class="meta"><span>第 32:30</span><span class="name">马仲刚</span></div><div class="text">你[穆圣]当避开他们，你当等待。他们的确也在等待。</div></div><div class="tcard"><div class="meta"><span>第 32:30</span><span class="name">马金鹏</span></div><div class="text">所以你背弃他们，你等待吧！的确，他们是等待者[注]。</div></div><div class="tcard"><div class="meta"><span>第 32:30</span><span class="name">仝道章</span></div><div class="text">因此你要避开他们，并且等候，他们也一定在等候着。</div></div><div class="tcard"><div class="meta"><span>第 32:30</span><span class="name">王静斋</span></div><div class="text">你要远避他们。你等侯吧！他们也必是等侯的。</div></div><div class="tcard"><div class="meta"><span>第 32:30</span><span class="name">马坚</span></div><div class="text">你应当避开他们，你应当等待，他们必定是等待的。</div></div></div></div>
+    <details class="rag-container" style="margin:20px; padding:15px; background:var(--bg-card, #f9f9f9); border:1px solid var(--border, #eee); border-radius:8px;">
+        <summary style="cursor:pointer; font-weight:bold; color:var(--primary, #2A5D34);">[+] 打开 AI & RAG 语义索引库 (LLM Dataset Context)</summary>
+        <div class="rag-content" style="margin-top:15px; font-size:0.9em; line-height:1.6;">
+            <h2>《古兰经》第32章（叩头(赛直德)）中文翻译 RAG 语义索引库</h2>
+<article><h3>User Prompt: 提问：古兰经第 32 章第 1 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第1节的翻译如下：<br/>马仲刚: 艾利夫，俩目，米目[阿拉伯语三个字母的音译，唯安拉最知道其意]。<br/>马金鹏: 艾立夫，俩姆，米姆[注]。<br/>仝道章: 阿立甫、俩目、敏目。<br/>王静斋: （阿里甫、俩模、密默。）<br/>马坚: 艾列弗，俩目，米目。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 2 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第2节的翻译如下：<br/>马仲刚: 这部经典[《古兰经》]是从众世界的主[安拉]降示的，其中确实无疑。<br/>马金鹏: 其中无疑的经典[注]，是降自万世之养主的。<br/>仝道章: 这本确实无疑的经典是由众世界的主颁降的。<br/>王静斋: 降下无可疑的经典，是从调养众世界的主上。<br/>马坚: （这）是从全世界的主降示的经典，其中毫无疑义。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 3 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第3节的翻译如下：<br/>马仲刚: 难道他们要说：“《古兰经》是他[穆圣]伪造的吗？”不，《古兰经》是从你[穆圣]的主降示的真理，以便你警告在你之前没有任何警告者到达过的民众，以便他们遵行正道。<br/>马金鹏: 而他们[注1]却说是他[注2]编造的。它确是来自你养主的真理，以便你[注3]警告你以前没有一位警告者来至[注4]他们的族人。愿他们得正道。<br/>仝道章: 可是他们却说：“是他伪造它的吧?”不是的，它是来自你的主的真理，以便你能警告一群在你以前没有警告者到达过的人民，也许他们能够获得引导。<br/>王静斋: 不然，他们说：（他造作了它）吗? 不然，那是出自养主的真理，好教你警告一伙在你以前未得到警告的人，以便他们得正道。<br/>马坚: 他们说：「他捏造它吗？」不然！它是从你的主降示的真理，以便你警告在你之前没有任何警告者来临过的一群民众，以便他们遵循正道。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 4 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第4节的翻译如下：<br/>马仲刚: 是安拉在六日内创造了天地万物，然后升上宝座。除他外，你们绝没有任何保护者和求情者。难道你们还不接受教诲吗？<br/>马金鹏: 安拉是那在六天内[注1]造化了天与地和在两者之间的。后来，他升上阿尔史，你们在他以外没有一位挚友[注2]。没有一位说情者[注3]。你们还不思索吗？<br/>仝道章: 安拉在六天中造化了天地， 以及其间的万物，然后登上(权威的)宝座。在他之外，你们没有保护者或求情者，你们难道还不纪念(他)吗?<br/>王静斋: 安拉在六日造化了天地万有，而后操纵「阿勒世」。在你们除他以外无一爱护的，也无一告赦的。你们怎不受劝呢?<br/>马坚: 真主曾在六日内创造天地万物，然后，升上宝座，除他外，你们没有任何监护者和说情者。你们怎么不记念呢？</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 5 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第5节的翻译如下：<br/>马仲刚: 他处理自天至地的事务，然后，那些事务将在一日内上升到他那里。那一日的长度，是你们[在尘世]所计算的一千年。<br/>马金鹏: 他从天上安排事情至地上[注1]，后来，它[注2]在一日——你们所计算的一千年——之内再回至他[注3]，<br/>仝道章: 他规划从诸天到大地的(一切)事务。然后，在(某)一天当中(一切的事务)都将上升到他(那里)。这一天的长度照你们的计算是一千年。<br/>王静斋: 他治理事情，自天至地；而后那事件在它的限度是你们所计算的一千年的那一天升至真主。<br/>马坚: 他治理自天至地的事物，然后那事物在一日之内上升到他那里，那一日的长度，是你们所计算的一千年。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 6 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第6节的翻译如下：<br/>马仲刚: 这是全知一切看不见之物[注]和看得见之物的主[安拉]，[他]是全能的，是特慈的。<br/>马金鹏: 那是未见和可见的深知者、有力者、特慈者。<br/>仝道章: 这就是深知隐秘的(不可见的)、公开的(可见的)、大能的、大慈的主。<br/>王静斋: 这是知目不能见的与显见的优胜特慈的主。<br/>马坚: 那是全知幽明的、万能的、至慈的主。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 7 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第7节的翻译如下：<br/>马仲刚: 他完善他所创造的万物，他最初用泥土创造了人。<br/>马金鹏: 是那使万物的造化美好的，他从土上创造了人[注]。<br/>仝道章: 他使他所造化的每一件事物美好，他以泥土开始造人。<br/>王静斋: 那真主把自所造化的每一物造成完美的。他由泥上开始造化人类，<br/>马坚: 他精制他所创造的万物，他最初用泥土创造人。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 8 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第8节的翻译如下：<br/>马仲刚: 然后，他用无用的精液的精华创造他的后裔。<br/>马金鹏: 后来，从血块，从卑贱的水上创造了他的后裔[注]。<br/>仝道章: 然后，他(主)以一滴不受重视的液体造化他的后裔。<br/>王静斋: 并由微贱的清水上造化它的子孙。<br/>马坚: 然后用贱水的精华创造他的子孙。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 9 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第9节的翻译如下：<br/>马仲刚: 然后，他[安拉]匀称地成型他[人]，并把灵魂吹入他的体内。他为你们创造了耳[听觉]目[视觉]心[思维]，但你们很少感恩。<br/>马金鹏: 后来，他使他[注1]端正，把他的鲁哈吹入其中[注2]，为你们造化了听觉、视觉和心，你们却很少感谢。<br/>仝道章: 然后他(按照应有的比例)形成他，并把他(主)的灵吹进他的当中，他又给你们听觉、视觉和感觉(的官能)，而你们却很少感谢!<br/>王静斋: 主且造它为齐整的，为它吹入灵魂。主为你们造化耳、眼、心，你们绝少感念。<br/>马坚: 然后使他健全，并将他的精神吹在他的身体中，又为你们创造耳目心灵。你们很少感谢。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 10 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第10节的翻译如下：<br/>马仲刚: 他们说：“当我们[死后]消失在地下时，难道我们真的还要被复活成一个新的生命吗？”不，他们在否认[后世]与他们的主相会[注]。<br/>马金鹏: 他们[注1]说：“当我们消失在地里时，我们是在新的造化中[注2]吗？”而他们对与他们的养主相遇是隐昧的。<br/>仝道章: 他们说：“(什么话!)当我们已经消失在地下时，那时我们还会被重新造化吗?”不然，他们不信会见他们的主!<br/>王静斋: 他们说：（我们消失在地中的时候，必须重新被造吗?）不然，他们是不信看见养主的。<br/>马坚: 他们说：「我们消失在地下之后，难道我们必定重新受造吗？」不然！他们不信将与他们的主相会。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 11 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第11节的翻译如下：<br/>马仲刚: 你[对他们]说：“奉命管理你们死亡的天使将使你们死亡，然后，你们都将归到你们的主那里去。”<br/>马金鹏: 你说[注1]：“把你们委托给它的死亡天仙，他是结束你们的，后来，你们是被送回你们的养主[注2]的。”<br/>仝道章: 你说：“负责管你们的死亡的天仙将会使你们死亡。然后你们将被带回到你们的主(那里)。”<br/>王静斋: 你说，（那负责经管你们的，掌理死亡的天使，取去你们的性命，然后你们惟被归到养主。）<br/>马坚: 你说：「奉命主管你们的生命的死神，将使你们死亡，然后你们将被召归于你们的主。」</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 12 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第12节的翻译如下：<br/>马仲刚: 要是你能看见犯罪者在他们的主那里垂头丧气的情况多好啊！[他们将说]：“我们的主啊！我们看见了，我们听见了，求你送我们回[尘世]去吧！我们一定做善事，我们真的信仰了。”<br/>马金鹏: 假若你看到，当时犯罪者们低着头在他们养主前面[说]：“我们的养主哇！我们看到了[注1]，我们听到了[注2]，让我们回去干善功吧！我们是确信者。”<br/>仝道章: 如果你能看见那些有罪的人在他们的主跟前垂下他们的头说道：“我们的主啊! 我们已看见了，我们已听到了，求你现在送我们回(到尘世)去吧! (这一回)我们一定会作善事，我们(现在)的确信仰了。”<br/>王静斋: 为恶的人在养主御前俯首说：（养主啊！我们看见了，听到了；你让我们转回去作善举，我们实是坚信的。）当这时候，设若你看见了，……<br/>马坚: 假若你得见犯罪者在他们的主那里垂头丧气地说：「我们的主啊！我们已经看见了，听见了，求你让我们转回去，我们将做善事，我们确是确信者。」假若你看见这种情状……。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 13 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第13节的翻译如下：<br/>马仲刚: 假如我意欲，我必赐给每个人正道，但从我发出的[对作恶者的]判决已生效，我必用精灵和人类一起填满火狱。<br/>马金鹏: 假若我要时，我必定把正道给予每个人。但发自我的话落实了，我必定让全部镇尼和人填满了折汉难[注]。<br/>仝道章: 如果我曾经愿意，我一定能给每一个人引导，但是我对作恶者的话已经实现了，我一定会以精灵和人一同填满地狱。<br/>王静斋: 设我意欲……了，我必赐给每一个人正道。虽然，我的话：（必以镇呢与人类一同充满火狱）已然决定了。<br/>马坚: 假若我意欲，必以向导赋予每个人，但从我发出的判词已确定了，我必以精灵和人类一起填满火狱。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 14 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第14节的翻译如下：<br/>马仲刚: 你们尝试[火狱的]刑罚吧！因为你们忘记了你们今日[与我]的相会。我的确也将忘记你们。你们尝试永久的刑罚吧！因为你们常作恶。<br/>马金鹏: 则因你们忘记了与你们的这天相遇，所以你们品尝[注1]吧！的确，我也忘了你们[注2]！你们因你们的所作所为[注3]，就品尝永久处罚吧！<br/>仝道章: “现在你们尝试吧! 由于你们忘了你们在这一天(跟我)的会见，我(现在)也忘记了你们。为了你们所曾做过的尝试永恒的惩罚吧!”<br/>王静斋: 你们由于忘掉看见今日而尝试吧：我忘却你们了，你们因自所作过的尝试永久的刑罚吧！<br/>马坚: 你们尝试吧！因为你们忘记今日的相会，我确已忘记你们了。你们因为自己的行为而尝试永久的刑罚吧。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 15 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第15节的翻译如下：<br/>马仲刚: 唯这些人信仰我的启示：当有人以我的启示劝戒他们时，他们就俯首叩头并赞美颂扬他们的主，而且他们不骄傲自大；叩头处<br/>马金鹏: 归信我的迹象[注]的只是那些人，如果他们以它受劝，他们便伏地叩头，他们以赞美他们的养主而赞[他]清高！他们是不高傲的。<br/>仝道章: 只有那些信仰我的启示的人，当他们被提醒(我的启示)时，他们就俯伏叩头，并赞念他们的主(安拉)。他们也不自高自大。<br/>王静斋: 信我的表征惟有一般遇人以这个劝他的时候，遂就倒身下拜，以赞其养主称颂清净，并不高傲的人。<br/>马坚: 信仰我的迹象的，只有那等人：别人以我的迹象劝戒他们的时候，他们便俯伏叩头并赞颂他们的那超绝万物的主，他们不敢妄自尊大，※</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 16 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第16节的翻译如下：<br/>马仲刚: 他们体不落床，他们在畏惧和期望中祈求他们的主，并[为安拉之道]施舍我所赐予他们的财物。<br/>马金鹏: 他们的身躯离开卧铺[注]，骇怕与希望地乞求他们的养主，和从我赐予他们的上施费的。<br/>仝道章: 当他们在畏惧与希望中祈求他们的主时，他们体不沾床，他们使用我已赐给他们的(财物于善举)。<br/>王静斋: 他们的两肋离开卧所，在骇怕希望着呼求养主；并就着我所赐与的作使用。<br/>马坚: 他们肋不落床，他们以恐惧和希望的心情祈祷他们的主；他们分舍我所赐予他们的。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 17 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第17节的翻译如下：<br/>马仲刚: 任何人都不知道已[在乐园中]为他们储藏了何种极乐之福，以报酬他们所做的善功[注]。<br/>马金鹏: 所以每个人不知道为他们所掩盖的开心悦目的事，作为对他们所干的报酬。<br/>仝道章: 没有人知道我为他们(在天园中)藏着什么样令他们目畅心怡的(福泽)，作为他们所做过的(善行的)回赐。<br/>王静斋: 人不知道已为他们隐伏的愉快。这是因着他们所作过的施以报偿。<br/>马坚: 任何人都不知道已为他们贮藏了甚么慰藉，以报酬他们的行为。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 18 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第18节的翻译如下：<br/>马仲刚: 难道信士与悖逆者[违抗安拉的不信仰者等]是一样的吗？他们绝不是一样的。<br/>马金鹏: 那归信者可像他是坏人的吗？他们是不一样的。<br/>仝道章: 那么信仰的人象背叛的人(一样)吗?他们是不相等的。<br/>王静斋: 为穆民的安能像是作恶的人呢?他们本不一样。<br/>马坚: 信道者与悖逆者一样吗？他们是不相等的。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 19 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第19节的翻译如下：<br/>马仲刚: 至于信仰并行善者，乐园就是他们的归宿，这是对他们所做善功的款待。<br/>马金鹏: 至于那些归信并干善功的人，则他们以他们所干的享受归宿的天堂。<br/>仝道章: 至于那些信仰并作善行的人，给他们的居处是天园，那是一项对他们所做过的(善行的)款待。<br/>王静斋: 归信并作善举的人，可以其所作过的获得路筵般的长住的园林。<br/>马坚: 至于信道而且行善者，将来得以乐园为归宿，那是为了报酬他们的行为的。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 20 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第20节的翻译如下：<br/>马仲刚: 至于悖逆者，火狱就是他们的归宿。每当他们想逃离火狱时，他们又被赶回去。有话声对他们说：“你们尝试你们[在尘世]所否认的火狱的刑罚吧！”<br/>马金鹏: 至于那些为非干歹的[注1]人们，则他们的归宿是火狱。每当他们要从它[注2]中出去时，他们便被赶了回来，有人[注3]对他们说：“你们尝尝你们所不信的火狱处罚吧！”<br/>仝道章: 但是那些背叛的人，他们的居处是火(狱)，每当他们希望离开那里时，他们就会(被强迫)回到其中，并将对他们说：“你们尝试火刑吧，那是你们曾经不信的。”<br/>王静斋: 作恶的人，其居所是火狱。有时他们欲从那里出去，复被投在其中；有的对他们说：（你们尝试曾所不信的火刑吧！）<br/>马坚: 至于悖逆者，他们的归宿，只是火狱，每当他们要想逃出，都被拦回去。有声音对他们说：「你们尝试以前你们所否认的火刑吧！」</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 21 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第21节的翻译如下：<br/>马仲刚: 在[后世]最大的刑罚来临前，我必使他们尝试最近的[小]刑罚[如今世所遭的灾难]，以便他们悔过自新。<br/>马金鹏: 我必使他们品尝在大处罚[注1]前的眼前处罚[注2]！愿他们返回[注3]。<br/>仝道章: 我一定会使他们在受到更大的惩罚之前使他们尝试较近的(即今世的)刑罚，以便他们或许能够(忏悔和)回头。<br/>王静斋: 我必教他们尝试次于极大刑罚的最近的刑罚，好教他们转回。<br/>马坚: 在最大的刑罚之前，我必使他们尝试最近的刑罚，以便他们悔悟。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 22 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第22节的翻译如下：<br/>马仲刚: 有人以他的主的启示劝戒他，而他却背弃它，谁比这种人更不义呢？我必将惩罚犯罪者。<br/>马金鹏: 谁比那人更为亏折的呢？有人把他养主的迹象[注1]读给他，而他竞背弃了它！的确，我从犯罪者们[注2]上，是报复的。<br/>仝道章: 还有谁比他的主的启示向他提起时而避开的人更不义?我确将报复有罪的人。<br/>王静斋: 遇人劝以安拉的表征遂就远避，谁是比这类人更属背义的。我义报复作恶的人。<br/>马坚: 有人以主的迹象劝戒他，而他不肯听从，这样的人，谁比他还不义呢？我必然要惩浩犯罪的人。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 23 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第23节的翻译如下：<br/>马仲刚: 我确已赐给穆萨经典[《讨拉特》]，所以，你不要怀疑会与他相会[如穆圣升霄之夜与穆萨的相会]。我曾使那部经典成为以色列的后裔的指南。<br/>马金鹏: 我确已把经典[注1]授给了穆萨，你不要对相遇他[注2]处于怀疑之中，我使他成为以色列人的引导。<br/>仝道章: 我的确在以前赐经典给姆撒，所以 你不要怀疑它，我并曾使它作为以色列子孙的引导。<br/>王静斋: 我确把经典赐给母撒了。你对于见他上不要怀疑。我委他引导以斯拉衣来的子孙。<br/>马坚: 我确已把经典赏赐穆萨，所以你们对于接受经典，不要陷于犹豫中，我曾以那部经典为以色列后裔的向导。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 24 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第24节的翻译如下：<br/>马仲刚: 当他们[以色列的后裔]坚忍并确信我的启示时，我曾任命他们中的一些人做领袖，他们[那些领袖]奉我的命令引导人们[遵行正道]。<br/>马金鹏: 我使他们中的部分人，当他们忍耐[注1]时，奉我的命令作为引导人们的领导者，他们对我的迹象[注2]是确信的。<br/>仝道章: 只要他们坚忍，并确信我的启示，我就从他们当中委派一些人作领袖，奉我的命令引导他们(以色列的子孙)。<br/>王静斋: 我于他们之间发现一般教领，奉我的命令作引导，彼时他们忍耐， 他们坚信我的种种表征。<br/>马坚: 我曾以他们中的一部分人为表率，当他们忍受艰难，确信我的迹象的时候，奉我的命令去引导众人。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 25 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第25节的翻译如下：<br/>马仲刚: 复活日，你的主必为他们判决他们所分歧的。<br/>马金鹏: 的确，你的养主于复活之日，对他们所分歧的[注]加以分析。<br/>仝道章: 你的主确将在复活日，在他们之间裁判他们所曾(互相)争论的歧见。<br/>王静斋: 你的养主将在复生日对他们所争议的从中判明。<br/>马坚: 复活日，你的主必定判决他们所争论的是非。</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 26 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第26节的翻译如下：<br/>马仲刚: 难道他们没有获得引导[或难道他们不知道]吗？在他们之前，我曾毁灭了许多世代，他们常从这些人的故居上走过。此中确有许多迹象，他们为何不听从呢？<br/>马金鹏: 我在他们以前使多少民族灭亡，还没有对他们说明吗？他们在他们的住地中行走[注1]。的确，其中确有一些迹象。他们没听到[注2]吗？<br/>仝道章: 我在他们之前毁灭了多少世代，他们行走在这些人的故居上，这难道对于他们不是一项引导吗?这当中确有迹象，他们还没有听到吗?<br/>王静斋: 我在他们 以前灭绝了若干代，他们经过那般人的居处，这在他们尚未明白吗?此中确含有种种表征，他们怎不听从呢?<br/>马坚: 难道他们还不晓得吗？在他们之前，我曾毁灭了许多世代，他们常常经过那些人的故乡，在那里确有许多迹象。他们怎么不听从呢？</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 27 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第27节的翻译如下：<br/>马仲刚: 难道他们没看见吗？我把雨水[含雨的云]赶到无植物生长的干地，借此而生长出庄稼[注1]，供他们的牲畜[注2]和他们自己吃吗？难道他们没有看见吗？<br/>马金鹏: 他们没看到吗？的确，我把水驱至干涸不毛之地，于是我用它让庄稼长出，供你们的牲畜和你们自己食用，你们没有看到吗？<br/>仝道章: 他们没看见我驱使水至(寸草不生的)荒土，然后我在那里生长谷物，供给他们的牲口和他们自己食用吗?他们还没有看见吗?<br/>王静斋: 他们岂未看见，我把水驱至不毛之地，而用它发生禾谷。他们的牲畜与个人就着它吃，他们怎不观察呢?<br/>马坚: 他们还不知道吗？我把雨水赶到无草的地方，而借它生出他们的牲畜和他们自己所食的庄稼。难道他们看不见吗？</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 28 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第28节的翻译如下：<br/>马仲刚: 他们说：“假如你们是诚实者，[我们与你们之间的]这个判决何时实现呢？”<br/>马金鹏: 他们说[注1]：“这个判断[注2]是何时呀？若你们是忠实者时。”<br/>仝道章: 他们说：“如果你是诚实的，(告诉我们)审判(你们的胜利)在什么时候到来?”<br/>王静斋: 他们说：（这判明是在何时? 如果你们所言属实了，……）<br/>马坚: 他们说：「这种判决甚么时候实现呢？如果你们是说实话的。」</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 29 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第29节的翻译如下：<br/>马仲刚: 你说：“审判日，对不信仰者来说，[那时]即使他们信仰，对他们也是无益的，他们将不被缓刑。”<br/>马金鹏: 你说：“判断之日[注1]，那些隐昧者们的信念对他们无益，他们不受宽容[注2]。”<br/>仝道章: 你说：“在审判(我们胜利)的那天，不信者的信仰将对他们无益，他们也不被给予宽限。”<br/>王静斋: 你说：（在判断{实现}的那一天，逆徒们的归信无济，他们也得不到姑容。）<br/>马坚: 你说：「不信道者，在判决日，虽信无益，并且不获得宽待。」</p></article><article><h3>User Prompt: 提问：古兰经第 32 章第 30 节的中文意思是什么？</h3><p><strong>System Response:</strong> 根据多版本中文古兰经记载，第32章（叩头(赛直德)）第30节的翻译如下：<br/>马仲刚: 你[穆圣]当避开他们，你当等待。他们的确也在等待。<br/>马金鹏: 所以你背弃他们，你等待吧！的确，他们是等待者[注]。<br/>仝道章: 因此你要避开他们，并且等候，他们也一定在等候着。<br/>王静斋: 你要远避他们。你等侯吧！他们也必是等侯的。<br/>马坚: 你应当避开他们，你应当等待，他们必定是等待的。</p></article>
+        </div>
+    </details>
+    
+    </main>
+  </div>
+
+  <div class="loading">
+    <div class="spinner">加载中…</div>
+  </div>
+
+  <!-- Data Scripts (Offline Compatible) -->
+  <script src="../sura-names.js"></script>
+
+  <!-- Translator Data: 5 Versions -->
+  <script src="../data/majian.data.js"></script>
+  <script src="../data/mazhonggang.data.js"></script>
+  <script src="../data/majinpeng.data.js"></script>
+  <script src="../data/tongdaozhang.data.js"></script>
+  <script src="../data/wangjingzhai.data.js"></script>
+
+  <!-- Application Logic -->
+  <script src="../assets/app.js"></script>
+<script>window.addEventListener('DOMContentLoaded', () => { window.location.hash = '#32'; });</script>
+</body>
+
+</html>

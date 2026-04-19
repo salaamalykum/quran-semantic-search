@@ -1,0 +1,328 @@
+/* Mobile Styles - Apple-style, Islamic-inspired, Dark/Light Mode */
+:root {
+  --bg: #ffffff;
+  --fg: #1d1d1f;
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --border: #e5e5ea;
+  --muted: #86868b;
+  --accent: #007aff;
+  /* Apple Blue or Islamic Green? User said Islamic aesthetic but Apple design. */
+  --accent-islamic: #1fa37e;
+  --card-bg: #f5f5f7;
+  --hl: #ffe066;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] {
+  --bg: #000000;
+  --fg: #f5f5f7;
+  --nav-bg: rgba(28, 28, 30, 0.9);
+  --border: #38383a;
+  --muted: #86868b;
+  --accent: #0a84ff;
+  --accent-islamic: #2b7a66;
+  --card-bg: #1c1c1e;
+  --hl: #2b7a66;
+  /* darker highlight */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Topbar */
+.topbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 0.5px solid var(--border);
+  z-index: 50;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--accent-islamic);
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  color: var(--fg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+.icon-btn:active {
+  background: rgba(128, 128, 128, 0.15);
+}
+
+
+/* Search */
+.search-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: rgba(118, 118, 128, 0.12);
+  border-radius: 10px;
+  padding: 0 8px;
+  min-width: 0;
+  /* Enable flex shrinking */
+}
+
+.search-wrap input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px 4px;
+  color: var(--fg);
+  font-size: 16px;
+  outline: none;
+  min-width: 0;
+  /* CRITICAL: prevents overflow */
+}
+
+.search-wrap .btn {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  /* Prevents button from being squashed */
+}
+
+/* Controls / Filters */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.controls {
+  flex: 0 0 auto;
+  margin-bottom: 8px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.filter-item {
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--card-bg);
+  padding: 6px 10px;
+  border-radius: 99px;
+  /* Pill shape */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+
+.filter-item input {
+  margin: 0
+}
+
+/* Drawer for Sura List */
+.drawer {
+  position: fixed;
+  inset: 0;
+  transform: translateX(-100%);
+  background: var(--bg);
+  z-index: 100;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer[aria-hidden="false"] {
+  transform: translateX(0);
+}
+
+.drawer.open {
+  /* Alternative class for JS toggle */
+  transform: translateX(0);
+}
+
+.drawer-header {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sura-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.sura-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sura-item:active {
+  background: var(--card-bg);
+}
+
+.sura-item .num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  color: var(--accent-islamic);
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Results */
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+/* Verse Row */
+.aya-row {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 14px;
+}
+
+.aya-row:last-child {
+  border-bottom: none;
+}
+
+.aya-row .meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.translations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  padding: 10px 12px;
+  background: var(--card-bg);
+  border-radius: 12px;
+}
+
+.card .translator {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-islamic);
+  margin-bottom: 4px;
+}
+
+.card .text {
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Highlight */
+mark.hl {
+  background: var(--hl);
+  color: #000;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+/* Loading - CRITICAL FIX */
+.loading {
+  text-align: center;
+  color: var(--muted);
+  padding: 20px;
+  display: none;
+  /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.loading.active {
+  display: flex;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent-islamic);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-results {
+  text-align: center;
+  color: var(--muted);
+  padding: 40px;
+}

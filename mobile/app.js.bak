@@ -1,0 +1,239 @@
+
+// mobile app.js - simplified, file:// friendly, uses window.QDATA and window.SURA_NAMES
+const TRANSLATORS = [
+  { key: 'mazhonggang', name: '马仲刚' },
+  { key: 'majinpeng', name: '马金鹏' },
+  { key: 'tongdaozhang', name: '仝道章' },
+  { key: 'wangjingzhai', name: '王静斋' },
+  { key: 'majian', name: '马坚' },
+];
+
+const STATE = {
+  selected: new Set(TRANSLATORS.map(t=>t.key)),
+  sura: window.SURA_NAMES || {},
+  activeSura: null
+};
+
+function $(s,ctx=document){return ctx.querySelector(s)}
+function $$(s,ctx=document){return Array.from(ctx.querySelectorAll(s))}
+function setStatus(msg){$('#status').textContent = msg || ''}
+function show(el){el.style.display='block'}
+function hide(el){el.style.display='none'}
+
+function escapeRegExp(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+function buildFilters(){
+  const wrap = $('#filter-translators');
+  wrap.innerHTML = '';
+  for(const t of TRANSLATORS){
+    const id = 'cb-'+t.key;
+    const div = document.createElement('label');
+    div.className = 'filter-chip';
+    div.innerHTML = `<input type="checkbox" data-key="${t.key}" id="${id}" ${STATE.selected.has(t.key)?'checked':''}> ${t.name}`;
+    wrap.appendChild(div);
+    div.querySelector('input').addEventListener('change', (e)=>{
+      if(e.target.checked) STATE.selected.add(t.key); else STATE.selected.delete(t.key);
+      // rerender current view
+      if(STATE.activeSura) renderSura(STATE.activeSura); else renderSearchResults();
+    });
+  }
+  $('#select-all').addEventListener('click', ()=>{
+    TRANSLATORS.forEach(t=>STATE.selected.add(t.key));
+    buildFilters();
+    if(STATE.activeSura) renderSura(STATE.activeSura); else renderSearchResults();
+  });
+  $('#clear-all').addEventListener('click', ()=>{
+    TRANSLATORS.forEach(t=>STATE.selected.delete(t.key));
+    buildFilters();
+    if(STATE.activeSura) renderSura(STATE.activeSura); else renderSearchResults();
+  });
+}
+
+function collectDataForKey(key){
+  return (window.QDATA && window.QDATA[key]) || [];
+}
+
+function tokenizeQuery(q){
+  q = (q||'').trim();
+  if(!q) return [];
+  // regex mode
+  if(q.startsWith('/') && q.endsWith('/')){
+    return [{type:'regex', re: new RegExp(q.slice(1,-1), 'i')}];
+  }
+  // split by spaces
+  return q.split(/\s+/).map(s=>({type:'token', text:s}));
+}
+
+function highlightText(text, tokens){
+  if(!tokens || tokens.length===0) return text;
+  let out = text;
+  for(const tk of tokens){
+    if(tk.type==='token'){
+      const rx = new RegExp(escapeRegExp(tk.text), 'gi');
+      out = out.replace(rx, m=>`<mark class="hl">${m}</mark>`);
+    }else if(tk.type==='regex'){
+      try{
+        const r = new RegExp(tk.re, 'gi');
+        out = out.replace(r, m=>`<mark class="hl">${m}</mark>`);
+      }catch(e){}
+    }
+  }
+  return out;
+}
+
+function search(){
+  const q = $('#q').value.trim();
+  STATE.activeSura = null;
+  setStatus('');
+  if(!q){ setStatus('请输入关键词或选择章节'); renderSearchResults(); return; }
+  const tokens = tokenizeQuery(q);
+  // gather selected datasets
+  const keys = TRANSLATORS.filter(t=>STATE.selected.has(t.key)).map(t=>t.key);
+  if(keys.length===0){ setStatus('请至少选择一个译本'); return; }
+  show($('#loading'));
+  // small timeout to allow loading indicator to show
+  setTimeout(()=>{
+    const results = [];
+    for(const k of keys){
+      const arr = collectDataForKey(k);
+      for(const rec of arr){
+        // match tokens: AND logic across rec.text
+        let ok = true;
+        for(const tk of tokens){
+          if(tk.type==='token'){
+            if(rec.text.toLowerCase().indexOf(tk.text.toLowerCase()) === -1){ ok=false; break; }
+          }else if(tk.type==='regex'){
+            try{
+              if(!(new RegExp(tk.re,'i')).test(rec.text)){ ok=false; break; }
+            }catch(e){ ok=false; break; }
+          }
+        }
+        if(ok){
+          results.push(Object.assign({},rec,{translator:k}));
+        }
+      }
+    }
+    hide($('#loading'));
+    renderResultsGrouped(results, tokens);
+  }, 20);
+}
+
+function renderResultsGrouped(records, tokens){
+  const out = $('#results');
+  out.innerHTML = '';
+  if(!records || records.length===0){
+    out.innerHTML = '<div class="no-results">未找到结果</div>';
+    return;
+  }
+  // group by sura->aya
+  const map = {};
+  for(const r of records){
+    const key = r.sura+'-'+r.aya;
+    map[key] = map[key] || {sura: r.sura, aya: r.aya, rows: {}};
+    map[key].rows[r.translator] = r;
+  }
+  const keys = Object.keys(map).sort((a,b)=>{
+    const [sa,aa]=a.split('-').map(Number); const [sb,ab]=b.split('-').map(Number);
+    return sa===sb? aa-ab: sa-sb;
+  });
+  for(const k of keys){
+    const group = map[k];
+    const row = document.createElement('div'); row.className='aya-row';
+    const meta = document.createElement('div'); meta.className='meta';
+    meta.innerHTML = `<div>第${group.sura}章 第${group.aya}节</div><div>${STATE.sura[String(group.sura)]||''}</div>`;
+    row.appendChild(meta);
+    const transWrap = document.createElement('div'); transWrap.className='translations';
+    for(const t of TRANSLATORS){
+      if(!STATE.selected.has(t.key)) continue;
+      const card = document.createElement('div'); card.className='card';
+      const rec = group.rows[t.key];
+      const title = document.createElement('div'); title.className='translator'; title.textContent = t.name;
+      const content = document.createElement('div');
+      if(rec){
+        content.innerHTML = highlightText(rec.text, tokens);
+      }else{
+        content.innerHTML = '<span style="color:#999">— 无内容 —</span>';
+      }
+      card.appendChild(title); card.appendChild(content);
+      transWrap.appendChild(card);
+    }
+    row.appendChild(transWrap);
+    out.appendChild(row);
+  }
+}
+
+function renderSura(sura){
+  STATE.activeSura = sura;
+  setStatus('');
+  const keys = TRANSLATORS.filter(t=>STATE.selected.has(t.key)).map(t=>t.key);
+  const out = $('#results'); out.innerHTML=''; hide($('#loading'));
+  // for each aya in that sura, build row
+  // collect aya numbers from first selected translator dataset, or across all
+  const ayaSet = new Set();
+  for(const k of keys){
+    const arr = collectDataForKey(k);
+    for(const r of arr){
+      if(r.sura === sura) ayaSet.add(r.aya);
+    }
+  }
+  const ayaList = Array.from(ayaSet).sort((a,b)=>a-b);
+  if(ayaList.length===0){
+    out.innerHTML = '<div class="no-results">未找到结果</div>'; return;
+  }
+  for(const aya of ayaList){
+    const row = document.createElement('div'); row.className='aya-row';
+    const meta = document.createElement('div'); meta.className='meta';
+    meta.innerHTML = `<div>第${sura}章 第${aya}节</div><div>${STATE.sura[String(sura)]||''}</div>`;
+    row.appendChild(meta);
+    const transWrap = document.createElement('div'); transWrap.className='translations';
+    for(const t of TRANSLATORS){
+      if(!STATE.selected.has(t.key)) continue;
+      const card = document.createElement('div'); card.className='card';
+      const arr = collectDataForKey(t.key);
+      const rec = arr.find(x=>x.sura===sura && x.aya===aya);
+      const title = document.createElement('div'); title.className='translator'; title.textContent = t.name;
+      const content = document.createElement('div');
+      if(rec) content.innerHTML = rec.text;
+      else content.innerHTML = '<span style="color:#999">— 无内容 —</span>';
+      card.appendChild(title); card.appendChild(content);
+      transWrap.appendChild(card);
+    }
+    row.appendChild(transWrap);
+    $('#results').appendChild(row);
+  }
+}
+
+function buildSuraList(){
+  const wrap = $('#sura-list');
+  wrap.innerHTML = '';
+  for(let i=1;i<=114;i++){
+    const item = document.createElement('div'); item.className='sura-item'; item.dataset.sura = String(i);
+    item.innerHTML = `<div class="num">${i}</div><div class="name">${STATE.sura[String(i)]||''}</div>`;
+    item.addEventListener('click', ()=>{
+      closeDrawer();
+      renderSura(i);
+    });
+    wrap.appendChild(item);
+  }
+}
+
+function openDrawer(){ $('#drawer').classList.add('open') }
+function closeDrawer(){ $('#drawer').classList.remove('open') }
+
+function bindUI(){
+  $('#btn-drawer').addEventListener('click', ()=> openDrawer());
+  $('#close-drawer').addEventListener('click', ()=> closeDrawer());
+  $('#go').addEventListener('click', ()=> search());
+  $('#q').addEventListener('keydown', (e)=>{ if(e.key==='Enter') search(); });
+}
+
+(function init(){
+  if(!window.QDATA){
+    // try to adapt older names: some files might assign window.QDATA[...] already
+    console.warn('QDATA not found, falling back to scanning window for data keys');
+  }
+  buildFilters();
+  buildSuraList();
+  bindUI();
+  setTimeout(()=>{ openDrawer(); }, 150);
+})();
