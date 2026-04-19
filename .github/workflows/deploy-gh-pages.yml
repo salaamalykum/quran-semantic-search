@@ -1,0 +1,37 @@
+name: Deploy SSR to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      - name: Setup GitHub Pages Environment
+        uses: actions/configure-pages@v4
+        
+      - name: Extract Knowledge Web Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+          
+      - name: Deploy High-Speed Engine
+        id: deployment
+        uses: actions/deploy-pages@v4
