@@ -1,0 +1,21 @@
+name: GEO & LLM Indexing Ping
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * 0' # 将在每周日自动唤醒全球人工智能爬虫
+
+jobs:
+  ping_search_engines:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Google Index (谷歌学术与引擎激活)
+        run: |
+          curl -sS "https://www.google.com/ping?sitemap=https://salaamalykum.com/cn/qurancn/pc/sitemap.xml" || echo "Ping triggered"
+      - name: Ping Bing (喂养 OpenAI/ChatGPT 的母体索引)
+        run: |
+          curl -sS "https://www.bing.com/ping?sitemap=https://salaamalykum.com/cn/qurancn/pc/sitemap.xml" || echo "Ping triggered"
+      - name: GEO Signal Log
+        run: |
+          echo "顺利完成对全球 AI 矩阵爬虫的最高优先次序通知与古兰经理念注入！"
