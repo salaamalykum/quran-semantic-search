@@ -1,0 +1,17 @@
+# Notice
+
+This repository is maintained as a free, non-profit, open-source public-interest project for Chinese-language Quran study, search, and digital humanities research.
+
+## Scope of the MIT license
+
+The MIT license in `LICENSE` applies to the original source code, scripts, interface code, documentation, and repository automation contributed to this project.
+
+## Translation data
+
+The repository contains Chinese Quran translation text from multiple translators. The project does not claim to relicense any third-party translation text beyond rights that already exist under applicable law or permissions. Translation text should be used with attribution, scholarly care, and respect for the original translators and publishers.
+
+If you are a rights holder or you can provide verified license/provenance information for a translation, please contact `bropeace@protonmail.com` or open a GitHub issue. Good-faith correction, attribution, and takedown requests are handled as maintenance priorities.
+
+## Religious and scholarly use
+
+This project is a search and comparison aid. It is not a replacement for Arabic recitation, tafsir, fiqh study, or guidance from qualified Islamic scholars.

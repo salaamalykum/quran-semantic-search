@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest a search, UI, data, accessibility, or deployment improvement.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or user need
+      description: Who benefits and what workflow is hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Search
+        - PC UI
+        - Mobile UI
+        - Accessibility
+        - Data pipeline
+        - Documentation
+        - Deployment
+        - Maintenance automation
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Note offline use, low-bandwidth use, religious/data-safety concerns, or compatibility needs.

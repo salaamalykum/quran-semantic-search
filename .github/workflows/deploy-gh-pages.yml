@@ -1,4 +1,4 @@
-name: Deploy SSR to GitHub Pages
+name: Deploy static site to GitHub Pages
 
 on:
   push:
@@ -21,17 +21,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Setup GitHub Pages Environment
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
         
-      - name: Extract Knowledge Web Artifacts
+      - name: Upload static site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
           
-      - name: Deploy High-Speed Engine
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

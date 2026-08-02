@@ -1,5 +1,9 @@
 # 📖 古兰经五大中文译本并行检索引擎
 
+[![Validate corpus and static site](https://github.com/salaamalykum/quran-semantic-search/actions/workflows/validate.yml/badge.svg)](https://github.com/salaamalykum/quran-semantic-search/actions/workflows/validate.yml)
+[![CodeQL](https://github.com/salaamalykum/quran-semantic-search/actions/workflows/codeql.yml/badge.svg)](https://github.com/salaamalykum/quran-semantic-search/actions/workflows/codeql.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 > **بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم**
 >
 > 奉至仁至慈的真主之名
@@ -8,13 +12,25 @@
 
 ## 项目简介
 
-本项目是一个完全**开源、公益、免费**的古兰经中文检索平台。我们将近现代汉语伊斯兰翻译史上最具权威的五个版本并列呈现，让每一位认识中文/汉语的穆斯林，无论身处中国内地、东南亚、欧美还是非洲，都能随时随地以母语深入研读真主的启示。
+本项目是一个**软件代码开源、公益、免费**的古兰经中文检索平台。我们将近现代汉语伊斯兰翻译史上最具权威的五个版本并列呈现，让每一位认识中文/汉语的穆斯林，无论身处中国内地、东南亚、欧美还是非洲，都能随时随地以母语深入研读真主的启示。
 
 **官方检索入口：**
 
 - 💻 **PC端检索引擎**：[https://salaamalykum.com/cn/qurancn/pc/](https://salaamalykum.com/cn/qurancn/pc/)
 - 📱 **Mobile端检索引擎**：[https://salaamalykum.com/cn/qurancn/mobile/](https://salaamalykum.com/cn/qurancn/mobile/)
 - 📧 **学术与开发联络邮箱**：[bropeace@protonmail.com](mailto:bropeace@protonmail.com)
+
+---
+
+## 项目状态与开放维护
+
+- **公益定位：** 永久免费、无广告、无付费墙，面向中文穆斯林、伊斯兰教育者、阿訇、研究者与社区镜像部署者。
+- **数据规模：** 五个中文译本，每个译本 6,236 条 ayah 记录，覆盖 114 章；PC 与 mobile 数据保持一致。
+- **离线能力：** 纯静态架构，可通过 `file://`、简单 HTTP 服务器、GitHub Pages 或社区自建服务器运行。
+- **维护流程：** 已建立 [贡献指南](CONTRIBUTING.md)、[安全政策](SECURITY.md)、[维护者职责](MAINTAINERS.md)、[路线图](ROADMAP.md)、Issue 模板与 PR 模板。
+- **质量验证：** 每次 PR/push 可运行 `python3 scripts/validate_project.py`，检查数据完整性、PC/mobile 一致性、SSR 页面、sitemap 与 RAG JSONL。
+- **许可边界：** 源代码使用 MIT License；译文文本可能受独立权利约束，详见 [NOTICE](NOTICE) 与 [数据来源标准](docs/DATA_PROVENANCE.md)。
+- **Codex for OSS：** 本仓库已整理申请说明与 500 字以内表单草稿：[docs/CODEX_FOR_OSS.md](docs/CODEX_FOR_OSS.md)。
 
 ---
 
@@ -61,7 +77,7 @@
 
 - **永久免费**，不收取任何费用，不投放任何广告。
 - **开源透明**，所有代码公开，任何人都可以审查、复制和改进。
-- **忠实原典**，所有经文内容均来自公认的权威译本，不作任何删改。
+- **尊重原典**，译文数据以权威译本为来源；任何勘误必须提供可验证来源，不凭主观偏好改写。
 - **持续维护**，随着社区反馈不断修正错误、优化体验。
 
 ---
@@ -161,7 +177,7 @@
 
 ### 填补中文伊斯兰数字人文研究的空白
 
-在阿拉伯语、英语、波斯语、乌尔都语等语言中，古兰经的数字化资源已经相当成熟，有多个成熟的在线平台提供多译本对照功能。然而，在中文领域，这类资源长期处于分散、低质量、缺乏系统整合的状态。本项目是目前已知的、第一个将五个主要权威中文译本完整数字化并提供全文关键词检索的开源平台。
+在阿拉伯语、英语、波斯语、乌尔都语等语言中，古兰经的数字化资源已经相当成熟，有多个成熟的在线平台提供多译本对照功能。然而，在中文领域，这类资源长期处于分散、低质量、缺乏系统整合的状态。本项目致力于将五个主要权威中文译本系统整理为可检索、可离线部署、可审计维护的开放平台。
 
 ### 对中文伊斯兰学术研究的贡献
 
@@ -182,7 +198,7 @@
 - `quran_rag_dataset.jsonl`：五译本并行对照数据集，JSON Lines 格式，每行为一节经文的五译本对照记录
 - `quran_rag_alpaca.jsonl`：转化为 Alpaca 指令跟随格式的数据集，适合用于语言模型的指令微调实验
 
-数据集的使用须遵守本项目的开源许可协议，并在任何学术发表中适当注明来源。
+数据集的使用须遵守本项目的许可与来源说明，并在任何学术发表中适当注明来源。源代码采用 MIT License；译文文本可能受独立权利约束，详见 [NOTICE](NOTICE)。
 
 ---
 
@@ -211,7 +227,7 @@
 如果你的电脑已经安装了 Git，可以在终端或命令提示符中运行：
 
 ```bash
-git clone https://github.com/your-username/quran-semantic-search.git
+git clone https://github.com/salaamalykum/quran-semantic-search.git
 ```
 
 ### 启动本地检索引擎
@@ -270,7 +286,7 @@ python3 -m http.server 8080
 cd /var/www/
 
 # 克隆代码库
-git clone https://github.com/your-username/quran-semantic-search.git
+git clone https://github.com/salaamalykum/quran-semantic-search.git
 
 # 进入项目目录
 cd quran-semantic-search
@@ -432,7 +448,7 @@ RewriteRule ^(.*)$ /index.html [L,QSA]
 # 确认 Python 版本
 python3 --version  # 需要 3.9 或以上
 
-# 安装依赖（如有）
+# 当前脚本只使用 Python 标准库；该命令用于保持文档化流程可复现
 pip install -r requirements.txt
 ```
 
@@ -454,6 +470,12 @@ python3 convert_hf.py
 # 输出文件：quran_rag_alpaca.jsonl
 ```
 
+**验证仓库完整性：**
+
+```bash
+python3 scripts/validate_project.py
+```
+
 Alpaca 格式的每条记录示例：
 
 ```json
@@ -467,7 +489,7 @@ Alpaca 格式的每条记录示例：
 ### 数据使用注意事项
 
 1. **学术引用：** 在论文或报告中使用本数据集时，请注明数据来源及项目地址。
-2. **版权说明：** 各译本的版权归属于原译者或其授权机构，本项目仅对数字化整理工作进行开源授权。在发表涉及具体译文内容的研究时，请另行确认版权状态。
+2. **版权说明：** 各译本的版权归属于原译者或其授权机构；本项目对原创代码、脚本、界面与文档采用 MIT License。发表、再分发或训练使用具体译文内容前，请另行确认译文版权与来源状态，并参阅 [NOTICE](NOTICE)。
 3. **数据质量反馈：** 如发现任何经文内容的错字、遗漏或格式问题，欢迎通过 GitHub Issues 或发送邮件至 [bropeace@protonmail.com](mailto:bropeace@protonmail.com) 反馈。
 
 ---
@@ -535,7 +557,7 @@ Alpaca 格式的每条记录示例：
 2. 创建一个新的分支：`git checkout -b feature/your-feature-name`
 3. 完成你的修改并提交：`git commit -m "描述你的修改内容"`
 4. 推送到你的 Fork：`git push origin feature/your-feature-name`
-5. 在原仓库提交 Merge Request
+5. 在原仓库提交 Pull Request
 
 如有任何疑问，欢迎先通过邮件联系我们讨论：[bropeace@protonmail.com](mailto:bropeace@protonmail.com)
 
@@ -565,4 +587,4 @@ Alpaca 格式的每条记录示例：
 
 ---
 
-*本项目以开源精神发布，详见仓库根目录下的 LICENSE 文件。*
+*本项目以开源精神维护。源代码许可详见 [LICENSE](LICENSE)，译文与来源边界详见 [NOTICE](NOTICE)。*

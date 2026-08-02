@@ -1,0 +1,51 @@
+name: Data correction
+description: Report a Quran translation text, metadata, or source issue.
+title: "[Data]: Surah "
+labels: ["data", "needs-source", "triage"]
+body:
+  - type: input
+    id: surah
+    attributes:
+      label: Surah number
+      placeholder: "1"
+    validations:
+      required: true
+  - type: input
+    id: ayah
+    attributes:
+      label: Ayah number
+      placeholder: "1"
+    validations:
+      required: true
+  - type: dropdown
+    id: translator
+    attributes:
+      label: Translator
+      options:
+        - 马坚
+        - 马金鹏
+        - 王静斋
+        - 仝道章
+        - 马仲刚
+        - Multiple translators
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current repository text
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source evidence
+      description: Provide printed edition details, scan/page reference, official source URL, or other verifiable provenance.
+    validations:
+      required: true

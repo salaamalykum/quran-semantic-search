@@ -1,0 +1,2 @@
+# The current maintenance scripts use only the Python standard library.
+# This file exists so documented setup commands remain reproducible.
